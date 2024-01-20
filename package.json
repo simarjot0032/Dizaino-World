@@ -1,5 +1,5 @@
 {
-  "homepage": "https://simarjot0032.github.io/Dizaino-World",
+  "homepage": "https://simarjot0032.github.io/dizaino-world",
   "name": "site",
   "private": true,
   "version": "0.0.0",
@@ -13,7 +13,9 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
+    "react-router-dom": "^6.21.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
