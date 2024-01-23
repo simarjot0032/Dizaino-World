@@ -4,32 +4,30 @@
   padding: 0;
   font-family: monospace;
 }
-.under {
-  width: 100vw;
-  height: 99vh;
-}
+
 .App {
   background-color: rgb(0, 0, 0);
-  height: 97vh;
-  width: 99vw;
+  height: 98vh;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 .heading {
-  margin-top: 2rem;
+  margin-top: 0;
   font-size: 3.5rem;
   font-weight: 800;
   line-height: 5rem;
+  color: white;
 }
 .secondary {
   font-size: 2rem;
   line-height: 5rem;
+  color: rgb(255, 255, 255);
 }
 .img {
   width: 80vw;
-
   height: 50vh;
 }
 .imgclock {
@@ -43,14 +41,16 @@
 }
 .heading-launch {
   font-size: 2.5rem;
+  color: white;
 }
 .footer {
   background-color: #000000;
   padding: 0.5rem;
-  width: 99vw;
+  /* width: 10vw; */
   display: flex;
+  color: white;
   justify-content: center;
-  box-shadow: 5px 0px 5px 5px rgb(21, 21, 21);
+  /* box-shadow: 0cap 0px 5px 5px rgb(21, 21, 21); */
 }
 @media screen and (min-width: 768px) {
   .heading,

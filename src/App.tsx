@@ -2,6 +2,7 @@ import { HashRouter } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 
 import UnderConst from "./Components/UnderConst";
+import Home from "./Components/Home";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -33,10 +34,9 @@ function App() {
       </div> */}
 
       <HashRouter>
-        <div className="main-container">
-          {/* <UnderConst></UnderConst> */}
-          <Navbar />
-        </div>
+        {/* <Navbar /> */}
+        {/* <div className="main-container"></div> */}
+        <Home />
       </HashRouter>
     </>
   );

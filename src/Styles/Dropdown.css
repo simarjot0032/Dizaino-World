@@ -1,0 +1,21 @@
+.dropdown-container {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  width: fit-content;
+  /* position: absolute; */
+  height: fit-content;
+  padding: 0.2rem;
+
+  background-color: white;
+}
+
+.dropdown-link {
+  list-style: none;
+  color: black;
+}
+@media screen and (min-width: 1300px) {
+  .dropdown-container {
+    position: absolute;
+    /* top: -0.2rem; */
+  }
+}
