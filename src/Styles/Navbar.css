@@ -94,12 +94,10 @@
 }
 .dropdown-menu {
   display: flex;
-
   flex-direction: column;
   justify-content: space-between;
   padding: 0 1rem 0 0;
   height: fit-content;
-
   border-bottom: 1px solid rgb(255, 255, 255);
 }
 @media screen and (min-width: 1300px) {
@@ -162,8 +160,4 @@
     border: 0;
     gap: 2px;
   }
-  /* .olivetext {
-    color: #383b34;
-    border: 0;
-  } */
 }

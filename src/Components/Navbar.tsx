@@ -5,15 +5,24 @@ import Logo from "../assets/icon.png";
 import { GrMenu } from "react-icons/gr";
 import { RxCrossCircled } from "react-icons/rx";
 import { IoMdArrowDropdown } from "react-icons/io";
-import Dropdown from "./Interiordropdown";
+import Dropdown from "./Dropdowncomponent";
 
 export default function Navbar() {
   const [menuopen, setmenuopen] = useState(false);
   const [color, setcolor] = useState(false);
-  const dropdown = [
+  const [interiordropdown, setinteriordropsown] = useState(false);
+  const dropdownforinterior = [
     {
       link: "/Bedroom",
       item: "Bedroom",
+    },
+    {
+      link: "/Kitchen",
+      item: "Kitchen",
+    },
+    {
+      link: "/Living-area",
+      item: "Living-Areas",
     },
   ];
   function handleclick(): any {
@@ -47,6 +56,7 @@ export default function Navbar() {
             />
           </div>
         </div>
+        {/* menu */}
         <div
           className={menuopen ? "mobilemenu" : "rightlaptop-navbar-container"}
         >
@@ -72,15 +82,28 @@ export default function Navbar() {
               Home
             </li>
           </Link>
-          <div className="dropdown-menu" onMouseEnter={() => {}}>
+          {/* link having dropdown */}
+          <div
+            className="dropdown-menu"
+            onMouseEnter={() => {
+              setinteriordropsown(true);
+            }}
+            onMouseLeave={() => {
+              setinteriordropsown(false);
+            }}
+          >
+            {/* link+icon+dropdown */}
             <div className="link-icon-dropdown">
-              <li className="link-navbar noborder" onClick={closemenu}>
+              <li className="link-navbar noborder " onClick={closemenu}>
                 Interior
               </li>
               <IoMdArrowDropdown size={25} color="white" />
             </div>
-            <div className="dropdown-menu">
-              <Dropdown arrayfordropdown={dropdown} />
+            {/* dropdown component */}
+            <div className="dropdown-menu-component">
+              {interiordropdown && (
+                <Dropdown arrayfordropdown={dropdownforinterior} />
+              )}
             </div>
           </div>
           <div className="dropdown-menu">
@@ -89,6 +112,9 @@ export default function Navbar() {
                 Exterior
               </li>
               <IoMdArrowDropdown size={25} color="white" />
+            </div>
+            <div className="dropdown-menu-component">
+              {/* <Dropdown arrayfordropdown={dropdownforinterior} /> */}
             </div>
           </div>
           <div className="dropdown-menu">
