@@ -12,7 +12,7 @@
   transition: all 0.5s linear;
 }
 .colorednav {
-  background-color: rgba(159, 159, 159, 0.671);
+  background-color: rgba(186, 185, 185, 0.658);
   transition: all 0.5s linear;
 
   backdrop-filter: blur(5px);
@@ -139,7 +139,7 @@
     font-size: 1.2rem;
     font-weight: 500;
   }
-  .link-navbar::before {
+  .link-navbar-with-bottom-animation::before {
     content: "";
     display: flex;
     flex-direction: column;

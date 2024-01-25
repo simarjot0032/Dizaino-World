@@ -76,7 +76,7 @@ export default function Navbar() {
           <Link to="" className="linktag-navbar">
             <li
               // (color ? "olivetext" : "")
-              className="link-navbar"
+              className="link-navbar link-navbar-with-bottom-animation"
               onClick={closemenu}
             >
               Home
@@ -135,17 +135,21 @@ export default function Navbar() {
           </div>
           <Link
             to="/TerraceGarden"
-            className={"linktag-navbar" + " " + (color ? "olivetext" : "")}
+            className="linktag-navbar "
             onClick={closemenu}
           >
             <li
-              className={"link-navbar" + " " + (color ? "olivetext" : "")}
+              className="link-navbar link-navbar-with-bottom-animation"
               onClick={handleclick}
             >
               Terrance Garden
             </li>
           </Link>
-          <Link to="/Contact" className="linktag-navbar" onClick={closemenu}>
+          <Link
+            to="/Contact"
+            className="linktag-navbar link-navbar-with-bottom-animation"
+            onClick={closemenu}
+          >
             <li className={"link-navbar"} onClick={handleclick}>
               Contact us
             </li>
