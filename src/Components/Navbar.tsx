@@ -10,7 +10,10 @@ import Dropdown from "./Dropdowncomponent";
 export default function Navbar() {
   const [menuopen, setmenuopen] = useState(false);
   const [color, setcolor] = useState(false);
-  const [interiordropdown, setinteriordropsown] = useState(false);
+  const [interiordropdown, setinteriordropdown] = useState(false);
+  const handlehoverandclick = () => {
+    setinteriordropdown(!interiordropdown);
+  };
   const dropdownforinterior = [
     {
       link: "/Bedroom",
@@ -23,6 +26,26 @@ export default function Navbar() {
     {
       link: "/Living-area",
       item: "Living-Areas",
+    },
+    {
+      link: "/Pooja-Room",
+      item: "Pooja Room",
+    },
+    {
+      link: "/Washroom",
+      item: "Washroom",
+    },
+    {
+      link: "/Down-Celling",
+      item: "Down Celling",
+    },
+    {
+      link: "/Theater",
+      item: "Theater",
+    },
+    {
+      link: "/Dining",
+      item: "Dining",
     },
   ];
   function handleclick(): any {
@@ -85,18 +108,13 @@ export default function Navbar() {
           {/* link having dropdown */}
           <div
             className="dropdown-menu"
-            onMouseEnter={() => {
-              setinteriordropsown(true);
-            }}
-            onMouseLeave={() => {
-              setinteriordropsown(false);
-            }}
+            onMouseEnter={handlehoverandclick}
+            onMouseLeave={handlehoverandclick}
+            onClick={handlehoverandclick}
           >
             {/* link+icon+dropdown */}
             <div className="link-icon-dropdown">
-              <li className="link-navbar noborder " onClick={closemenu}>
-                Interior
-              </li>
+              <li className="link-navbar noborder">Interior</li>
               <IoMdArrowDropdown size={25} color="white" />
             </div>
             {/* dropdown component */}
@@ -108,9 +126,7 @@ export default function Navbar() {
           </div>
           <div className="dropdown-menu">
             <div className="link-icon-dropdown">
-              <li className={"link-navbar noborder"} onClick={closemenu}>
-                Exterior
-              </li>
+              <li className={"link-navbar noborder"}>Exterior</li>
               <IoMdArrowDropdown size={25} color="white" />
             </div>
             <div className="dropdown-menu-component">
@@ -145,12 +161,16 @@ export default function Navbar() {
               Terrance Garden
             </li>
           </Link>
-          <Link
-            to="/Contact"
-            className="linktag-navbar link-navbar-with-bottom-animation"
-            onClick={closemenu}
-          >
-            <li className={"link-navbar"} onClick={handleclick}>
+          <Link to="/Projects" className="linktag-navbar">
+            <li className="link-navbar link-navbar-with-bottom-animation">
+              Projects
+            </li>
+          </Link>
+          <Link to="/Contact" className="linktag-navbar " onClick={closemenu}>
+            <li
+              className={"link-navbar link-navbar-with-bottom-animation"}
+              onClick={handleclick}
+            >
               Contact us
             </li>
           </Link>

@@ -41,8 +41,9 @@
     position: absolute;
     margin-left: -0.2rem;
     top: 95%;
-    width: 160px;
+    width: 165px;
     border: 2px solid rgb(42, 42, 5);
+    padding-bottom: 1rem;
   }
   .dropdown-container::before {
     content: "";
@@ -60,6 +61,5 @@
   }
   .dropdown-link {
     color: black;
-    /* border-bottom: 1px solid black; */
   }
 }
