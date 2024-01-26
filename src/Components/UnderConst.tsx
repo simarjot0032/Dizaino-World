@@ -4,7 +4,6 @@ import "../Styles/Undercons.css";
 export default function UnderCons() {
   return (
     <>
-      {" "}
       <div className="App">
         <div className="heading">WEBSITE</div>
         <div className="secondary">Under Construction</div>
