@@ -14,6 +14,13 @@ export default function Navbar() {
   const [exteriordropdown, setexteriordropdown] = useState(false);
   const [Commercialinteriordropdown, setcommercialdropdown] = useState(false);
   const [dropdownforplanning, setdropdownforplanning] = useState(false);
+  function changenavcolor() {
+    if (window.scrollY >= 100) {
+      setcolor(true);
+    } else {
+      setcolor(false);
+    }
+  }
   function handleclick(): any {
     setmenuopen(!menuopen);
   }
@@ -32,13 +39,6 @@ export default function Navbar() {
   const handlehoverandclickforplanning = () => {
     setdropdownforplanning(!dropdownforplanning);
   };
-  function changenavcolor() {
-    if (window.scrollY >= 100) {
-      setcolor(true);
-    } else {
-      setcolor(false);
-    }
-  }
   const dropdownforinterior = [
     {
       link: "/Bedroom",
