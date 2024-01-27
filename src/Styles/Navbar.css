@@ -10,6 +10,7 @@
 
   top: 0;
   transition: all 0.5s linear;
+  user-select: none;
 }
 .colorednav {
   background-color: rgba(186, 185, 185, 0.658);
@@ -81,6 +82,7 @@
   font-family: var(--font);
   border-bottom: 1px solid rgb(255, 255, 255);
   cursor: pointer;
+  line-height: 3.5rem;
 }
 
 .noborder {
@@ -100,7 +102,7 @@
   height: fit-content;
   border-bottom: 1px solid rgb(255, 255, 255);
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1280px) {
   .navbar-container {
     justify-content: space-around;
     align-items: center;
