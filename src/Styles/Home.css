@@ -1,4 +1,32 @@
 .home-hero-section {
   background: url("../assets//home.jpg");
-  min-height: 120vh;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+.hero-section-main-heading {
+  font-size: 3rem;
+  background-color: rgba(248, 242, 233, 0.768);
+  color: rgb(23, 23, 23);
+  font-family: var(--font);
+  width: fit-content;
+  border-radius: 12px;
+  padding: 0 1rem;
+  text-align: center;
+  user-select: none;
+}
+.hero-section-secondary-heading {
+  text-align: center;
+  color: white;
+  font-family: var(--font);
+  font-weight: 300;
+  user-select: none;
+}
+@media screen and (min-width: 500px) {
+  .hero-section-main-heading {
+    font-size: 3.3rem;
+  }
 }
