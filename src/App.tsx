@@ -1,16 +1,16 @@
-import { HashRouter } from "react-router-dom";
-import Navbar from "./Components/Navbar";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
-import UnderConst from "./Components/UnderConst";
 import Home from "./Components/Home";
+import Navbar from "./Components/Navbar";
 
 function App() {
   return (
     <>
       <HashRouter>
-        {/* <Navbar /> */}
-        {/* <div className="main-container"></div> */}
-        <Home />
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
       </HashRouter>
     </>
   );
