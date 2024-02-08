@@ -2,10 +2,12 @@ import "../Styles/Home.css";
 import { LuMouse } from "react-icons/lu";
 import about_pic from "../assets/exterior-pic.jpeg";
 import { GrUserExpert } from "react-icons/gr";
+import { GrProjects } from "react-icons/gr";
+import { IoMdHappy } from "react-icons/io";
 import { useState } from "react";
 
 export default function Home() {
-  let aboutussection = document.querySelector(".aboutus-section");
+  let aboutussection = document.querySelector(".design-main-container");
 
   function HandleScroll() {
     console.log(aboutussection);
@@ -33,6 +35,23 @@ export default function Home() {
             </div>
           </div>
         </div>
+        {/* stripe section */}
+        <div className="design-main-container">
+          <div className="design-container">
+            <p className="design-text">
+              <span className="design-text-content">Build?</span>
+              <span className="design-text-content">*</span>{" "}
+              <span className="design-text-content">Hire us</span>{" "}
+              <span className="design-text-content">*</span>
+              <span className="design-text-content"> Craft</span>
+              <span className="design-text-content"> *</span>{" "}
+              <span className="design-text-content">Build</span>
+              <span className="design-text-content"> *</span>{" "}
+              <span className="design-text-content">Live</span>
+            </p>
+          </div>
+        </div>
+        {/* about us section */}
         <div className="aboutus-section">
           <div className="left-about-section">
             <h2 className="left-about-heading">ABOUT US!</h2>
@@ -51,6 +70,7 @@ export default function Home() {
             <img src={about_pic} alt="" className="about-pic" />
           </div>
         </div>
+        {/* experiance showcase */}
         <div className="showcase-for-experiance">
           <div className="experiance-container">
             <div className="left-expriance">
@@ -61,8 +81,30 @@ export default function Home() {
               <GrUserExpert size={60} color="var(--primarycolor)" />
             </div>
           </div>
-          <div className="experiance-container"></div>
-          <div className="experiance-container"></div>
+          <div className="experiance-container">
+            <div className="left-experiance">
+              <h2 className="experiance-number">5000+</h2>
+              <p className="experiance-text">Projects</p>
+            </div>
+            <div className="right-experiance">
+              <GrProjects size={60} color="var(--primarycolor)" />
+            </div>
+          </div>
+          <div className="experiance-container">
+            <div className="left-experiance">
+              <h2 className="experiance-number">500+</h2>
+              <p className="experiance-text">Reglar -Clients</p>
+            </div>
+            <div className="right-experiance">
+              <IoMdHappy size={60} color="var(--primarycolor)" />
+            </div>
+          </div>
+        </div>
+        {/* why to choose us section */}
+        <div className="choose-us-container">
+          <div className="choose-us-header">
+            <h2 className="choose-us-heading">WHY TO US?</h2>
+          </div>
         </div>
       </div>
     </>

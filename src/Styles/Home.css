@@ -1,6 +1,5 @@
 .home-container {
-  min-height: 250vh;
-  background-color: rgb(241, 247, 253);
+  background-color: rgb(237, 237, 238);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,11 +64,12 @@
 }
 .aboutus-section {
   border-radius: 20px;
-  /* box-shadow: 0 2px 8px 0px rgba(0, 128, 128, 0.373); */
+
   scroll-margin: 5rem;
   display: flex;
   padding: 2.5rem 1.09rem;
   flex-direction: column;
+  box-shadow: rgba(29, 29, 29, 0.495) 0px 2px 8px 0px;
 }
 
 .left-about-heading {
@@ -77,17 +77,51 @@
   color: transparent;
   font-family: var(--fontsecond);
   font-weight: 800;
-  -webkit-text-stroke: 3px var(--primarycolor);
+  -webkit-text-stroke: 3px rgba(6, 173, 173, 0.355);
   letter-spacing: 5px;
+  /* line-height: normal; */
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .left-about-heading::after {
-  content: " ";
+  content: "ARCHITECT";
+  position: absolute;
+  top: 30%;
+  color: var(--primarycolor);
+  font-size: 2.6rem;
+  display: flex;
+  align-items: center;
+  -webkit-text-stroke: 0;
+  z-index: 1;
+}
+.design-main-container {
+  scroll-margin: 100px;
+  display: flex;
+  background-color: var(--secondarycolor);
+  padding: 1rem 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.design-container {
+  padding: 0.5rem 0.2rem;
+  width: 99.98%;
 
-  width: 220px;
-  border: 2px solid black;
-  height: 3px;
+  background-image: linear-gradient(315deg, #3bb2cd 0%, #618789 74%);
+
+  transform: rotate(-1deg);
+}
+.design-text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--mainbgcolor);
+  gap: 2px;
+}
+.design-text-content {
+  font-size: 1.02rem;
+  font-family: var(--font);
 }
 .left-about-para {
   margin-top: 1.5rem;
@@ -110,18 +144,19 @@
   width: 100%;
   border-radius: 15px;
   background-color: var(--secondarycolor);
-  padding: 3.2rem 0;
+  padding: 3.2rem 2rem;
   display: flex;
-  /* justify-content: center; */
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
-  box-shadow: rgb(29, 29, 29) 0px 2px 8px 0px;
+  gap: 3rem;
+  box-shadow: rgb(0, 0, 0) 0px 2px 8px 0px;
 }
 .experiance-container {
   display: flex;
   gap: 2rem;
   align-items: center;
+  width: 220px;
+  justify-content: space-between;
 }
 .experiance-number,
 .experiance-text {
@@ -130,12 +165,41 @@
   font-size: 2rem;
   margin: 0;
 }
+.choose-us-container {
+  margin-top: 3rem;
+}
+.choose-us-container,
+.choose-us-header {
+  display: flex;
+  flex-direction: column;
+}
+.choose-us-heading {
+  font-size: 3.2rem;
+  font-family: var(--fontsecond);
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(0, 128, 128, 0.38);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  user-select: none;
+}
+.choose-us-heading::after {
+  content: "Choose";
+  position: absolute;
+  top: 25%;
+  font-size: 2.5rem;
+  -webkit-text-stroke: 0;
+  color: var(--primarycolor);
+}
 @media screen and (min-width: 500px) {
   .hero-section-main-heading {
     font-size: 3.3rem;
   }
   .aboutus-section {
     padding: 2.5rem 2rem;
+  }
+  .design-text-content {
+    font-size: 1.5rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -159,6 +223,24 @@
   .left-about-para {
     text-align: left;
     font-size: 1.2rem;
+  }
+  .showcase-for-experiance {
+    max-width: var(--tabwidth);
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .right-about-section {
+    align-items: center;
+  }
+  .about-pic {
+    height: 500px;
+    margin: 0;
+  }
+  .design-text-content {
+    font-size: 2rem;
+  }
+  .choose-us-container {
+    max-width: var(--tabwidth);
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
@@ -184,10 +266,19 @@
   .about-pic {
     padding-top: 1rem;
   }
+  .showcase-for-experiance {
+    max-width: var(--smalllaptop);
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .design-text-content {
+    font-size: 2.5rem;
+  }
+  .choose-us-container {
+    max-width: var(--smalllaptop);
+  }
 }
 @media screen and (min-width: 1280px) and (max-width: 1500px) {
-  .home-container {
-  }
   .aboutus-section {
     max-width: var(--laptop);
     justify-content: center;
@@ -218,6 +309,26 @@
 
     max-width: 500px;
     height: 400px;
+  }
+  .left-about-heading {
+    font-size: 65px;
+    justify-content: center;
+  }
+  .left-about-heading::after {
+    font-size: 3rem;
+    /* top: 10px; */
+    left: 0;
+  }
+  .showcase-for-experiance {
+    max-width: var(--laptop);
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .design-text-content {
+    font-size: 2.5rem;
+  }
+  .choose-us-container {
+    max-width: var(--laptop);
   }
 }
 @media screen and (min-width: 1500px) {
@@ -250,5 +361,25 @@
     padding-top: 0.8rem;
 
     max-width: 500px;
+  }
+  .left-about-heading {
+    font-size: 85px;
+    justify-content: center;
+  }
+  .left-about-heading::after {
+    font-size: 3.8rem;
+    /* top: ; */
+    left: 0;
+  }
+  .showcase-for-experiance {
+    max-width: var(--large);
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .design-text-content {
+    font-size: 3rem;
+  }
+  .choose-us-container {
+    max-width: var(--large);
   }
 }

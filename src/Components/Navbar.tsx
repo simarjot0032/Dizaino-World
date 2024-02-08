@@ -29,15 +29,28 @@ export default function Navbar() {
   }
   const handlehoverandclick = () => {
     setinteriordropdown(!interiordropdown);
+    setcommercialdropdown(false);
+    setdropdownforplanning(false);
+    setexteriordropdown(false);
   };
   const handlehoverandclickforexterior = () => {
     setexteriordropdown(!exteriordropdown);
+    setinteriordropdown(false);
+    setcommercialdropdown(false);
+    setdropdownforplanning(false);
   };
   const handlehoverandclickforcommercialinterior = () => {
     setcommercialdropdown(!Commercialinteriordropdown);
+    setexteriordropdown(false);
+    setinteriordropdown(false);
+
+    setdropdownforplanning(false);
   };
   const handlehoverandclickforplanning = () => {
     setdropdownforplanning(!dropdownforplanning);
+    setexteriordropdown(false);
+    setinteriordropdown(false);
+    setcommercialdropdown(false);
   };
   const dropdownforinterior = [
     {
@@ -62,7 +75,7 @@ export default function Navbar() {
     },
     {
       link: "/Down-Celling",
-      item: "Down Celling",
+      item: "Down-Celling",
     },
     {
       link: "/Theater",
@@ -229,9 +242,7 @@ export default function Navbar() {
             onClick={menuopen ? handlehoverandclickforplanning : undefined}
           >
             <div className="link-icon-dropdown">
-              <li className={"link-navbar noborder"} onClick={closemenu}>
-                Planning
-              </li>
+              <li className={"link-navbar noborder"}>Planning</li>
               <IoMdArrowDropdown size={25} color="white" />
             </div>
             <div className="dropdown-menu-component">
