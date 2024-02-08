@@ -11,8 +11,46 @@ export default function Navbar() {
   const [menuopen, setmenuopen] = useState(false);
   const [color, setcolor] = useState(false);
   const [interiordropdown, setinteriordropdown] = useState(false);
+  const [exteriordropdown, setexteriordropdown] = useState(false);
+  const [Commercialinteriordropdown, setcommercialdropdown] = useState(false);
+  const [dropdownforplanning, setdropdownforplanning] = useState(false);
+  function changenavcolor() {
+    if (window.scrollY >= 100) {
+      setcolor(true);
+    } else {
+      setcolor(false);
+    }
+  }
+  function handleclick(): any {
+    setmenuopen(!menuopen);
+  }
+  function closemenu() {
+    setmenuopen(false);
+  }
   const handlehoverandclick = () => {
     setinteriordropdown(!interiordropdown);
+    setcommercialdropdown(false);
+    setdropdownforplanning(false);
+    setexteriordropdown(false);
+  };
+  const handlehoverandclickforexterior = () => {
+    setexteriordropdown(!exteriordropdown);
+    setinteriordropdown(false);
+    setcommercialdropdown(false);
+    setdropdownforplanning(false);
+  };
+  const handlehoverandclickforcommercialinterior = () => {
+    setcommercialdropdown(!Commercialinteriordropdown);
+    setexteriordropdown(false);
+    setinteriordropdown(false);
+
+    setdropdownforplanning(false);
+  };
+  const handlehoverandclickforplanning = () => {
+    setdropdownforplanning(!dropdownforplanning);
+    setexteriordropdown(false);
+    setinteriordropdown(false);
+    setcommercialdropdown(false);
   };
   const dropdownforinterior = [
     {
@@ -37,7 +75,7 @@ export default function Navbar() {
     },
     {
       link: "/Down-Celling",
-      item: "Down Celling",
+      item: "Down-Celling",
     },
     {
       link: "/Theater",
@@ -48,19 +86,45 @@ export default function Navbar() {
       item: "Dining",
     },
   ];
-  function handleclick(): any {
-    setmenuopen(!menuopen);
-  }
-  function closemenu() {
-    setmenuopen(false);
-  }
-  function changenavcolor() {
-    if (window.scrollY >= 100) {
-      setcolor(true);
-    } else {
-      setcolor(false);
-    }
-  }
+  const arrayforexterior = [
+    {
+      link: "/Residential-Exterior",
+      item: "Residential-Exterior",
+    },
+    {
+      link: "/Commercial-Exterior",
+      item: "Commercial-Exterior",
+    },
+    {
+      link: "/Classical-Exterior",
+      item: "Classical-Exterior",
+    },
+  ];
+  const arrayforcommercialinterior = [
+    {
+      link: "/Offices",
+      item: "Offices",
+    },
+    {
+      link: "/Restruants",
+      item: "Restraunts",
+    },
+    {
+      link: "/Salons",
+      item: "Salons",
+    },
+  ];
+  const arrayforplanning = [
+    {
+      link: "/2D-Planning",
+      item: "2D-Plainng",
+    },
+    {
+      link: "/3D-Planning",
+      item: "3D-Planning",
+    },
+  ];
+
   window.addEventListener("scroll", changenavcolor);
   return (
     <>
@@ -108,9 +172,9 @@ export default function Navbar() {
           {/* link having dropdown */}
           <div
             className="dropdown-menu"
-            onMouseEnter={handlehoverandclick}
-            onMouseLeave={handlehoverandclick}
-            onClick={handlehoverandclick}
+            onMouseEnter={menuopen ? undefined : handlehoverandclick}
+            onMouseLeave={menuopen ? undefined : handlehoverandclick}
+            onClick={menuopen ? handlehoverandclick : undefined}
           >
             {/* link+icon+dropdown */}
             <div className="link-icon-dropdown">
@@ -120,33 +184,74 @@ export default function Navbar() {
             {/* dropdown component */}
             <div className="dropdown-menu-component">
               {interiordropdown && (
-                <Dropdown arrayfordropdown={dropdownforinterior} />
+                <Dropdown
+                  arrayfordropdown={dropdownforinterior}
+                  handleclick={closemenu}
+                />
               )}
             </div>
           </div>
-          <div className="dropdown-menu">
+          <div
+            className="dropdown-menu"
+            onMouseEnter={menuopen ? undefined : handlehoverandclickforexterior}
+            onMouseLeave={menuopen ? undefined : handlehoverandclickforexterior}
+            onClick={menuopen ? handlehoverandclickforexterior : undefined}
+          >
             <div className="link-icon-dropdown">
               <li className={"link-navbar noborder"}>Exterior</li>
               <IoMdArrowDropdown size={25} color="white" />
             </div>
             <div className="dropdown-menu-component">
-              {/* <Dropdown arrayfordropdown={dropdownforinterior} /> */}
+              {exteriordropdown && (
+                <Dropdown
+                  arrayfordropdown={arrayforexterior}
+                  handleclick={closemenu}
+                />
+              )}
             </div>
           </div>
-          <div className="dropdown-menu">
+          <div
+            className="dropdown-menu"
+            onMouseEnter={
+              menuopen ? undefined : handlehoverandclickforcommercialinterior
+            }
+            onMouseLeave={
+              menuopen ? undefined : handlehoverandclickforcommercialinterior
+            }
+            onClick={
+              menuopen ? handlehoverandclickforcommercialinterior : undefined
+            }
+          >
             <div className="link-icon-dropdown">
-              <li className={"link-navbar noborder "} onClick={closemenu}>
-                Commercial Inteior
-              </li>
+              <li className={"link-navbar noborder "}>Commercial Inteior</li>
               <IoMdArrowDropdown size={25} color="white" />
             </div>
+            <div className="dropdown-menu-component">
+              {Commercialinteriordropdown && (
+                <Dropdown
+                  arrayfordropdown={arrayforcommercialinterior}
+                  handleclick={closemenu}
+                />
+              )}
+            </div>
           </div>
-          <div className="dropdown-menu">
+          <div
+            className="dropdown-menu"
+            onMouseEnter={menuopen ? undefined : handlehoverandclickforplanning}
+            onMouseLeave={menuopen ? undefined : handlehoverandclickforplanning}
+            onClick={menuopen ? handlehoverandclickforplanning : undefined}
+          >
             <div className="link-icon-dropdown">
-              <li className={"link-navbar noborder"} onClick={closemenu}>
-                Planning
-              </li>
+              <li className={"link-navbar noborder"}>Planning</li>
               <IoMdArrowDropdown size={25} color="white" />
+            </div>
+            <div className="dropdown-menu-component">
+              {dropdownforplanning && (
+                <Dropdown
+                  arrayfordropdown={arrayforplanning}
+                  handleclick={closemenu}
+                />
+              )}
             </div>
           </div>
           <Link

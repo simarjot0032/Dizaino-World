@@ -79,11 +79,12 @@ button:focus-visible {
   box-sizing: border-box;
   --font: "Poppins", sans-serif;
   --fontsecond: "Montserrat", sans-serif;
-  --mainbgcolor: #000000;
+  --mainbgcolor: rgb(241, 247, 253);
+  --primarycolor: teal;
+  --secondarycolor: rgb(35, 35, 35);
+  --accentcolor: rgba(179, 179, 179, 0.69);
+  --tabwidth: 880px;
+  --samlllaptop: 100px;
+  --laptop: 1150px;
+  --large: 1500px;
 }
-/* .main-container {
-  /* background: url(./assets//home.jpg); 
-  /* height: 120vh; 
-  /* background-size: contain; 
-  /* background-repeat: no-repeat; 
-} */
