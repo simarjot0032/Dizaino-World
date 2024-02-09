@@ -8,12 +8,15 @@ import { MdOutlineDesignServices } from "react-icons/md";
 import { useState } from "react";
 
 export default function Home() {
+  const [explation, setexplation] = useState(1);
   let aboutussection = document.querySelector(".design-main-container");
 
   function HandleScroll() {
     aboutussection?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
-
+  function handletoggle(index: number) {
+    setexplation(index);
+  }
   return (
     <>
       <div className="home-container">
@@ -107,7 +110,13 @@ export default function Home() {
           </div>
           <div className="choose-us-main-content">
             <div className="choose-main-right">
-              <div className="choose-right-content-container">
+              <div
+                className={
+                  explation == 1
+                    ? "choose-right-content-container"
+                    : "  innovationnone"
+                }
+              >
                 <h2 className="choose-right-heading">
                   Innovative Design Solutions
                 </h2>
@@ -120,84 +129,105 @@ export default function Home() {
                   showcase of originality and forward-thinking design.
                 </p>
               </div>
+              <div
+                className={
+                  explation == 2
+                    ? "choose-right-content-container"
+                    : "experiancenone"
+                }
+              >
+                <h2 className="choose-right-heading">
+                  Experienced Design Team
+                </h2>
+                <p className="choose-right-content">
+                  Our team is the backbone of our success. With a wealth of
+                  experience in the industry, our designers, architects, and
+                  craftsmen bring a diverse set of skills and insights to every
+                  project. Their collective expertise ensures that each design
+                  not only meets but exceeds industry standards.
+                </p>
+              </div>
             </div>
             <div className="choose-main-left">
-              <div className="choose-card-row">
-                <div className="choose-us-card">
-                  <div className="choose-us-card-header">
-                    <MdOutlineDesignServices
-                      size={50}
-                      color="var(--primarycolor)"
-                    />
-                  </div>
-                  <div className="choose-us-card-heading">
-                    Innovative Design Solutions
-                  </div>
+              <div
+                className="choose-us-card"
+                onClick={() => {
+                  handletoggle(1);
+                }}
+              >
+                <div className="choose-us-card-header">
+                  <MdOutlineDesignServices
+                    size={50}
+                    color="var(--primarycolor)"
+                  />
+                </div>
+                <div className="choose-us-card-heading">
+                  Innovative Design Solutions
                 </div>
               </div>
-              <div className="choose-card-row">
-                <div className="choose-us-card">
-                  <div className="choose-us-card-header">
-                    <MdOutlineDesignServices
-                      size={50}
-                      color="var(--primarycolor)"
-                    />
-                  </div>
-                  <div className="choose-us-card-heading">
-                    Innovative Design Solutions
-                  </div>
+
+              <div
+                className="choose-us-card"
+                onClick={() => {
+                  handletoggle(2);
+                }}
+              >
+                <div className="choose-us-card-header">
+                  <MdOutlineDesignServices
+                    size={50}
+                    color="var(--primarycolor)"
+                  />
+                </div>
+                <div className="choose-us-card-heading">
+                  Experienced Design Team
                 </div>
               </div>
-              <div className="choose-card-row">
-                <div className="choose-us-card">
-                  <div className="choose-us-card-header">
-                    <MdOutlineDesignServices
-                      size={50}
-                      color="var(--primarycolor)"
-                    />
-                  </div>
-                  <div className="choose-us-card-heading">
-                    Innovative Design Solutions
-                  </div>
+
+              <div className="choose-us-card">
+                <div className="choose-us-card-header">
+                  <MdOutlineDesignServices
+                    size={50}
+                    color="var(--primarycolor)"
+                  />
+                </div>
+                <div className="choose-us-card-heading">
+                  Innovative Design Solutions
                 </div>
               </div>
-              <div className="choose-card-row">
-                <div className="choose-us-card">
-                  <div className="choose-us-card-header">
-                    <MdOutlineDesignServices
-                      size={50}
-                      color="var(--primarycolor)"
-                    />
-                  </div>
-                  <div className="choose-us-card-heading">
-                    Innovative Design Solutions
-                  </div>
+
+              <div className="choose-us-card">
+                <div className="choose-us-card-header">
+                  <MdOutlineDesignServices
+                    size={50}
+                    color="var(--primarycolor)"
+                  />
+                </div>
+                <div className="choose-us-card-heading">
+                  Innovative Design Solutions
                 </div>
               </div>
-              <div className="choose-card-row">
-                <div className="choose-us-card">
-                  <div className="choose-us-card-header">
-                    <MdOutlineDesignServices
-                      size={50}
-                      color="var(--primarycolor)"
-                    />
-                  </div>
-                  <div className="choose-us-card-heading">
-                    Innovative Design Solutions
-                  </div>
+
+              <div className="choose-us-card">
+                <div className="choose-us-card-header">
+                  <MdOutlineDesignServices
+                    size={50}
+                    color="var(--primarycolor)"
+                  />
+                </div>
+                <div className="choose-us-card-heading">
+                  Innovative Design Solutions
                 </div>
               </div>
-              <div className="choose-card-row">
-                <div className="choose-us-card">
-                  <div className="choose-us-card-header">
-                    <MdOutlineDesignServices
-                      size={50}
-                      color="var(--primarycolor)"
-                    />
-                  </div>
-                  <div className="choose-us-card-heading">
-                    Innovative Design Solutions
-                  </div>
+
+              <div className="choose-us-card">
+                <div className="choose-us-card-header">
+                  <MdOutlineDesignServices
+                    size={50}
+                    color="var(--primarycolor)"
+                  />
+                </div>
+                <div className="choose-us-card-heading">
+                  Innovative Design Solutions
                 </div>
               </div>
             </div>
