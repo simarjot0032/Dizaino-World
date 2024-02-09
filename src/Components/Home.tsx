@@ -4,13 +4,13 @@ import about_pic from "../assets/exterior-pic.jpeg";
 import { GrUserExpert } from "react-icons/gr";
 import { GrProjects } from "react-icons/gr";
 import { IoMdHappy } from "react-icons/io";
+import { MdOutlineDesignServices } from "react-icons/md";
 import { useState } from "react";
 
 export default function Home() {
   let aboutussection = document.querySelector(".design-main-container");
 
   function HandleScroll() {
-    console.log(aboutussection);
     aboutussection?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
@@ -93,7 +93,7 @@ export default function Home() {
           <div className="experiance-container">
             <div className="left-experiance">
               <h2 className="experiance-number">500+</h2>
-              <p className="experiance-text">Reglar -Clients</p>
+              <p className="experiance-text">Reglar-Clients</p>
             </div>
             <div className="right-experiance">
               <IoMdHappy size={60} color="var(--primarycolor)" />
@@ -104,6 +104,103 @@ export default function Home() {
         <div className="choose-us-container">
           <div className="choose-us-header">
             <h2 className="choose-us-heading">WHY TO US?</h2>
+          </div>
+          <div className="choose-us-main-content">
+            <div className="choose-main-right">
+              <div className="choose-right-content-container">
+                <h2 className="choose-right-heading">
+                  Innovative Design Solutions
+                </h2>
+                <p className="choose-right-content">
+                  At Dizaino World, we pride ourselves on pushing the boundaries
+                  of design. Our team thrives on creativity and is dedicated to
+                  bringing fresh, innovative ideas to the table. From
+                  conceptualizing modern living spaces to incorporating the
+                  latest design trends, we strive to make every project a
+                  showcase of originality and forward-thinking design.
+                </p>
+              </div>
+            </div>
+            <div className="choose-main-left">
+              <div className="choose-card-row">
+                <div className="choose-us-card">
+                  <div className="choose-us-card-header">
+                    <MdOutlineDesignServices
+                      size={50}
+                      color="var(--primarycolor)"
+                    />
+                  </div>
+                  <div className="choose-us-card-heading">
+                    Innovative Design Solutions
+                  </div>
+                </div>
+              </div>
+              <div className="choose-card-row">
+                <div className="choose-us-card">
+                  <div className="choose-us-card-header">
+                    <MdOutlineDesignServices
+                      size={50}
+                      color="var(--primarycolor)"
+                    />
+                  </div>
+                  <div className="choose-us-card-heading">
+                    Innovative Design Solutions
+                  </div>
+                </div>
+              </div>
+              <div className="choose-card-row">
+                <div className="choose-us-card">
+                  <div className="choose-us-card-header">
+                    <MdOutlineDesignServices
+                      size={50}
+                      color="var(--primarycolor)"
+                    />
+                  </div>
+                  <div className="choose-us-card-heading">
+                    Innovative Design Solutions
+                  </div>
+                </div>
+              </div>
+              <div className="choose-card-row">
+                <div className="choose-us-card">
+                  <div className="choose-us-card-header">
+                    <MdOutlineDesignServices
+                      size={50}
+                      color="var(--primarycolor)"
+                    />
+                  </div>
+                  <div className="choose-us-card-heading">
+                    Innovative Design Solutions
+                  </div>
+                </div>
+              </div>
+              <div className="choose-card-row">
+                <div className="choose-us-card">
+                  <div className="choose-us-card-header">
+                    <MdOutlineDesignServices
+                      size={50}
+                      color="var(--primarycolor)"
+                    />
+                  </div>
+                  <div className="choose-us-card-heading">
+                    Innovative Design Solutions
+                  </div>
+                </div>
+              </div>
+              <div className="choose-card-row">
+                <div className="choose-us-card">
+                  <div className="choose-us-card-header">
+                    <MdOutlineDesignServices
+                      size={50}
+                      color="var(--primarycolor)"
+                    />
+                  </div>
+                  <div className="choose-us-card-heading">
+                    Innovative Design Solutions
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
