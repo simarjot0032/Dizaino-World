@@ -147,6 +147,79 @@ export default function Home() {
                   not only meets but exceeds industry standards.
                 </p>
               </div>
+              <div
+                className={
+                  explation == 3
+                    ? "choose-right-content-container"
+                    : "experiancenone"
+                }
+              >
+                <h2 className="choose-right-heading">
+                  Tailored to Your Lifestyle
+                </h2>
+                <p className="choose-right-content">
+                  We understand that your home or commercial space is an
+                  extension of your lifestyle. Our design philosophy revolves
+                  around translating your unique personality and preferences
+                  into tangible, functional spaces. By tailoring our designs to
+                  fit your lifestyle, we ensure that every project feels like a
+                  true reflection of you.
+                </p>
+              </div>
+              <div
+                className={
+                  explation == 4
+                    ? "choose-right-content-container"
+                    : "experiancenone"
+                }
+              >
+                <h2 className="choose-right-heading">Attention to Detail</h2>
+                <p className="choose-right-content">
+                  Detail is our design language. We believe that it's the little
+                  things that make a big difference. From the choice of
+                  materials to the placement of furniture, we pay meticulous
+                  attention to every detail. This commitment to precision
+                  results in spaces that not only look stunning but also
+                  function seamlessly.
+                </p>
+              </div>
+              <div
+                className={
+                  explation == 5
+                    ? "choose-right-content-container"
+                    : "experiancenone"
+                }
+              >
+                <h2 className="choose-right-heading">
+                  Versatility in Design Styles
+                </h2>
+                <p className="choose-right-content">
+                  One size doesn't fit all, especially in design. Dizaino World
+                  embraces the diversity of design styles. Whether you're drawn
+                  to the clean lines of modern aesthetics, the timeless elegance
+                  of classical design, or the boldness of contemporary styles,
+                  our versatile team can bring your vision to life.
+                </p>
+              </div>
+              <div
+                className={
+                  explation == 6
+                    ? "choose-right-content-container"
+                    : "experiancenone"
+                }
+              >
+                <h2 className="choose-right-heading">
+                  Client-Centric Approach
+                </h2>
+                <p className="choose-right-content">
+                  Your satisfaction is our priority. We take a client-centric
+                  approach that involves open communication and collaboration.
+                  Throughout the design process, we actively seek your input,
+                  listen to your feedback, and adjust our designs to align with
+                  your evolving vision. This ensures that the end result is not
+                  just a design but a personalized masterpiece.
+                </p>
+              </div>
             </div>
             <div className="choose-main-left">
               <div
@@ -183,7 +256,12 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="choose-us-card">
+              <div
+                className="choose-us-card"
+                onClick={() => {
+                  handletoggle(3);
+                }}
+              >
                 <div className="choose-us-card-header">
                   <MdOutlineDesignServices
                     size={50}
@@ -191,11 +269,16 @@ export default function Home() {
                   />
                 </div>
                 <div className="choose-us-card-heading">
-                  Innovative Design Solutions
+                  Tailored to Your Lifestyle
                 </div>
               </div>
 
-              <div className="choose-us-card">
+              <div
+                className="choose-us-card"
+                onClick={() => {
+                  handletoggle(4);
+                }}
+              >
                 <div className="choose-us-card-header">
                   <MdOutlineDesignServices
                     size={50}
@@ -203,11 +286,16 @@ export default function Home() {
                   />
                 </div>
                 <div className="choose-us-card-heading">
-                  Innovative Design Solutions
+                  Attention to Detail
                 </div>
               </div>
 
-              <div className="choose-us-card">
+              <div
+                className="choose-us-card"
+                onClick={() => {
+                  handletoggle(5);
+                }}
+              >
                 <div className="choose-us-card-header">
                   <MdOutlineDesignServices
                     size={50}
@@ -215,11 +303,16 @@ export default function Home() {
                   />
                 </div>
                 <div className="choose-us-card-heading">
-                  Innovative Design Solutions
+                  Versatility in Design Styles
                 </div>
               </div>
 
-              <div className="choose-us-card">
+              <div
+                className="choose-us-card"
+                onClick={() => {
+                  handletoggle(6);
+                }}
+              >
                 <div className="choose-us-card-header">
                   <MdOutlineDesignServices
                     size={50}
@@ -227,7 +320,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="choose-us-card-heading">
-                  Innovative Design Solutions
+                  Client-Centric Approach
                 </div>
               </div>
             </div>
