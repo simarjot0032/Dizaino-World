@@ -83,8 +83,8 @@ button:focus-visible {
   --primarycolor: teal;
   --secondarycolor: rgb(35, 35, 35);
   --accentcolor: rgba(179, 179, 179, 0.69);
-  --tabwidth: 880px;
-  --samlllaptop: 100px;
+  --tabwidth: 850px;
+  --samlllaptop: 1000px;
   --laptop: 1150px;
   --large: 1500px;
 }
