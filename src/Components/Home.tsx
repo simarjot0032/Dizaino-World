@@ -35,11 +35,32 @@ export default function Home() {
   // }
   const arrayforcommercialimages = [
     {
-      image: "../assets/Major%20project%20/c(1).jpg",
+      image: commercial,
+    },
+    {
+      image: commercial,
+    },
+    {
+      image: commercial,
+    },
+    {
+      image: commercial,
+    },
+    {
+      image: commercial,
+    },
+    {
+      image: commercial,
+    },
+    {
+      image: commercial,
+    },
+    {
+      image: commercial,
     },
   ];
   const [explation, setexplation] = useState(1);
-  let aboutussection = document.querySelector(".design-main-container");
+  let aboutussection = document.getElementById("design");
 
   function HandleScroll() {
     aboutussection?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -64,12 +85,12 @@ export default function Home() {
               <LuMouse size={23} color="white" />
             </div>
             <div className="scroll-text-container">
-              <p className="scroll-text">Scroll-Down</p>
+              <a className="scroll-text">Scroll-Down</a>
             </div>
           </div>
         </div>
         {/* stripe section */}
-        <div className="design-main-container">
+        <div className="design-main-container" id="design">
           <div className="design-container">
             <p className="design-text">
               <span className="design-text-content">Build?</span>
@@ -86,7 +107,7 @@ export default function Home() {
         </div>
         {/* about us section */}
         <div className="content-container">
-          <div className="aboutus-section">
+          <div className="aboutus-section" data-aos="fade-left">
             <div className="left-about-section">
               <h2 className="left-about-heading">ABOUT US!</h2>
               <p className="left-about-para">
@@ -105,7 +126,7 @@ export default function Home() {
             </div>
           </div>
           {/* experiance showcase */}
-          <div className="showcase-for-experiance">
+          <div className="showcase-for-experiance" data-aos="fade-right">
             <div className="experiance-container">
               <div className="left-expriance">
                 <h2 className="experiance-number">12+</h2>
@@ -140,7 +161,7 @@ export default function Home() {
               <h2 className="choose-us-heading">WHY TO US?</h2>
             </div>
             <div className="choose-us-main-content">
-              <div className="choose-main-right">
+              <div className="choose-main-right" data-aos="fade-left">
                 <div
                   className={
                     explation == 1
@@ -253,7 +274,7 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-              <div className="choose-main-left">
+              <div className="choose-main-left" data-aos="fade-right">
                 <div
                   className="choose-us-card"
                   onClick={() => {
@@ -354,9 +375,9 @@ export default function Home() {
             <div className="project-showcase-content">
               <div className="project-showcase-content-header-container">
                 <h2 className="project-showcase-tab-heading">COMMERCIAL</h2>
-                <h2 className="project-showcase-tab-heading">RESSIDENTIAL</h2>
+                <h2 className="project-showcase-tab-heading">RESIDENTIAL</h2>
               </div>
-              <div className="project-commercial none">
+              <div className="project-commercial none" data-aos="fade-left">
                 {/* {arrayforcommercialimages.map((item: any, index: any): any => {
                   return (
                     <React.Fragment key={index}>
@@ -378,7 +399,11 @@ export default function Home() {
                   );
                 })}*/}
                 <SlideshowLightbox className="lightbox-container">
-                  <img src={commercial} alt="" className="project-img" />
+                  {arrayforcommercialimages.map((image) => {
+                    return (
+                      <img src={image.image} alt="" className="project-img" />
+                    );
+                  })}
                 </SlideshowLightbox>
               </div>
               <div className="project-ressidential none"></div>
