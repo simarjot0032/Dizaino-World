@@ -295,6 +295,10 @@
   position: absolute;
   top: -12px;
 }
+.activetab {
+  background-color: var(--primarycolor);
+  color: white;
+}
 .project-showcase-content {
   display: flex;
   flex-direction: column;
@@ -321,7 +325,7 @@
   color: white;
 }
 .project-commercial,
-.project-ressidential {
+.project-residential {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -352,6 +356,9 @@
   min-height: 80%;
   max-height: 80vh;
   aspect-ratio: 3/2;
+}
+.none {
+  display: none;
 }
 @media screen and (min-width: 500px) {
   .hero-section-main-heading {
@@ -660,7 +667,7 @@
     display: none;
   }
   .project-commercial,
-  .project-ressidential {
+  .project-residential {
     max-width: var(--large);
   }
   .project-img {

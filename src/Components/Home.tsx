@@ -11,7 +11,31 @@ import { SiAffinitydesigner } from "react-icons/si";
 import { RiCustomerService2Line } from "react-icons/ri";
 import { SlideshowLightbox } from "lightbox.js-react";
 import "lightbox.js-react/dist/index.css";
-import commercial from "../assets/Major project /c(1).jpg";
+import c1 from "../assets/commercial-images/c1.jpeg";
+import c2 from "../assets/commercial-images/c2.jpeg";
+import c3 from "../assets/commercial-images/c3.jpg";
+import c4 from "../assets/commercial-images/c4.jpg";
+import c5 from "../assets/commercial-images/c5.jpg";
+import c6 from "../assets/commercial-images/c6.jpg";
+import c7 from "../assets/commercial-images/c7.jpg";
+import c8 from "../assets/commercial-images/c8.jpg";
+import c9 from "../assets/commercial-images/c9.jpg";
+import c11 from "../assets/commercial-images/c11.jpg";
+import c12 from "../assets/commercial-images/c12.jpeg";
+import c10 from "../assets/commercial-images/c10.jpg";
+import r1 from "../assets/residental images/r(1).jpg";
+import r2 from "../assets/residental images/r(2).jpg";
+import r3 from "../assets/residental images/r(3).jpg";
+import r4 from "../assets/residental images/r(4).jpg";
+import r5 from "../assets/residental images/r(5).jpg";
+import r6 from "../assets/residental images/r(6).jpg";
+import r7 from "../assets/residental images/r(7).jpg";
+import r8 from "../assets/residental images/r(8).jpg";
+import r9 from "../assets/residental images/r(9).jpg";
+import r10 from "../assets/residental images/r(10).jpg";
+import r11 from "../assets/residental images/r(11).jpeg";
+import r12 from "../assets/residental images/r(12).jpeg";
+
 import { useState } from "react";
 
 export default function Home() {
@@ -33,34 +57,93 @@ export default function Home() {
   //     };
   //   });
   // }
-  const arrayforcommercialimages = [
-    {
-      image: commercial,
-    },
-    {
-      image: commercial,
-    },
-    {
-      image: commercial,
-    },
-    {
-      image: commercial,
-    },
-    {
-      image: commercial,
-    },
-    {
-      image: commercial,
-    },
-    {
-      image: commercial,
-    },
-    {
-      image: commercial,
-    },
-  ];
+
+  // usestate and variable section
+  const [activetab, setactivetab] = useState(1);
   const [explation, setexplation] = useState(1);
   let aboutussection = document.getElementById("design");
+
+  const arrayforcommercialimages = [
+    {
+      image: c1,
+    },
+    {
+      image: c2,
+    },
+    {
+      image: c3,
+    },
+    {
+      image: c4,
+    },
+    {
+      image: c5,
+    },
+    {
+      image: c6,
+    },
+    {
+      image: c7,
+    },
+    {
+      image: c8,
+    },
+    {
+      image: c9,
+    },
+    {
+      image: c10,
+    },
+    {
+      image: c11,
+    },
+    {
+      image: c12,
+    },
+  ];
+  const arrayforresidentialimages = [
+    {
+      image: r1,
+    },
+    {
+      image: r3,
+    },
+    {
+      image: r2,
+    },
+    {
+      image: r4,
+    },
+    {
+      image: r8,
+    },
+    {
+      image: r5,
+    },
+    {
+      image: r7,
+    },
+
+    {
+      image: r6,
+    },
+    {
+      image: r9,
+    },
+    {
+      image: r10,
+    },
+    {
+      image: r11,
+    },
+    {
+      image: r12,
+    },
+  ];
+  // function section
+  function handletabevent(index: number) {
+    setactivetab(index);
+  }
 
   function HandleScroll() {
     aboutussection?.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -368,16 +451,34 @@ export default function Home() {
             </div>
           </div>
           {/* Project showcase section */}
-          <div className="project-showcase-container">
+          <div className="project-showcase-container" data-aos="fade-left">
             <div className="project-showcase-header">
               <h1 className="project-showcase-heading">Projects</h1>
             </div>
             <div className="project-showcase-content">
               <div className="project-showcase-content-header-container">
-                <h2 className="project-showcase-tab-heading">COMMERCIAL</h2>
-                <h2 className="project-showcase-tab-heading">RESIDENTIAL</h2>
+                <h2
+                  className={
+                    activetab === 1
+                      ? "project-showcase-tab-heading activetab"
+                      : "project-showcase-tab-heading"
+                  }
+                  onClick={() => handletabevent(1)}
+                >
+                  COMMERCIAL
+                </h2>
+                <h2
+                  className={
+                    activetab === 2
+                      ? "project-showcase-tab-heading activetab"
+                      : "project-showcase-tab-heading"
+                  }
+                  onClick={() => handletabevent(2)}
+                >
+                  RESIDENTIAL
+                </h2>
               </div>
-              <div className="project-commercial none" data-aos="fade-left">
+              <div className={activetab === 1 ? "project-commercial " : "none"}>
                 {/* {arrayforcommercialimages.map((item: any, index: any): any => {
                   return (
                     <React.Fragment key={index}>
@@ -406,7 +507,17 @@ export default function Home() {
                   })}
                 </SlideshowLightbox>
               </div>
-              <div className="project-ressidential none"></div>
+              <div
+                className={activetab === 2 ? "project-residential" : " none"}
+              >
+                <SlideshowLightbox className="lightbox-container">
+                  {arrayforresidentialimages.map((image) => {
+                    return (
+                      <img src={image.image} alt="" className="project-img" />
+                    );
+                  })}
+                </SlideshowLightbox>
+              </div>
             </div>
           </div>
         </div>
