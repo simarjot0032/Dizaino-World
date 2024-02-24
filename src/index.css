@@ -79,12 +79,26 @@ button:focus-visible {
   box-sizing: border-box;
   --font: "Poppins", sans-serif;
   --fontsecond: "Montserrat", sans-serif;
-  --mainbgcolor: rgb(241, 247, 253);
+  --mainbgcolor: rgb(249, 252, 255);
   --primarycolor: teal;
   --secondarycolor: rgb(35, 35, 35);
-  --accentcolor: rgba(179, 179, 179, 0.69);
-  --tabwidth: 880px;
-  --samlllaptop: 100px;
+  --accentcolor: rgba(145, 144, 144, 0.69);
+  --tabwidth: 850px;
+  --samlllaptop: 1000px;
   --laptop: 1150px;
   --large: 1500px;
+}
+body::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+  border-radius: 20px;
+}
+body::-webkit-scrollbar-track {
+  border-radius: 20px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.342);
+}
+body::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  background-color: rgba(104, 104, 104, 0.35);
 }
