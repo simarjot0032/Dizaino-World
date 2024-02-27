@@ -37,6 +37,7 @@ import r11 from "../assets/residental images/r(11).jpeg";
 import r12 from "../assets/residental images/r(12).jpeg";
 
 import { useState } from "react";
+import Footer from "./Footer";
 
 export default function Home() {
   // const [lightbox, setlightbox] = useState<{ [key: number]: boolean }>({
@@ -62,6 +63,7 @@ export default function Home() {
   const [activetab, setactivetab] = useState(1);
   const [explation, setexplation] = useState(1);
   let aboutussection = document.getElementById("design");
+  let choosecontent = document.querySelector(".choose-main-right");
 
   const arrayforcommercialimages = [
     {
@@ -147,6 +149,10 @@ export default function Home() {
 
   function HandleScroll() {
     aboutussection?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+  function handlechoosescroll() {
+    choosecontent?.scrollIntoView({ behavior: "smooth" });
+    console.log(choosecontent);
   }
   function handletoggle(index: number) {
     setexplation(index);
@@ -362,6 +368,7 @@ export default function Home() {
                   className="choose-us-card"
                   onClick={() => {
                     handletoggle(1);
+                    handlechoosescroll();
                   }}
                 >
                   <div className="choose-us-card-header">
@@ -379,6 +386,7 @@ export default function Home() {
                   className="choose-us-card"
                   onClick={() => {
                     handletoggle(2);
+                    handlechoosescroll();
                   }}
                 >
                   <div className="choose-us-card-header">
@@ -393,6 +401,7 @@ export default function Home() {
                   className="choose-us-card"
                   onClick={() => {
                     handletoggle(3);
+                    handlechoosescroll();
                   }}
                 >
                   <div className="choose-us-card-header">
@@ -407,6 +416,7 @@ export default function Home() {
                   className="choose-us-card"
                   onClick={() => {
                     handletoggle(4);
+                    handlechoosescroll();
                   }}
                 >
                   <div className="choose-us-card-header">
@@ -421,6 +431,7 @@ export default function Home() {
                   className="choose-us-card"
                   onClick={() => {
                     handletoggle(5);
+                    handlechoosescroll();
                   }}
                 >
                   <div className="choose-us-card-header">
@@ -435,6 +446,7 @@ export default function Home() {
                   className="choose-us-card"
                   onClick={() => {
                     handletoggle(6);
+                    handlechoosescroll();
                   }}
                 >
                   <div className="choose-us-card-header">
@@ -521,6 +533,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <Footer />
       </div>
     </>
   );
