@@ -26,13 +26,13 @@ export default function Footer() {
             </p>
           </div>
           <div className="footer-content-center">
-            <Link to="" className="linktag-footer">
+            <Link to="/" className="linktag-footer">
               <li className="link-footer">Home</li>
             </Link>
-            <Link to="" className="linktag-footer">
+            <Link to="Projects" className="linktag-footer">
               <li className="link-footer">Projects</li>
             </Link>
-            <Link to="" className="linktag-footer">
+            <Link to="/Contact" className="linktag-footer">
               <li className="link-footer">Contact-us</li>
             </Link>
           </div>
