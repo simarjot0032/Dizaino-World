@@ -19,12 +19,14 @@
   font-size: 3.5rem;
   font-weight: 800;
   line-height: 5rem;
+  height: 100px;
   color: white;
 }
 .secondary {
   font-size: 2rem;
   line-height: 5rem;
   color: rgb(255, 255, 255);
+  text-align: center;
 }
 .img {
   width: 80vw;

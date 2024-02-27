@@ -233,13 +233,17 @@
   color: white;
   font-family: var(--fontsecond);
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  line-height: 2rem;
 }
 .choose-main-left {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
+}
+.choose-main-right {
+  scroll-margin: 100px 0 0 0;
 }
 .choose-us-card {
   display: flex;
@@ -338,6 +342,7 @@
   box-shadow: rgba(99, 99, 99, 0.495) 0px 3px 5px 0px;
   transition: all 0.3s linear;
   filter: grayscale(0.3);
+  user-select: none;
 }
 .project-img:hover {
   border-radius: 5px 50px;
@@ -604,7 +609,7 @@
   }
   .left-about-para {
     display: flex;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     flex-direction: row;
     justify-content: center;
     text-align: left;
@@ -635,7 +640,12 @@
     flex-direction: row;
     justify-content: space-around;
   }
-
+  .experiance-number {
+    font-size: 2.8rem;
+  }
+  .experiance-text {
+    font-size: 2rem;
+  }
   .design-text-content {
     font-size: 2.3rem;
   }
@@ -657,8 +667,15 @@
     gap: 1.5rem;
     padding: 2.8rem;
   }
+  .choose-right-heading {
+    font-size: 2.5rem;
+  }
   .choose-right-content {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+  .choose-us-card-heading {
+    font-size: 2rem;
   }
   .innovationnone {
     display: none;

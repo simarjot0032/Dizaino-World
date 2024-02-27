@@ -5,8 +5,8 @@ export default function UnderCons() {
   return (
     <>
       <div className="App">
-        <div className="heading">WEBSITE</div>
-        <div className="secondary">Under Construction</div>
+        <div className="heading"></div>
+        <div className="secondary">404 WEBSITE Under Construction</div>
         <img src={Working} alt="" className="img" />
         <img src={Clock} alt="" className="imgclock" />
         <h2 className="heading-launch">Launching Soon!</h2>

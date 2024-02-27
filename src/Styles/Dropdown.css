@@ -52,14 +52,15 @@
     height: 18px;
     background-color: rgb(255, 255, 255);
     position: absolute;
-    top: -0.7rem;
-    left: 0.8rem;
+    top: -0.9rem;
+    left: 0.99rem;
     border-left: 2px solid black;
     border-top: 2px solid black;
     transform: rotate(45deg);
   }
   .dropdown-link {
     color: black;
-    line-height: 2rem;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
   }
 }
