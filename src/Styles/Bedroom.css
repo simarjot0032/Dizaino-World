@@ -1,0 +1,10 @@
+.bedroom-container {
+  display: flex;
+  flex-direction: column;
+}
+.bedroom-hero-container {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../assets//bedroom/hero-section.jpg") no-repeat center;
+  background-size: cover;
+}

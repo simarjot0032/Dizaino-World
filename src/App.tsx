@@ -5,6 +5,7 @@ import Home from "./Components/Home";
 import Navbar from "./Components/Navbar";
 import { useEffect } from "react";
 import UnderCons from "./Components/UnderConst";
+import Bedroom from "./Components/Bedroom";
 
 function App() {
   useEffect(() => {
@@ -30,7 +31,7 @@ function App() {
   const routesarray = [
     {
       link: "/Bedroom",
-      element: <UnderCons />,
+      element: <Bedroom />,
     },
     {
       link: "/Kitchen",

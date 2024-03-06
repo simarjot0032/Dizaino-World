@@ -30,6 +30,11 @@
   text-align: center;
   user-select: none;
 }
+.hero-heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .hero-section-secondary-heading {
   text-align: center;
   color: white;
@@ -312,12 +317,14 @@
   display: flex;
   width: 100%;
   justify-content: space-around;
-  padding: 1rem;
+  padding: 1rem 0rem;
+  flex-wrap: wrap;
 }
 .project-showcase-tab-heading {
   font-family: var(--font);
-  font-weight: 500;
-  width: 100%;
+  font-weight: 300;
+  min-width: fit-content;
+  width: 30%;
   text-align: center;
   padding: 0.5rem;
   border-radius: 25px;

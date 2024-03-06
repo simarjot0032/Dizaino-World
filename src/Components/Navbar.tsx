@@ -6,6 +6,13 @@ import { GrMenu } from "react-icons/gr";
 import { RxCrossCircled } from "react-icons/rx";
 import { IoMdArrowDropdown } from "react-icons/io";
 import Dropdown from "./Dropdowncomponent";
+import "../Data/Naviagation";
+import {
+  dropdownforinterior,
+  arrayforexterior,
+  arrayforcommercialinterior,
+  arrayforplanning,
+} from "../Data/Naviagation";
 
 export default function Navbar() {
   const [menuopen, setmenuopen] = useState(false);
@@ -52,78 +59,6 @@ export default function Navbar() {
     setinteriordropdown(false);
     setcommercialdropdown(false);
   };
-  const dropdownforinterior = [
-    {
-      link: "/Bedroom",
-      item: "Bedroom",
-    },
-    {
-      link: "/Kitchen",
-      item: "Kitchen",
-    },
-    {
-      link: "/Living-area",
-      item: "Living-Areas",
-    },
-    {
-      link: "/Pooja-Room",
-      item: "Pooja Room",
-    },
-    {
-      link: "/Washroom",
-      item: "Washroom",
-    },
-    {
-      link: "/Down-Celling",
-      item: "Down-Celling",
-    },
-    {
-      link: "/Theater",
-      item: "Theater",
-    },
-    {
-      link: "/Dining",
-      item: "Dining",
-    },
-  ];
-  const arrayforexterior = [
-    {
-      link: "/Residential-Exterior",
-      item: "Residential-Exterior",
-    },
-    {
-      link: "/Commercial-Exterior",
-      item: "Commercial-Exterior",
-    },
-    {
-      link: "/Classical-Exterior",
-      item: "Classical-Exterior",
-    },
-  ];
-  const arrayforcommercialinterior = [
-    {
-      link: "/Offices",
-      item: "Offices",
-    },
-    {
-      link: "/Restruants",
-      item: "Restraunts",
-    },
-    {
-      link: "/Salons",
-      item: "Salons",
-    },
-  ];
-  const arrayforplanning = [
-    {
-      link: "/2D-Planning",
-      item: "2D-Plainng",
-    },
-    {
-      link: "/3D-Planning",
-      item: "3D-Planning",
-    },
-  ];
 
   window.addEventListener("scroll", changenavcolor);
   return (

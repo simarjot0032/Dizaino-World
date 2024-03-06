@@ -76,7 +76,7 @@ button:focus-visible {
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
   --font: "Poppins", sans-serif;
   --fontsecond: "Montserrat", sans-serif;
   --mainbgcolor: rgb(249, 252, 255);
