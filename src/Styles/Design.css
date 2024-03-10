@@ -1,0 +1,88 @@
+.how-we-design-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.how-we-design-header {
+  width: 100%;
+}
+.how-we-design-heading {
+  font-size: 4.2rem;
+  font-family: var(--font);
+  color: var(--primarycolor);
+  text-align: center;
+  position: relative;
+  letter-spacing: 2px;
+}
+.how-we-design-heading::after {
+  content: "How We Design";
+  position: absolute;
+  inset: 0;
+  top: -15px;
+  z-index: -1;
+  color: transparent;
+  -webkit-text-stroke: 2px rgba(0, 128, 128, 0.794);
+}
+.how-we-design-content-container {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.how-we-design-card-container {
+  max-width: 350px;
+  padding: 1rem;
+  overflow: hidden;
+  margin-top: 5rem;
+
+  border-radius: 10px;
+  background-color: rgb(255, 253, 251);
+  box-shadow: 0 0 20px 5px rgb(231, 231, 231);
+  transition: all 0.2s linear;
+}
+.how-we-design-card-container:hover {
+  box-shadow: 0 0 20px 5px rgb(194, 194, 194);
+}
+.how-we-design-card-image {
+  width: 100%;
+  max-width: 400px;
+  object-fit: contain;
+}
+.how-we-design-card-heading {
+  font-size: 1.8rem;
+  font-family: var(--font);
+  color: var(--primarycolor);
+}
+.how-we-design-card-para {
+  font-size: 1.2rem;
+  margin: 0;
+  font-family: var(--font);
+}
+@media screen and (min-width: 456px) {
+  .how-we-design-card-container {
+    margin-top: 0rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .how-we-design-content-container {
+    max-width: var(--tabwidth);
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .how-we-design-content-container {
+    max-width: var(--smalllaptop);
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1480px) {
+  .how-we-design-content-container {
+    max-width: var(--laptop);
+  }
+}
+@media screen and (min-width: 1480px) {
+  .how-we-design-content-container {
+    max-width: var(--large);
+  }
+}

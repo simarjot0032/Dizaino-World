@@ -44,7 +44,7 @@
 }
 .scroll-container {
   position: absolute;
-  bottom: 8%;
+  bottom: 80px;
   display: flex;
   background-color: rgba(253, 244, 233, 0.258);
   align-items: center;

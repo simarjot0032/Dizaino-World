@@ -11,14 +11,13 @@ import { SiAffinitydesigner } from "react-icons/si";
 import { RiCustomerService2Line } from "react-icons/ri";
 import { SlideshowLightbox } from "lightbox.js-react";
 import "lightbox.js-react/dist/index.css";
-import "../Data/Home";
-
+import "../Data/LightBoxDataHome";
 import { useState } from "react";
 import Footer from "./Footer";
 import {
   arrayforcommercialimages,
   arrayforresidentialimages,
-} from "../Data/Home";
+} from "../Data/LightBoxDataHome";
 
 export default function Home() {
   // const [lightbox, setlightbox] = useState<{ [key: number]: boolean }>({
@@ -74,7 +73,7 @@ export default function Home() {
           </div>
           <div className="scroll-container" onClick={HandleScroll}>
             <div className="mouse">
-              <LuMouse size={23} color="white" />
+              <LuMouse size={23} color="var(--mainbgcolor)" />
             </div>
             <div className="scroll-text-container">
               <a className="scroll-text">Scroll-Down</a>

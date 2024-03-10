@@ -83,6 +83,7 @@ button:focus-visible {
   --primarycolor: teal;
   --secondarycolor: rgb(35, 35, 35);
   --accentcolor: rgba(145, 144, 144, 0.69);
+  --heroheadingbg: rgba(248, 242, 233, 0.768);
   --tabwidth: 850px;
   --samlllaptop: 1000px;
   --laptop: 1150px;
