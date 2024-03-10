@@ -1,0 +1,63 @@
+.bedroom-container {
+  display: flex;
+  flex-direction: column;
+}
+.bedroom-hero-container {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../assets//bedroom/hero-section.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  position: relative;
+  user-select: none;
+}
+.bedroom-hero-heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.bedroom-hero-heading,
+.bedroom-hero-para {
+  text-align: center;
+  font-family: var(--fontsecond);
+  color: var(--mainbgcolor);
+}
+.bedroom-hero-heading {
+  padding: 1rem;
+  background-color: var(--heroheadingbg);
+  color: var(--secondarycolor);
+  font-size: 2.8rem;
+  width: fit-content;
+  border-radius: 10px;
+}
+.bedroom-hero-para {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.scroll-down-container {
+  position: absolute;
+  bottom: 80px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(253, 244, 233, 0.258);
+  padding: 0.55rem;
+  border-radius: 50px;
+  gap: 5px;
+  transition: all 0.3s linear;
+}
+.scroll-down-content {
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: var(--font);
+}
+.scroll-down-container:hover {
+  transform: translateY(-10px);
+  filter: drop-shadow(5px 25px 20px rgba(0, 0, 0, 0.437));
+}

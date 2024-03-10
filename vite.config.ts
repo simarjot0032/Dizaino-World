@@ -5,4 +5,7 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   base: "/dizaino-world/",
   plugins: [react()],
+  build: {
+    chunkSizeWarningLimit: 8000,
+  },
 });
