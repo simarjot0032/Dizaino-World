@@ -19,7 +19,7 @@
   content: "How We Design";
   position: absolute;
   inset: 0;
-  top: -15px;
+  top: -20px;
   z-index: -1;
   color: transparent;
   -webkit-text-stroke: 2px rgba(0, 128, 128, 0.794);
@@ -32,22 +32,22 @@
   justify-content: center;
 }
 .how-we-design-card-container {
-  max-width: 350px;
+  max-width: 360px;
   padding: 1rem;
   overflow: hidden;
   margin-top: 5rem;
 
   border-radius: 10px;
   background-color: rgb(255, 253, 251);
-  box-shadow: 0 0 20px 5px rgb(231, 231, 231);
+  box-shadow: 0 0 5px 5px rgba(3, 81, 81, 0.143);
   transition: all 0.2s linear;
 }
 .how-we-design-card-container:hover {
-  box-shadow: 0 0 20px 5px rgb(194, 194, 194);
+  box-shadow: 0 0 15px 2px rgba(1, 81, 81, 0.424);
 }
 .how-we-design-card-image {
   width: 100%;
-  max-width: 400px;
+  max-width: 360px;
   object-fit: contain;
 }
 .how-we-design-card-heading {

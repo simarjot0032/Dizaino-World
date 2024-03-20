@@ -3,10 +3,12 @@ import "../Styles/Bedroom.css";
 import { LuMouse } from "react-icons/lu";
 import HowWeDesign from "./HowWeDesign";
 import { Howwedesing } from "../Data/BedroomHowWeDesign";
-
+import Featuresbedroom from "./Featuresbedroom";
+import Navbar from "./Navbar";
 export default function Bedroom() {
   return (
     <>
+      <Navbar></Navbar>
       <div className="bedroom-container">
         <div className="bedroom-hero-container">
           <div className="bedroom-hero-heading-container">
@@ -20,6 +22,7 @@ export default function Bedroom() {
             <p className="scroll-down-content">Scroll Down</p>
           </div>
         </div>
+        <Featuresbedroom />
         <HowWeDesign main_head="Bedroom" array={Howwedesing} />
       </div>
     </>

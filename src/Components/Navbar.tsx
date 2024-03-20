@@ -95,7 +95,7 @@ export default function Navbar() {
             />
           </div>
 
-          <Link to="" className="linktag-navbar">
+          <Link to="/" className="linktag-navbar">
             <li
               // (color ? "olivetext" : "")
               className="link-navbar link-navbar-with-bottom-animation"

@@ -109,7 +109,7 @@ function App() {
   return (
     <>
       <HashRouter>
-        <Navbar />
+        {/* <Navbar /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           {routesarray.map((item): any => {

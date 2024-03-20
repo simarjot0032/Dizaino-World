@@ -18,6 +18,7 @@ import {
   arrayforcommercialimages,
   arrayforresidentialimages,
 } from "../Data/LightBoxDataHome";
+import Navbar from "./Navbar";
 
 export default function Home() {
   // const [lightbox, setlightbox] = useState<{ [key: number]: boolean }>({
@@ -61,6 +62,7 @@ export default function Home() {
   }
   return (
     <>
+      <Navbar />
       <div className="home-container">
         <div className="home-hero-section">
           <div className="hero-heading-container">
