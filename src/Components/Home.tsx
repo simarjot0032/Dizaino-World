@@ -19,6 +19,7 @@ import {
   arrayforresidentialimages,
 } from "../Data/LightBoxDataHome";
 import Navbar from "./Navbar";
+import Accordian from "./Accordian";
 
 export default function Home() {
   // const [lightbox, setlightbox] = useState<{ [key: number]: boolean }>({
@@ -43,8 +44,6 @@ export default function Home() {
   // usestate and variable section
   const [activetab, setactivetab] = useState(1);
   const [explation, setexplation] = useState(1);
-  let aboutussection = document.getElementById("design");
-  let choosecontent = document.querySelector(".choose-main-right");
 
   // function section
   function handletabevent(index: number) {
@@ -52,12 +51,14 @@ export default function Home() {
   }
 
   function HandleScroll() {
+    let aboutussection = document.getElementById("design");
     aboutussection?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
-  function handlechoosescroll() {
-    choosecontent?.scrollIntoView({ behavior: "smooth" });
-  }
+  // function handlechoosescroll() {}
   function handletoggle(index: number) {
+    let choosecontent = document.querySelector(".choose-main-right");
+
+    choosecontent?.scrollIntoView({ behavior: "smooth" });
     setexplation(index);
   }
   return (
@@ -272,7 +273,6 @@ export default function Home() {
                   className="choose-us-card"
                   onClick={() => {
                     handletoggle(1);
-                    handlechoosescroll();
                   }}
                 >
                   <div className="choose-us-card-header">
@@ -290,7 +290,6 @@ export default function Home() {
                   className="choose-us-card"
                   onClick={() => {
                     handletoggle(2);
-                    handlechoosescroll();
                   }}
                 >
                   <div className="choose-us-card-header">
@@ -305,7 +304,6 @@ export default function Home() {
                   className="choose-us-card"
                   onClick={() => {
                     handletoggle(3);
-                    handlechoosescroll();
                   }}
                 >
                   <div className="choose-us-card-header">
@@ -320,7 +318,6 @@ export default function Home() {
                   className="choose-us-card"
                   onClick={() => {
                     handletoggle(4);
-                    handlechoosescroll();
                   }}
                 >
                   <div className="choose-us-card-header">
@@ -335,7 +332,6 @@ export default function Home() {
                   className="choose-us-card"
                   onClick={() => {
                     handletoggle(5);
-                    handlechoosescroll();
                   }}
                 >
                   <div className="choose-us-card-header">
@@ -350,7 +346,6 @@ export default function Home() {
                   className="choose-us-card"
                   onClick={() => {
                     handletoggle(6);
-                    handlechoosescroll();
                   }}
                 >
                   <div className="choose-us-card-header">
@@ -436,6 +431,14 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="accordian-container">
+          <div className="accordian-container-header">
+            <h2 className="accordian-container-heading">
+              Frequently Asked Question
+            </h2>
+          </div>
+          <div className="accordian-content-container"></div>
         </div>
         <Footer />
       </div>

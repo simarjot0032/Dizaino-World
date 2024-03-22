@@ -6,7 +6,8 @@
 }
 .features-header-heading {
   font-size: 3.8rem;
-  -webkit-text-stroke: 2px rgba(0, 128, 128, 0.79);
+  -webkit-text-stroke: var(--stroke);
+
   color: transparent;
   text-align: center;
   letter-spacing: 2px;
@@ -27,9 +28,12 @@
   justify-content: space-evenly;
   gap: 1.5rem;
   width: 100%;
+  margin-bottom: 2rem;
 }
 .features-card {
-  max-width: 220px;
+  width: 100%;
+  max-width: 450px;
+  padding: 0.5rem;
 }
 .features-card-number {
   color: var(--primarycolor);
@@ -46,8 +50,9 @@
   margin-bottom: 0.5rem;
 }
 .features-card-content {
-  font-size: 1.08rem;
-  line-height: 1.8rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  text-align: justify;
   color: var(--secodarycolor);
 }
 
@@ -56,7 +61,7 @@
     max-width: var(--tabwidth);
   }
   .features-card {
-    max-width: 220px;
+    max-width: 235px;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
@@ -80,7 +85,7 @@
     max-width: var(--large);
   }
   .features-card {
-    max-width: 350px;
+    max-width: 380px;
   }
   .features-card-content {
     font-size: 1.2rem;

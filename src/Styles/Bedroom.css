@@ -50,6 +50,7 @@
   border-radius: 50px;
   gap: 5px;
   transition: all 0.3s linear;
+  cursor: pointer;
 }
 .scroll-down-content {
   color: white;
