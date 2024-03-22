@@ -14,15 +14,16 @@
   text-align: center;
   position: relative;
   letter-spacing: 2px;
+  margin-bottom: 5rem;
 }
 .how-we-design-heading::after {
   content: "How We Design";
   position: absolute;
   inset: 0;
-  top: -15px;
+  top: -20px;
   z-index: -1;
   color: transparent;
-  -webkit-text-stroke: 2px rgba(0, 128, 128, 0.794);
+  -webkit-text-stroke: var(--stroke);
 }
 .how-we-design-content-container {
   padding: 1rem;
@@ -32,23 +33,22 @@
   justify-content: center;
 }
 .how-we-design-card-container {
-  max-width: 350px;
+  max-width: 100%;
   padding: 1rem;
   overflow: hidden;
-  margin-top: 5rem;
 
   border-radius: 10px;
   background-color: rgb(255, 253, 251);
-  box-shadow: 0 0 20px 5px rgb(231, 231, 231);
+  box-shadow: 0 0 5px 5px rgba(3, 81, 81, 0.143);
   transition: all 0.2s linear;
 }
 .how-we-design-card-container:hover {
-  box-shadow: 0 0 20px 5px rgb(194, 194, 194);
+  box-shadow: 0 0 15px 2px rgba(1, 81, 81, 0.424);
 }
 .how-we-design-card-image {
   width: 100%;
-  max-width: 400px;
-  object-fit: contain;
+  max-height: 210px;
+  object-fit: cover;
 }
 .how-we-design-card-heading {
   font-size: 1.8rem;
@@ -56,23 +56,45 @@
   color: var(--primarycolor);
 }
 .how-we-design-card-para {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin: 0;
   font-family: var(--font);
+  color: rgb(68, 68, 68);
 }
 @media screen and (min-width: 456px) {
   .how-we-design-card-container {
     margin-top: 0rem;
+  }
+  .how-we-design-heading {
+    margin-bottom: 0rem;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .how-we-design-content-container {
     max-width: var(--tabwidth);
   }
+  .how-we-design-card-container {
+    max-width: 360px;
+  }
+  .how-we-design-card-image {
+    max-width: 360px;
+  }
+  .how-we-design-card-para {
+    font-size: 1.2rem;
+  }
 }
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   .how-we-design-content-container {
     max-width: var(--smalllaptop);
+  }
+  .how-we-design-card-container {
+    max-width: 360px;
+  }
+  .how-we-design-card-image {
+    max-width: 360px;
+  }
+  .how-we-design-card-para {
+    font-size: 1.2rem;
   }
 }
 
@@ -80,9 +102,27 @@
   .how-we-design-content-container {
     max-width: var(--laptop);
   }
+  .how-we-design-card-container {
+    max-width: 360px;
+  }
+  .how-we-design-card-image {
+    max-width: 360px;
+  }
+  .how-we-design-card-para {
+    font-size: 1.2rem;
+  }
 }
 @media screen and (min-width: 1480px) {
   .how-we-design-content-container {
     max-width: var(--large);
+  }
+  .how-we-design-card-container {
+    max-width: 360px;
+  }
+  .how-we-design-card-image {
+    max-width: 360px;
+  }
+  .how-we-design-card-para {
+    font-size: 1.2rem;
   }
 }

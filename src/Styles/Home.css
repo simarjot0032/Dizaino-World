@@ -83,9 +83,9 @@
   color: transparent;
   font-family: var(--fontsecond);
   font-weight: 800;
-  -webkit-text-stroke: 3px rgba(6, 173, 173, 0.355);
+  -webkit-text-stroke: var(--stroke);
   letter-spacing: 5px;
-  /* line-height: normal; */
+
   display: flex;
   flex-direction: column;
   position: relative;
@@ -194,10 +194,10 @@
   gap: 2rem;
 }
 .choose-us-heading {
-  font-size: 3.2rem;
+  font-size: 5rem;
   font-family: var(--fontsecond);
   color: transparent;
-  -webkit-text-stroke: 2px rgba(0, 128, 128, 0.38);
+  -webkit-text-stroke: var(--stroke);
   position: relative;
   display: flex;
   justify-content: center;
@@ -208,7 +208,7 @@
   position: absolute;
   text-transform: uppercase;
   top: 25%;
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
   -webkit-text-stroke: 0;
   color: var(--primarycolor);
 }
@@ -255,10 +255,10 @@
   flex-direction: column;
   border-radius: 15px;
   gap: 1.2rem;
-  padding: 1rem;
+  padding: 2rem 1rem;
   border: 2px solid var(--primarycolor);
   transition: all 0.2s linear;
-  width: 205px;
+  width: 90%;
   box-shadow: rgba(94, 94, 100, 0.079) 0px 30px 60px -12px inset,
     rgba(95, 93, 93, 0.159) 0px 18px 36px -18px;
   cursor: pointer;
@@ -289,7 +289,7 @@
   align-items: center;
 }
 .project-showcase-heading {
-  font-size: 3rem;
+  font-size: 5rem;
   font-family: var(--font);
   color: var(--primarycolor);
   position: relative;
@@ -298,9 +298,9 @@
 }
 .project-showcase-heading::after {
   content: "SHOWCASE";
-  -webkit-text-stroke: 2px rgba(0, 128, 128, 0.533);
+  -webkit-text-stroke: var(--stroke);
   color: transparent;
-  font-size: 3.2rem;
+  /* font-size: 3.2rem; */
   position: absolute;
   top: -12px;
 }
@@ -329,9 +329,9 @@
   padding: 0.5rem;
   border-radius: 25px;
   transition: all 0.3s linear;
+  cursor: pointer;
 }
 .project-showcase-tab-heading:hover {
-  /* transform: scale(1); */
   background-color: var(--primarycolor);
   color: white;
 }
@@ -372,6 +372,20 @@
 .none {
   display: none;
 }
+.accordian-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accordian-container-heading {
+  font-family: var(--font);
+  font-size: 2.5rem;
+  color: var(--primarycolor);
+}
+.accordian-content-container {
+  width: 100%;
+}
 @media screen and (min-width: 500px) {
   .hero-section-main-heading {
     font-size: 3.3rem;
@@ -387,6 +401,9 @@
   }
   .experiancenone {
     display: none;
+  }
+  .choose-us-card {
+    width: 205px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -445,6 +462,9 @@
     object-fit: fill;
     aspect-ratio: 2/2;
   }
+  .accordian-content-container {
+    max-width: var(--tabwidth);
+  }
 }
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   .aboutus-section {
@@ -492,7 +512,7 @@
     align-items: center;
   }
   .choose-main-left {
-    gap: 0.3rem;
+    gap: 0.8rem 2rem;
   }
   .choose-right-heading {
     font-size: 2.8rem;
@@ -506,8 +526,13 @@
   .experiancenone {
     display: none;
   }
-  .project-showcase-container {
+  .project-showcase-container,
+  .accordian-container,
+  .accordian-container {
     max-width: var(--smalllaptop);
+  }
+  .accordian-container {
+    max-width: var(--tabwidth);
   }
   .project-img {
     width: 100%;
@@ -516,7 +541,7 @@
     aspect-ratio: 2/2;
   }
 }
-@media screen and (min-width: 1280px) and (max-width: 1500px) {
+@media screen and (min-width: 1280px) and (max-width: 1480px) {
   .aboutus-section {
     max-width: var(--laptop);
     justify-content: center;
@@ -592,8 +617,12 @@
   .experiancenone {
     display: none;
   }
-  .project-showcase-container {
+  .project-showcase-container,
+  .accordian-container {
     max-width: var(--laptop);
+  }
+  .accordian-container {
+    max-width: var(--tabwidth);
   }
   .project-img {
     width: 100%;
@@ -602,7 +631,7 @@
     aspect-ratio: 2/2;
   }
 }
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1480px) {
   .home-container {
     gap: 5rem;
   }
@@ -699,5 +728,8 @@
     max-width: 350px;
     object-fit: fill;
     aspect-ratio: 2/2;
+  }
+  .accordian-container {
+    max-width: var(--laptop);
   }
 }
