@@ -5,9 +5,15 @@ import HowWeDesign from "./HowWeDesign";
 import { Howwedesing } from "../Data/Bedroom";
 import Featuresbedroom from "./FeaturesSection";
 import Navbar from "./Navbar";
-import { FeaturesBedroomData, BedroomLightHouseData } from "../Data/Bedroom";
+import {
+  FeaturesBedroomData,
+  BedroomLightHouseData,
+  AccordianBedroom,
+} from "../Data/Bedroom";
 import { SlideshowLightbox } from "lightbox.js-react";
 import "lightbox.js-react/dist/index.css";
+import Accordian from "./Accordian";
+import Footer from "./Footer";
 export default function Bedroom() {
   const handlebedroomscroll = () => {
     const bedroomtobescrolled = document.getElementById("bedroom-content");
@@ -56,8 +62,21 @@ export default function Bedroom() {
               </div>
             </div>
           </div>
+          <div className="accordian-container" data-aos="fade-up">
+            <div className="accordian-container-header">
+              <h2 className="accordian-container-heading">
+                Frequently Asked Question
+              </h2>
+            </div>
+            <div className="accordian-content-container">
+              {AccordianBedroom.map((accordian) => {
+                return <Accordian objectforquestionandanswer={accordian} />;
+              })}
+            </div>
+          </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

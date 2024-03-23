@@ -543,12 +543,10 @@
   .experiancenone {
     display: none;
   }
-  .project-showcase-container,
-  .accordian-container,
-  .accordian-container {
+  .project-showcase-container {
     max-width: var(--smalllaptop);
   }
-  .accordian-container {
+  .accordian-content-container {
     max-width: var(--tabwidth);
   }
   .project-img {
@@ -634,11 +632,10 @@
   .experiancenone {
     display: none;
   }
-  .project-showcase-container,
-  .accordian-container {
+  .project-showcase-container {
     max-width: var(--laptop);
   }
-  .accordian-container {
+  .accordian-content-container {
     max-width: var(--tabwidth);
   }
   .project-img {
@@ -746,7 +743,7 @@
     object-fit: fill;
     aspect-ratio: 2/2;
   }
-  .accordian-container {
+  .accordian-content-container {
     max-width: var(--laptop);
   }
 }

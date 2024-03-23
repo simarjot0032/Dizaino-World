@@ -89,7 +89,7 @@
   margin-top: 50px;
 }
 .bedroom-project-img {
-  max-width: 350px;
+  max-width: 95vw;
   filter: grayscale(20%);
   transition: all 0.2s linear;
   aspect-ratio: 2/2;
@@ -110,19 +110,31 @@
   .bedroom-project-content-container {
     max-width: var(--tabwidth);
   }
+  .bedroom-project-img {
+    max-width: 350px;
+  }
 }
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   .bedroom-project-content-container {
     max-width: var(--smalllaptop);
+  }
+  .bedroom-project-img {
+    max-width: 350px;
   }
 }
 @media screen and (min-width: 1280px) and (max-width: 1480px) {
   .bedroom-project-content-container {
     max-width: var(--laptop);
   }
+  .bedroom-project-img {
+    max-width: 350px;
+  }
 }
 @media screen and (min-width: 1480px) {
   .bedroom-project-content-container {
     max-width: var(--large);
+  }
+  .bedroom-project-img {
+    max-width: 350px;
   }
 }

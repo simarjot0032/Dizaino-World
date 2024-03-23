@@ -88,3 +88,38 @@ export const BedroomLightHouseData = [
   },
   { image: b8 },
 ];
+export const AccordianBedroom = [
+  {
+    question: "What services do you offer for bedroom design?",
+    answer:
+      "Our bedroom design services encompass everything from initial consultations to final installations. ",
+  },
+  {
+    question: "How do you approach bedroom design projects?",
+    answer:
+      "Our approach to bedroom design begins with understanding your needs, lifestyle, and aesthetic preferences. We'll work closely with you to create a tailored design plan that maximizes functionality, comfort, and visual appeal while staying within your budget and timeline.",
+  },
+  {
+    question:
+      "Can you help me visualize my bedroom design before starting the project?",
+    answer:
+      "Yes, we utilize advanced design tools such as 3D renderings and mood boards to help you visualize your bedroom design concept before implementation. This allows for better decision-making and ensures that the final result aligns with your vision.",
+  },
+  {
+    question: "Do you offer customizable design packages for bedrooms?",
+    answer:
+      "Absolutely! We offer customizable design packages tailored to your specific requirements, whether you need a complete bedroom makeover or assistance with specific design elements. Our flexible packages cater to various budgets and project scopes.",
+  },
+  {
+    question:
+      "What materials and finishes do you recommend for bedroom interiors?",
+    answer:
+      "We carefully select materials, finishes, and furnishings that enhance the comfort, aesthetics, and functionality of your bedroom space. From luxurious fabrics and cozy textiles to durable flooring and eco-friendly finishes, we prioritize quality and sustainability in our selections.",
+  },
+  {
+    question:
+      "How long does a typical bedroom design project take from start to finish?",
+    answer:
+      "The duration of a bedroom design project depends on factors such as the scope of work, size of the space, and complexity of the design. We'll provide you with a realistic project timeline during the initial consultation based on your specific requirements and preferences.",
+  },
+];
