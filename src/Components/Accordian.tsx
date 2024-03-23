@@ -11,7 +11,7 @@ export default function Accordian({ objectforquestionandanswer }: Props) {
   const handleaccordian = () => setaccordian(!accordian);
   return (
     <>
-      <div className="accordian-box-container">
+      <div className="accordian-box-container ">
         <div className="accordian-question-box" onClick={handleaccordian}>
           <p className="accordian-question">
             {objectforquestionandanswer.question}

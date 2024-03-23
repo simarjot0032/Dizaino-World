@@ -3,9 +3,11 @@ import "../Styles/Bedroom.css";
 import { LuMouse } from "react-icons/lu";
 import HowWeDesign from "./HowWeDesign";
 import { Howwedesing } from "../Data/Bedroom";
-import Featuresbedroom from "./Featuresbedroom";
+import Featuresbedroom from "./FeaturesSection";
 import Navbar from "./Navbar";
-import { FeaturesBedroomData } from "../Data/Bedroom";
+import { FeaturesBedroomData, BedroomLightHouseData } from "../Data/Bedroom";
+import { SlideshowLightbox } from "lightbox.js-react";
+import "lightbox.js-react/dist/index.css";
 export default function Bedroom() {
   const handlebedroomscroll = () => {
     const bedroomtobescrolled = document.getElementById("bedroom-content");
@@ -34,6 +36,26 @@ export default function Bedroom() {
         >
           <Featuresbedroom featurescard={FeaturesBedroomData} />
           <HowWeDesign main_head="Bedroom" array={Howwedesing} />
+          <div className="bedroom-project-showcase-container">
+            <div className="bedroom-project-content-container">
+              <div className="bedroom-project-content-header-container">
+                <h2 className="project-content-heading">Bedroom</h2>
+              </div>
+              <div className="bedroom-project-lightbox">
+                <SlideshowLightbox className="bedroom-lightbox">
+                  {BedroomLightHouseData.map((image) => {
+                    return (
+                      <img
+                        src={image.image}
+                        alt=""
+                        className="bedroom-project-img"
+                      />
+                    );
+                  })}
+                </SlideshowLightbox>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>

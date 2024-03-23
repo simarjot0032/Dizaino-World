@@ -1,4 +1,4 @@
-import "../Styles/Featuresbedroom.css";
+import "../Styles/FeaturesSection.css";
 interface Props {
   featurescard: any;
 }

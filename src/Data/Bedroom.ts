@@ -4,6 +4,14 @@ import Conceptualization from "../assets/bedroom/Conceptualization.jpg";
 import materialandcolor from "../assets/bedroom/material and color selection.png";
 import Furniture from "../assets/bedroom/Furniture and Accessories.webp";
 import finializing from "../assets/bedroom/finializing.jpg";
+import b1 from "../assets/bedroom/b1.jpg";
+import b2 from "../assets/bedroom/b2.jpg";
+import b3 from "../assets/bedroom/b3.jpg";
+import b4 from "../assets/bedroom/b4.jpg";
+import b5 from "../assets/bedroom/b5.jpg";
+import b6 from "../assets/bedroom/b6.jpg";
+import b7 from "../assets/bedroom/b7.jpg";
+import b8 from "../assets/bedroom/b8.jpg";
 export const Howwedesing = [
   {
     image: clientimage,
@@ -55,4 +63,28 @@ export const FeaturesBedroomData = [
     content:
       "Embrace a collaborative design experience where your input is valued, and your preferences play a crucial role in shaping the final design of your dream bedroom.",
   },
+];
+export const BedroomLightHouseData = [
+  {
+    image: b1,
+  },
+  {
+    image: b2,
+  },
+  {
+    image: b3,
+  },
+  {
+    image: b4,
+  },
+  {
+    image: b5,
+  },
+  {
+    image: b6,
+  },
+  {
+    image: b7,
+  },
+  { image: b8 },
 ];

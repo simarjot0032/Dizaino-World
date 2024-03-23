@@ -433,7 +433,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="accordian-container">
+        <div className="accordian-container" data-aos="fade-left">
           <div className="accordian-container-header">
             <h2 className="accordian-container-heading">
               Frequently Asked Question

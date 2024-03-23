@@ -7,11 +7,12 @@
 }
 
 .accordian-box-container {
-  background-color: #efefef;
+  background-color: #ffffff;
   padding: 1rem;
   border-radius: 10px;
   margin: 1rem;
   user-select: none;
+  box-shadow: 0 0 5px 2px rgb(200, 200, 200);
 }
 .accordian-question-box {
   display: flex;
