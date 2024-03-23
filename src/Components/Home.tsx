@@ -20,6 +20,7 @@ import {
 } from "../Data/LightBoxDataHome";
 import Navbar from "./Navbar";
 import Accordian from "./Accordian";
+import { HomeAccordianData } from "../Data/Home";
 
 export default function Home() {
   // const [lightbox, setlightbox] = useState<{ [key: number]: boolean }>({
@@ -438,7 +439,11 @@ export default function Home() {
               Frequently Asked Question
             </h2>
           </div>
-          <div className="accordian-content-container"></div>
+          <div className="accordian-content-container">
+            {HomeAccordianData.map((accordian) => {
+              return <Accordian objectforquestionandanswer={accordian} />;
+            })}
+          </div>
         </div>
         <Footer />
       </div>
