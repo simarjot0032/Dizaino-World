@@ -5,7 +5,7 @@ interface Props {
 export default function Featuresbedroom({ featurescard }: Props) {
   return (
     <>
-      <div className="features-container">
+      <div className="features-container" data-aos="fade-left">
         <div className="features-container-header">
           <h2 className="features-header-heading">What We Provide?</h2>
         </div>

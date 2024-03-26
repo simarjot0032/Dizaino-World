@@ -432,17 +432,17 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="accordian-container" data-aos="fade-left">
-          <div className="accordian-container-header">
-            <h2 className="accordian-container-heading">
-              Frequently Asked Question
-            </h2>
-          </div>
-          <div className="accordian-content-container">
-            {HomeAccordianData.map((accordian) => {
-              return <Accordian objectforquestionandanswer={accordian} />;
-            })}
+          <div className="accordian-container" data-aos="fade-left">
+            <div className="accordian-container-header">
+              <h2 className="accordian-container-heading">
+                Frequently Asked Question
+              </h2>
+            </div>
+            <div className="accordian-content-container">
+              {HomeAccordianData.map((accordian) => {
+                return <Accordian objectforquestionandanswer={accordian} />;
+              })}
+            </div>
           </div>
         </div>
         <Footer />

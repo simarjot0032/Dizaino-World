@@ -42,8 +42,11 @@ export default function Bedroom() {
         >
           <Featuresbedroom featurescard={FeaturesBedroomData} />
           <HowWeDesign main_head="Bedroom" array={Howwedesing} />
-          <div className="bedroom-project-showcase-container">
-            <div className="bedroom-project-content-container">
+          <div
+            className="bedroom-project-showcase-container"
+            data-aos="flip-left"
+          >
+            <div className="bedroom-project-content-container" data-aos="flip">
               <div className="bedroom-project-content-header-container">
                 <h2 className="project-content-heading">Bedroom</h2>
               </div>
@@ -62,7 +65,7 @@ export default function Bedroom() {
               </div>
             </div>
           </div>
-          <div className="accordian-container" data-aos="fade-up">
+          <div className="accordian-container" data-aos="fade-right">
             <div className="accordian-container-header">
               <h2 className="accordian-container-heading">
                 Frequently Asked Question

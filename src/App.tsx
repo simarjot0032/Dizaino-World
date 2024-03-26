@@ -6,6 +6,7 @@ import Navbar from "./Components/Navbar";
 import { useEffect } from "react";
 import UnderCons from "./Components/UnderConst";
 import Bedroom from "./Components/Bedroom";
+import Kitchen from "./Components/Kitchen";
 
 function App() {
   useEffect(() => {
@@ -35,7 +36,7 @@ function App() {
     },
     {
       link: "/Kitchen",
-      element: <UnderCons />,
+      element: <Kitchen />,
     },
     {
       link: "/Living-area",
