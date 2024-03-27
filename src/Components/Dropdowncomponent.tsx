@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../Styles/Dropdown.css";
+import "@Styles/Dropdown.css";
 interface Props {
   arrayfordropdown: any;
   handleclick(): any;

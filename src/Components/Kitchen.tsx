@@ -1,5 +1,5 @@
-import Navbar from "./Navbar";
-import "../Styles/Kitchen.css";
+import Navbar from "@Components/Navbar";
+import "@Styles/Kitchen.css";
 import { LuMouse } from "react-icons/lu";
 export default function Kitchen() {
   return (

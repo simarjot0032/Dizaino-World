@@ -1,5 +1,5 @@
 import { HiXMark } from "react-icons/hi2";
-import "../Styles/Lightbox.css";
+import "@Styles/Lightbox.css";
 interface Props {
   imagelink: any;
   handlecross: any;

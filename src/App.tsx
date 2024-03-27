@@ -1,12 +1,11 @@
 import { HashRouter, Route, Routes } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Home from "./Components/Home";
-import Navbar from "./Components/Navbar";
+import Home from "@Components/Home";
 import { useEffect } from "react";
-import UnderCons from "./Components/UnderConst";
-import Bedroom from "./Components/Bedroom";
-import Kitchen from "./Components/Kitchen";
+import UnderCons from "@Components/UnderConst";
+import Bedroom from "@Components/Bedroom";
+import Kitchen from "@Components/Kitchen";
 
 function App() {
   useEffect(() => {

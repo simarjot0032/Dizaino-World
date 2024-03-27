@@ -1,19 +1,19 @@
 /*url("https://e0.pxfuel.com/wallpapers/1013/482/desktop-wallpaper-stylish-bedroom-design-brown-wood-in-the-bedroom-bedroom-idea-modern-interior-design-bedroom.jpg") image for the background but changed*/
-import "../Styles/Bedroom.css";
+import "@Styles/Bedroom.css";
 import { LuMouse } from "react-icons/lu";
-import HowWeDesign from "./HowWeDesign";
-import { Howwedesing } from "../Data/Bedroom";
-import Featuresbedroom from "./FeaturesSection";
-import Navbar from "./Navbar";
+import HowWeDesign from "@Components/HowWeDesign";
+import { Howwedesing } from "@Data/Bedroom";
+import Featuresbedroom from "@Components/FeaturesSection";
+import Navbar from "@Components/Navbar";
 import {
   FeaturesBedroomData,
   BedroomLightHouseData,
   AccordianBedroom,
-} from "../Data/Bedroom";
+} from "@Data/Bedroom";
 import { SlideshowLightbox } from "lightbox.js-react";
 import "lightbox.js-react/dist/index.css";
-import Accordian from "./Accordian";
-import Footer from "./Footer";
+import Accordian from "@Components/Accordian";
+import Footer from "@Components/Footer";
 export default function Bedroom() {
   const handlebedroomscroll = () => {
     const bedroomtobescrolled = document.getElementById("bedroom-content");
@@ -46,7 +46,10 @@ export default function Bedroom() {
             className="bedroom-project-showcase-container"
             data-aos="flip-left"
           >
-            <div className="bedroom-project-content-container" data-aos="flip">
+            <div
+              className="bedroom-project-content-container"
+              data-aos="flip-left"
+            >
               <div className="bedroom-project-content-header-container">
                 <h2 className="project-content-heading">Bedroom</h2>
               </div>

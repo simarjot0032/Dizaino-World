@@ -1,4 +1,4 @@
-import "../Styles/Design.css";
+import "@Styles/Design.css";
 interface Props {
   main_head: string;
   array: any;

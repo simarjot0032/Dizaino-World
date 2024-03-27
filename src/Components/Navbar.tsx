@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../Styles/Navbar.css";
-import Logo from "../assets/icon.png";
+import "@Styles/Navbar.css";
+import Logo from "/icon.png";
 import { GrMenu } from "react-icons/gr";
 import { RxCrossCircled } from "react-icons/rx";
 import { IoMdArrowDropdown } from "react-icons/io";
 import Dropdown from "./Dropdowncomponent";
-import "../Data/Naviagation";
+import "@Data/Naviagation";
 import {
   dropdownforinterior,
   arrayforexterior,
   arrayforcommercialinterior,
   arrayforplanning,
-} from "../Data/Naviagation";
+} from "@Data/Naviagation";
 
 export default function Navbar() {
   const [menuopen, setmenuopen] = useState(false);

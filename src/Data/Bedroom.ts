@@ -1,17 +1,17 @@
-import clientimage from "../assets/bedroom/clientconsulting.jpg";
-import spaceplanning from "../assets/bedroom/spacePlanning.webp";
-import Conceptualization from "../assets/bedroom/Conceptualization.jpg";
-import materialandcolor from "../assets/bedroom/material and color selection.png";
-import Furniture from "../assets/bedroom/Furniture and Accessories.webp";
-import finializing from "../assets/bedroom/finializing.jpg";
-import b1 from "../assets/bedroom/b1.jpg";
-import b2 from "../assets/bedroom/b2.jpg";
-import b3 from "../assets/bedroom/b3.jpg";
-import b4 from "../assets/bedroom/b4.jpg";
-import b5 from "../assets/bedroom/b5.jpg";
-import b6 from "../assets/bedroom/b6.jpg";
-import b7 from "../assets/bedroom/b7.jpg";
-import b8 from "../assets/bedroom/b8.jpg";
+import clientimage from "@Assets/bedroom/clientconsulting.jpg";
+import spaceplanning from "@Assets/bedroom/spacePlanning.webp";
+import Conceptualization from "@Assets/bedroom/Conceptualization.jpg";
+import materialandcolor from "@Assets/bedroom/material and color selection.png";
+import Furniture from "@Assets/bedroom/Furniture and Accessories.webp";
+import finializing from "@Assets/bedroom/finializing.jpg";
+import b1 from "@Assets/bedroom/b1.jpg";
+import b2 from "@Assets/bedroom/b2.jpg";
+import b3 from "@Assets/bedroom/b3.jpg";
+import b4 from "@Assets/bedroom/b4.jpg";
+import b5 from "@Assets/bedroom/b5.jpg";
+import b6 from "@Assets/bedroom/b6.jpg";
+import b7 from "@Assets/bedroom/b7.jpg";
+import b8 from "@Assets/bedroom/b8.jpg";
 export const Howwedesing = [
   {
     image: clientimage,
@@ -92,7 +92,7 @@ export const AccordianBedroom = [
   {
     question: "What services do you offer for bedroom design?",
     answer:
-      "Our bedroom design services encompass everything from initial consultations to final installations. ",
+      "Our bedroom design services encompAss everything from initial consultations to final installations. ",
   },
   {
     question: "How do you approach bedroom design projects?",
@@ -108,7 +108,7 @@ export const AccordianBedroom = [
   {
     question: "Do you offer customizable design packages for bedrooms?",
     answer:
-      "Absolutely! We offer customizable design packages tailored to your specific requirements, whether you need a complete bedroom makeover or assistance with specific design elements. Our flexible packages cater to various budgets and project scopes.",
+      "Absolutely! We offer customizable design packages tailored to your specific requirements, whether you need a complete bedroom makeover or Assistance with specific design elements. Our flexible packages cater to various budgets and project scopes.",
   },
   {
     question:

@@ -14,13 +14,14 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
-    // "baseUrl": "./",
-    // "paths": {
-    //   "@Components/*": ["src/Components/*"],
-    //   "@Data/*": ["src/Data/*"],
-    //   "@Styles/*": ["src/Styles/*"]
-    // }
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@Components/*": ["src/Components/*"],
+      "@Assets/*": ["src/Assets/*"],
+      "@Data/*": ["src/Data/*"],
+      "@Styles/*": ["src/Styles/*"]
+    }
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

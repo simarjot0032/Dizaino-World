@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../Styles/Accordian.css";
+import "@Styles/Accordian.css";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { RiArrowDropUpLine } from "react-icons/ri";
 
