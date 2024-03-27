@@ -12,6 +12,27 @@ import b5 from "@Assets/bedroom/b5.jpg";
 import b6 from "@Assets/bedroom/b6.jpg";
 import b7 from "@Assets/bedroom/b7.jpg";
 import b8 from "@Assets/bedroom/b8.jpg";
+
+export const FeaturesBedroomData = [
+  {
+    cnumber: "01.",
+    heading: "Full-Service Design",
+    content:
+      "From initial consultations to conceptualization, mood boards, 3D renderings, and project management, we offer a comprehensive overview of our design process.",
+  },
+  {
+    cnumber: "02.",
+    heading: "Tailored Packages",
+    content:
+      "Highlighting our tailored design packages, we offer customization options that allow you to choose services based on your specific requirements and budget constraints.",
+  },
+  {
+    cnumber: "03.",
+    heading: "Guidance from Experts",
+    content:
+      "Embrace a collaborative design experience where your input is valued, and your preferences play a crucial role in shaping the final design of your dream bedroom.",
+  },
+];
 export const Howwedesing = [
   {
     image: clientimage,
@@ -42,26 +63,6 @@ export const Howwedesing = [
     image: finializing,
     heading: "6. Finalizing Design",
     desc: " We Present the finalized design Bedroom concept to the client for approval, making any necessary adjustments based on feedback, Once the design is approved, then coordinating with contractors for the execution of the design plan.",
-  },
-];
-export const FeaturesBedroomData = [
-  {
-    cnumber: "01.",
-    heading: "Full-Service Design",
-    content:
-      "From initial consultations to conceptualization, mood boards, 3D renderings, and project management, we offer a comprehensive overview of our design process.",
-  },
-  {
-    cnumber: "02.",
-    heading: "Tailored Packages",
-    content:
-      "Highlighting our tailored design packages, we offer customization options that allow you to choose services based on your specific requirements and budget constraints.",
-  },
-  {
-    cnumber: "03.",
-    heading: "Guidance from Experts",
-    content:
-      "Embrace a collaborative design experience where your input is valued, and your preferences play a crucial role in shaping the final design of your dream bedroom.",
   },
 ];
 export const BedroomLightHouseData = [

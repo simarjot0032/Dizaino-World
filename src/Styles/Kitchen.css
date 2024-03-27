@@ -49,4 +49,6 @@
 }
 .kitchen-content-container {
   padding: 0.2rem;
+  scroll-margin: 20px;
+  overflow-x: hidden;
 }

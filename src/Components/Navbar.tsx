@@ -5,7 +5,7 @@ import Logo from "/icon.png";
 import { GrMenu } from "react-icons/gr";
 import { RxCrossCircled } from "react-icons/rx";
 import { IoMdArrowDropdown } from "react-icons/io";
-import Dropdown from "./Dropdowncomponent";
+import Dropdown from "@Components/Dropdowncomponent";
 import "@Data/Naviagation";
 import {
   dropdownforinterior,

@@ -1,7 +1,13 @@
 import Navbar from "@Components/Navbar";
 import "@Styles/Kitchen.css";
 import { LuMouse } from "react-icons/lu";
+import { FeaturesKitchenData } from "@Data/Kitchen";
+import FeaturesSection from "@Components/FeaturesSection";
 export default function Kitchen() {
+  const HandleKitchenScroll = () => {
+    let content = document.querySelector(".kitchen-content-container");
+    content?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <>
       <Navbar />
@@ -15,12 +21,17 @@ export default function Kitchen() {
               Where Kitchens Become the Heart of Your Home.
             </p>
           </div>
-          <div className="kitchen-scroll-container">
+          <div
+            className="kitchen-scroll-container"
+            onClick={HandleKitchenScroll}
+          >
             <LuMouse size={25} color="white" />
             <p className="kitchen-scroll-para">Scroll Down</p>
           </div>
         </div>
-        <div className="kitchen-content-container"></div>
+        <div className="kitchen-content-container">
+          <FeaturesSection featurescard={FeaturesKitchenData} />
+        </div>
       </div>
     </>
   );
