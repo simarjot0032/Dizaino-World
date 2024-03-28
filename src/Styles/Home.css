@@ -387,7 +387,6 @@
   color: var(--headingcolor);
   font-weight: 500;
 }
-
 .accordian-container-heading::after {
   content: "FAQ";
   color: var(--overlayheading);
