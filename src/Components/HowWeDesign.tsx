@@ -1,4 +1,4 @@
-import "../Styles/Design.css";
+import "@Styles/Design.css";
 interface Props {
   main_head: string;
   array: any;
@@ -6,7 +6,7 @@ interface Props {
 export default function HowWeDesign({ main_head, array }: Props) {
   return (
     <>
-      <div className="how-we-design-container">
+      <div className="how-we-design-container" data-aos="fade-right">
         <div className="how-we-design-header">
           <h2 className="how-we-design-heading">{main_head}</h2>
         </div>

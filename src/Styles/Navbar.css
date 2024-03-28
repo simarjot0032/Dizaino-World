@@ -95,6 +95,7 @@
   width: auto;
   align-items: center;
   justify-content: space-between;
+  cursor: pointer;
 }
 .dropdown-menu {
   display: flex;

@@ -1,6 +1,6 @@
-import "../Styles/Home.css";
+import "@Styles/Home.css";
 import { LuMouse } from "react-icons/lu";
-import about_pic from "../assets/exterior-pic.jpeg";
+import about_pic from "@Assets/exterior-pic.jpeg";
 import { GrUserExpert } from "react-icons/gr";
 import { GrProjects } from "react-icons/gr";
 import { IoMdHappy } from "react-icons/io";
@@ -11,15 +11,16 @@ import { SiAffinitydesigner } from "react-icons/si";
 import { RiCustomerService2Line } from "react-icons/ri";
 import { SlideshowLightbox } from "lightbox.js-react";
 import "lightbox.js-react/dist/index.css";
-import "../Data/LightBoxDataHome";
+import "@Data/LightBoxDataHome";
 import { useState } from "react";
-import Footer from "./Footer";
+import Footer from "@Components/Footer";
 import {
   arrayforcommercialimages,
   arrayforresidentialimages,
-} from "../Data/LightBoxDataHome";
-import Navbar from "./Navbar";
-import Accordian from "./Accordian";
+} from "@Data/LightBoxDataHome";
+import Navbar from "@Components/Navbar";
+import Accordian from "@Components/Accordian";
+import { HomeAccordianData } from "@Data/Home";
 
 export default function Home() {
   // const [lightbox, setlightbox] = useState<{ [key: number]: boolean }>({
@@ -431,14 +432,18 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="accordian-container">
-          <div className="accordian-container-header">
-            <h2 className="accordian-container-heading">
-              Frequently Asked Question
-            </h2>
+          <div className="accordian-container" data-aos="fade-left">
+            <div className="accordian-container-header">
+              <h2 className="accordian-container-heading">
+                Frequently Asked Question
+              </h2>
+            </div>
+            <div className="accordian-content-container">
+              {HomeAccordianData.map((accordian) => {
+                return <Accordian objectforquestionandanswer={accordian} />;
+              })}
+            </div>
           </div>
-          <div className="accordian-content-container"></div>
         </div>
         <Footer />
       </div>

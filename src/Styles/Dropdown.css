@@ -5,9 +5,12 @@
   height: fit-content;
   padding: 0.2rem;
   transition: all 0.5s linear;
+  width: inherit;
 }
 .linktag-dropdown {
   text-decoration: none;
+  display: block;
+  width: 100%;
 }
 .dropdown-link {
   margin-top: 0.5rem;
@@ -16,10 +19,14 @@
   color: rgb(255, 255, 255);
   font-family: var(--font);
   display: flex;
-  line-height: 1.5rem;
+  line-height: 2rem;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.298);
   position: relative;
 }
-
+.dropdown-link:last-child {
+  margin-bottom: 0.5rem;
+}
 @media screen and (min-width: 1280px) {
   .dropdown-container {
     background-color: rgb(255, 255, 255);

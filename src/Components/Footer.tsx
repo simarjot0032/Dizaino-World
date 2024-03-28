@@ -1,6 +1,6 @@
-import "../Styles/Footer.css";
+import "@Styles/Footer.css";
 import { RiHome6Line } from "react-icons/ri";
-import footerimg from "../assets/footer.jpeg";
+import footerimg from "@Assets/footer.jpeg";
 import { Link } from "react-router-dom";
 export default function Footer() {
   return (

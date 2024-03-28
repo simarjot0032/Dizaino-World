@@ -6,7 +6,7 @@
   gap: 2rem;
 }
 .home-hero-section {
-  background: url("../assets/more_dark-hero-img.webp");
+  background: url("../Assets/more_dark-hero-img.webp");
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
@@ -66,6 +66,7 @@
 .scroll-container:hover {
   transform: translateY(-10px);
   filter: drop-shadow(5px 25px 20px rgba(0, 0, 0, 0.437));
+  box-shadow: 0 0 5px 5px rgba(50, 50, 50, 0.368);
 }
 
 .aboutus-section {
@@ -80,26 +81,22 @@
 
 .left-about-heading {
   font-size: 3rem;
-  color: transparent;
   font-family: var(--fontsecond);
   font-weight: 800;
-  -webkit-text-stroke: var(--stroke);
   letter-spacing: 5px;
-
   display: flex;
   flex-direction: column;
   position: relative;
+  color: var(--headingcolor);
+  z-index: 1;
+  font-weight: 500;
 }
 .left-about-heading::after {
   content: "ARCHITECT";
+  color: var(--overlayheading);
   position: absolute;
-  top: 30%;
-  color: var(--primarycolor);
-  font-size: 2.2rem;
-  display: flex;
-  align-items: center;
-  -webkit-text-stroke: 0;
-  z-index: 1;
+  top: 23px;
+  font-size: 3rem;
 }
 .design-main-container {
   scroll-margin: 100px;
@@ -157,11 +154,10 @@
 .showcase-for-experiance {
   width: 100%;
   border-radius: 15px;
-  background: url(../assets//wavy.jpg);
+  background: url(../Assets//wavy.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 3.2rem 0.2rem;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -194,23 +190,23 @@
   gap: 2rem;
 }
 .choose-us-heading {
-  font-size: 5rem;
+  font-size: var(--mobileheading);
   font-family: var(--fontsecond);
-  color: transparent;
-  -webkit-text-stroke: var(--stroke);
   position: relative;
   display: flex;
   justify-content: center;
   user-select: none;
+  font-weight: 500;
+  color: var(--headingcolor);
 }
 .choose-us-heading::after {
   content: "Choose";
   position: absolute;
   text-transform: uppercase;
-  top: 25%;
-  /* font-size: 2.5rem; */
-  -webkit-text-stroke: 0;
-  color: var(--primarycolor);
+  color: var(--overlayheading);
+  top: 28px;
+  position: absolute;
+  font-size: var(--mobileoverlayheading);
 }
 .choose-us-main-content {
   display: flex;
@@ -222,7 +218,7 @@
 
 .choose-right-content-container {
   border-radius: 15px;
-  background: url(../assets/chooseback.avif);
+  background: url(../Assets/chooseback.avif);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 1rem;
@@ -289,20 +285,21 @@
   align-items: center;
 }
 .project-showcase-heading {
-  font-size: 5rem;
+  font-size: var(--mobileheading);
   font-family: var(--font);
-  color: var(--primarycolor);
   position: relative;
   display: flex;
   justify-content: center;
+  color: var(--headingcolor);
+  font-weight: 500;
 }
 .project-showcase-heading::after {
+  color: var(--overlayheading);
   content: "SHOWCASE";
-  -webkit-text-stroke: var(--stroke);
-  color: transparent;
-  /* font-size: 3.2rem; */
   position: absolute;
-  top: -12px;
+  top: 38px;
+  font-size: var(--mobileoverlayheading);
+  z-index: 1;
 }
 .activetab {
   background-color: var(--primarycolor);
@@ -346,7 +343,7 @@
   width: 100%;
   object-fit: fill;
   aspect-ratio: 2/2;
-  box-shadow: rgba(99, 99, 99, 0.495) 0px 3px 5px 0px;
+  box-shadow: var(--lighthouseshadow);
   transition: all 0.3s linear;
   filter: grayscale(0.3);
   user-select: none;
@@ -380,11 +377,26 @@
 
 .accordian-container-heading {
   font-family: var(--font);
-  font-size: 2.5rem;
-  color: var(--primarycolor);
+  font-size: var(--mobileheading);
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--headingcolor);
+  font-weight: 500;
+}
+.accordian-container-heading::after {
+  content: "FAQ";
+  color: var(--overlayheading);
+  position: absolute;
+  font-size: var(--mobileoverlayheading);
+  top: 50px;
 }
 .accordian-content-container {
   width: 100%;
+  margin-top: 1rem;
 }
 @media screen and (min-width: 500px) {
   .hero-section-main-heading {
@@ -426,7 +438,7 @@
   }
   .left-about-para {
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   .showcase-for-experiance {
     max-width: var(--tabwidth);
@@ -526,12 +538,10 @@
   .experiancenone {
     display: none;
   }
-  .project-showcase-container,
-  .accordian-container,
-  .accordian-container {
+  .project-showcase-container {
     max-width: var(--smalllaptop);
   }
-  .accordian-container {
+  .accordian-content-container {
     max-width: var(--tabwidth);
   }
   .project-img {
@@ -557,6 +567,7 @@
     flex-direction: column;
   }
   .left-about-para {
+    font-size: 1.5rem;
     text-align: left;
   }
   .right-about-section {
@@ -617,11 +628,10 @@
   .experiancenone {
     display: none;
   }
-  .project-showcase-container,
-  .accordian-container {
+  .project-showcase-container {
     max-width: var(--laptop);
   }
-  .accordian-container {
+  .accordian-content-container {
     max-width: var(--tabwidth);
   }
   .project-img {
@@ -663,14 +673,14 @@
     max-width: 500px;
   }
   .left-about-heading {
-    font-size: 85px;
+    font-size: 3.8rem;
     justify-content: center;
   }
-  .left-about-heading::after {
-    font-size: 3.8rem;
-    /* top: ; */
-    left: 0;
-  }
+  /* .left-about-heading::after {
+    /* font-size: 5.8rem;
+    color: rgba(0, 128, 128, 0.392);
+    z-index: -1; 
+  } */
   .showcase-for-experiance {
     max-width: var(--large);
     flex-direction: row;
@@ -729,7 +739,7 @@
     object-fit: fill;
     aspect-ratio: 2/2;
   }
-  .accordian-container {
+  .accordian-content-container {
     max-width: var(--laptop);
   }
 }

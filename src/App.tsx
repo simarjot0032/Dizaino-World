@@ -1,11 +1,11 @@
 import { HashRouter, Route, Routes } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Home from "./Components/Home";
-import Navbar from "./Components/Navbar";
+import Home from "@Components/Home";
 import { useEffect } from "react";
-import UnderCons from "./Components/UnderConst";
-import Bedroom from "./Components/Bedroom";
+import UnderCons from "@Components/UnderConst";
+import Bedroom from "@Components/Bedroom";
+import Kitchen from "@Components/Kitchen";
 
 function App() {
   useEffect(() => {
@@ -35,7 +35,7 @@ function App() {
     },
     {
       link: "/Kitchen",
-      element: <UnderCons />,
+      element: <Kitchen />,
     },
     {
       link: "/Living-area",
@@ -109,11 +109,12 @@ function App() {
   return (
     <>
       <HashRouter>
-        {/* <Navbar /> */}
         <Routes>
           <Route path="/" element={<Home />} />
-          {routesarray.map((item): any => {
-            return <Route path={item.link} element={item.element} />;
+          {routesarray.map((item, index): any => {
+            return (
+              <Route path={item.link} element={item.element} key={index} />
+            );
           })}
         </Routes>
       </HashRouter>
