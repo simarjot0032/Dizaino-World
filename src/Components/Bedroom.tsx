@@ -55,12 +55,13 @@ export default function Bedroom() {
               </div>
               <div className="bedroom-project-lightbox">
                 <SlideshowLightbox className="bedroom-lightbox">
-                  {BedroomLightHouseData.map((image) => {
+                  {BedroomLightHouseData.map((image, index) => {
                     return (
                       <img
                         src={image.image}
                         alt=""
                         className="bedroom-project-img"
+                        key={index}
                       />
                     );
                   })}

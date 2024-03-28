@@ -6,21 +6,21 @@
 }
 .features-header-heading {
   font-size: 3.8rem;
-  -webkit-text-stroke: var(--stroke);
 
-  color: transparent;
   text-align: center;
   letter-spacing: 2px;
   font-family: var(--font);
   position: relative;
   margin-bottom: 2.8rem;
+  color: var(--primarycolor);
 }
 .features-header-heading::after {
   content: "Features";
   position: absolute;
+  -webkit-text-stroke: var(--stroke);
+  color: transparent;
   inset: 0;
-  top: 23px;
-  color: var(--primarycolor);
+  top: 15px;
 }
 .features-content-container {
   display: flex;

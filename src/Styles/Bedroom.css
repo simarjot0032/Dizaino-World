@@ -1,7 +1,7 @@
 .bedroom-container {
   display: flex;
   flex-direction: column;
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 .bedroom-hero-container {
   width: 100%;
@@ -73,8 +73,7 @@
 .project-content-heading {
   font-size: 4.5rem;
   font-family: var(--font);
-  color: transparent;
-  -webkit-text-stroke: var(--strokeDarker);
+  color: var(--primarycolor);
   position: relative;
   display: flex;
   justify-content: center;
@@ -82,10 +81,12 @@
 }
 .project-content-heading::after {
   content: "Projects";
-  color: var(--primarycolor);
+  color: transparent;
+  -webkit-text-stroke: var(--strokeDarker);
   position: absolute;
-  bottom: -25px;
+  bottom: -10px;
   font-size: 3.8rem;
+  z-index: 9999;
 }
 .bedroom-project-lightbox {
   margin-top: 50px;

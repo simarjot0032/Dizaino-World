@@ -111,8 +111,10 @@ function App() {
       <HashRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          {routesarray.map((item): any => {
-            return <Route path={item.link} element={item.element} />;
+          {routesarray.map((item, index): any => {
+            return (
+              <Route path={item.link} element={item.element} key={index} />
+            );
           })}
         </Routes>
       </HashRouter>

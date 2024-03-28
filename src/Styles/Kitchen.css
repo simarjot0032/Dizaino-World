@@ -1,3 +1,6 @@
+.kitchen-container {
+  overflow-x: hidden;
+}
 .kitchen-hero-container {
   height: 100vh;
   background: center no-repeat url("../Assets/kitchen/hero-section.webp");
@@ -49,6 +52,6 @@
 }
 .kitchen-content-container {
   padding: 0.2rem;
-  scroll-margin: 20px;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  scroll-margin-top: 50px;
 }

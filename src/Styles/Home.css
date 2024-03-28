@@ -81,26 +81,22 @@
 
 .left-about-heading {
   font-size: 3rem;
-  color: transparent;
   font-family: var(--fontsecond);
   font-weight: 800;
-  -webkit-text-stroke: var(--stroke);
   letter-spacing: 5px;
-
   display: flex;
   flex-direction: column;
   position: relative;
+  color: var(--headingcolor);
+  z-index: 1;
+  font-weight: 500;
 }
 .left-about-heading::after {
   content: "ARCHITECT";
+  color: var(--overlayheading);
   position: absolute;
-  top: 30%;
-  color: var(--primarycolor);
-  font-size: 2.2rem;
-  display: flex;
-  align-items: center;
-  -webkit-text-stroke: 0;
-  z-index: 1;
+  top: 23px;
+  font-size: 3rem;
 }
 .design-main-container {
   scroll-margin: 100px;
@@ -162,7 +158,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding: 3.2rem 0.2rem;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -195,23 +190,23 @@
   gap: 2rem;
 }
 .choose-us-heading {
-  font-size: 5rem;
+  font-size: var(--mobileheading);
   font-family: var(--fontsecond);
-  color: transparent;
-  -webkit-text-stroke: var(--stroke);
   position: relative;
   display: flex;
   justify-content: center;
   user-select: none;
+  font-weight: 500;
+  color: var(--headingcolor);
 }
 .choose-us-heading::after {
   content: "Choose";
   position: absolute;
   text-transform: uppercase;
-  top: 25%;
-  /* font-size: 2.5rem; */
-  -webkit-text-stroke: 0;
-  color: var(--primarycolor);
+  color: var(--overlayheading);
+  top: 28px;
+  position: absolute;
+  font-size: var(--mobileoverlayheading);
 }
 .choose-us-main-content {
   display: flex;
@@ -290,20 +285,21 @@
   align-items: center;
 }
 .project-showcase-heading {
-  font-size: 5rem;
+  font-size: var(--mobileheading);
   font-family: var(--font);
-  color: var(--primarycolor);
   position: relative;
   display: flex;
   justify-content: center;
+  color: var(--headingcolor);
+  font-weight: 500;
 }
 .project-showcase-heading::after {
+  color: var(--overlayheading);
   content: "SHOWCASE";
-  -webkit-text-stroke: var(--stroke);
-  color: transparent;
-
   position: absolute;
-  top: -12px;
+  top: 38px;
+  font-size: var(--mobileoverlayheading);
+  z-index: 1;
 }
 .activetab {
   background-color: var(--primarycolor);
@@ -381,24 +377,23 @@
 
 .accordian-container-heading {
   font-family: var(--font);
-  font-size: 3.5rem;
-  color: transparent;
-  -webkit-text-stroke: var(--stroke);
+  font-size: var(--mobileheading);
+
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  color: var(--headingcolor);
+  font-weight: 500;
 }
 
 .accordian-container-heading::after {
   content: "FAQ";
-  color: var(--primarycolor);
+  color: var(--overlayheading);
   position: absolute;
-  font-size: 5rem;
-  top: 10px;
-
-  -webkit-text-stroke: 0;
+  font-size: var(--mobileoverlayheading);
+  top: 50px;
 }
 .accordian-content-container {
   width: 100%;
@@ -444,7 +439,7 @@
   }
   .left-about-para {
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   .showcase-for-experiance {
     max-width: var(--tabwidth);
@@ -573,6 +568,7 @@
     flex-direction: column;
   }
   .left-about-para {
+    font-size: 1.5rem;
     text-align: left;
   }
   .right-about-section {
@@ -678,14 +674,14 @@
     max-width: 500px;
   }
   .left-about-heading {
-    font-size: 85px;
+    font-size: 3.8rem;
     justify-content: center;
   }
-  .left-about-heading::after {
-    font-size: 3.8rem;
-    /* top: ; */
-    left: 0;
-  }
+  /* .left-about-heading::after {
+    /* font-size: 5.8rem;
+    color: rgba(0, 128, 128, 0.392);
+    z-index: -1; 
+  } */
   .showcase-for-experiance {
     max-width: var(--large);
     flex-direction: row;

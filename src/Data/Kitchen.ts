@@ -1,3 +1,7 @@
+import PersonalizedConsultation from "@Assets/kitchen/Personalized Consultation.jpg";
+import InnovativeDesignSolutions from "@Assets/kitchen/Innovative Design Solutions.jpg";
+import SeamlessIntegrationofTechnology from "@Assets/kitchen/Seamless Integration of Technology:.webp";
+import CustomizedLayouts from "@Assets/kitchen/Customized Layouts.jpg";
 export const FeaturesKitchenData = [
   {
     cnumber: "01",
@@ -16,5 +20,37 @@ export const FeaturesKitchenData = [
     heading: "Sustainable Practices",
     content:
       " We are committed to environmentally friendly design practices. Our kitchen designs incorporate energy-efficient appliances, eco-friendly materials, and sustainable construction methods to minimize environmental impact while creating beautiful and functional spaces.",
+  },
+];
+export const HowWeDesignKitchen = [
+  {
+    image: PersonalizedConsultation,
+    heading: "Personalized Consultation with Client",
+    desc: "We start by getting to know your cooking habits, lifestyle preferences, and design aspirations. Our personalized consultation delve deep into your needs and desires, laying the foundation for a kitchen that perfectly complements your lifestyle.",
+  },
+  {
+    image: InnovativeDesignSolutions,
+    heading: "Innovative Design Solutions",
+    desc: "Our team of experienced designers combines creativity & functionality to develop innovative solutions for your space. From optimizing layouts, maximum storage, we prioritize functionality without any compromise on style.",
+  },
+  {
+    image: CustomizedLayouts,
+    heading: "Customized Layouts",
+    desc: "Every kitchen we design is unique. We work closely with you to create customized layouts that seamlessly integrate with your home's architecture and enhance the flow of your living spaces. Whether you prefer an open-concept design or a more traditional layout, we tailor every detail to suit your preferences.",
+  },
+  {
+    image: InnovativeDesignSolutions,
+    heading: "Innovative Design Solutions",
+    desc: "Our team of experienced designers combines creativity & functionality to develop innovative solutions for your space. From optimizing layouts, maximum storage, we prioritize functionality without any compromise on style.",
+  },
+  {
+    image: SeamlessIntegrationofTechnology,
+    heading: "Seamless Integration of Technology",
+    desc: "Embracing the latest advancements in kitchen technology, we seamlessly integrate smart features and appliances into our designs. From intelligent lighting and temperature control to voice-activated assistants, we make cooking easy.",
+  },
+  {
+    image: InnovativeDesignSolutions,
+    heading: "Innovative Design Solutions",
+    desc: "Our team of experienced designers combines creativity & functionality to develop innovative solutions for your space. From optimizing layouts, maximum storage, we prioritize functionality without any compromise on style.",
   },
 ];
