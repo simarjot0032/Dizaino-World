@@ -27,7 +27,6 @@ function App() {
       anchorPlacement: "top-bottom",
     });
   });
-
   const routesarray = [
     {
       link: "/Bedroom",
