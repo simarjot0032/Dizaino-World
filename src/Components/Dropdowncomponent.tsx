@@ -11,9 +11,9 @@ export default function Interiordropdown({
   return (
     <>
       <div className="dropdown-container">
-        {arrayfordropdown.map((item: any): any => {
+        {arrayfordropdown.map((item: any, index: number): any => {
           return (
-            <Link to={item.link} className="linktag-dropdown">
+            <Link to={item.link} className="linktag-dropdown" key={index}>
               <li className="dropdown-link" onClick={handleclick}>
                 {item.item}
               </li>

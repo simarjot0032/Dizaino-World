@@ -8,22 +8,23 @@
   width: 100%;
 }
 .how-we-design-heading {
-  font-size: 4.2rem;
+  font-size: var(--mobileheading);
   font-family: var(--font);
-  color: var(--primarycolor);
+  color: var(--headingcolor);
   text-align: center;
   position: relative;
   letter-spacing: 2px;
-  margin-bottom: 5rem;
+
+  font-weight: 500;
 }
 .how-we-design-heading::after {
   content: "How We Design";
   position: absolute;
   inset: 0;
   top: -20px;
+  font-size: var(--mobileoverlayheading);
   z-index: -1;
-  color: transparent;
-  -webkit-text-stroke: var(--stroke);
+  color: var(--overlayheading);
 }
 .how-we-design-content-container {
   padding: 1rem;

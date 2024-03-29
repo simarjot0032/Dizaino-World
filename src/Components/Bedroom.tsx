@@ -76,8 +76,13 @@ export default function Bedroom() {
               </h2>
             </div>
             <div className="accordian-content-container">
-              {AccordianBedroom.map((accordian) => {
-                return <Accordian objectforquestionandanswer={accordian} />;
+              {AccordianBedroom.map((accordian, index) => {
+                return (
+                  <Accordian
+                    objectforquestionandanswer={accordian}
+                    key={index}
+                  />
+                );
               })}
             </div>
           </div>
