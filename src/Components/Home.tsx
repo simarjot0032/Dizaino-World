@@ -412,9 +412,14 @@ export default function Home() {
                   );
                 })}*/}
                 <SlideshowLightbox className="lightbox-container">
-                  {arrayforcommercialimages.map((image) => {
+                  {arrayforcommercialimages.map((image, index) => {
                     return (
-                      <img src={image.image} alt="" className="project-img" />
+                      <img
+                        src={image.image}
+                        alt=""
+                        className="project-img"
+                        key={index}
+                      />
                     );
                   })}
                 </SlideshowLightbox>
@@ -423,9 +428,14 @@ export default function Home() {
                 className={activetab === 2 ? "project-residential" : " none"}
               >
                 <SlideshowLightbox className="lightbox-container">
-                  {arrayforresidentialimages.map((image) => {
+                  {arrayforresidentialimages.map((image, index) => {
                     return (
-                      <img src={image.image} alt="" className="project-img" />
+                      <img
+                        src={image.image}
+                        alt=""
+                        className="project-img"
+                        key={index}
+                      />
                     );
                   })}
                 </SlideshowLightbox>
@@ -439,8 +449,13 @@ export default function Home() {
               </h2>
             </div>
             <div className="accordian-content-container">
-              {HomeAccordianData.map((accordian) => {
-                return <Accordian objectforquestionandanswer={accordian} />;
+              {HomeAccordianData.map((accordian, index) => {
+                return (
+                  <Accordian
+                    objectforquestionandanswer={accordian}
+                    key={index}
+                  />
+                );
               })}
             </div>
           </div>

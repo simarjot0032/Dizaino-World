@@ -5,22 +5,22 @@
   margin-top: 2rem;
 }
 .features-header-heading {
-  font-size: 3.8rem;
-
+  font-size: var(--mobileheading);
   text-align: center;
   letter-spacing: 2px;
   font-family: var(--font);
   position: relative;
   margin-bottom: 2.8rem;
-  color: var(--primarycolor);
+  color: var(--headingcolor);
+  font-weight: 500;
 }
 .features-header-heading::after {
   content: "Features";
   position: absolute;
-  -webkit-text-stroke: var(--stroke);
-  color: transparent;
+  color: var(--overlayheading);
+  font-size: var(--mobileoverlayheading);
   inset: 0;
-  top: 15px;
+  top: 38px;
 }
 .features-content-container {
   display: flex;

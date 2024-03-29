@@ -73,19 +73,20 @@
 .project-content-heading {
   font-size: 4.5rem;
   font-family: var(--font);
-  color: var(--primarycolor);
+  color: var(--headingcolor);
   position: relative;
   display: flex;
   justify-content: center;
   align-items: end;
+  font-size: var(--mobileheading);
+  font-weight: 500;
 }
 .project-content-heading::after {
   content: "Projects";
-  color: transparent;
-  -webkit-text-stroke: var(--strokeDarker);
+  color: var(--overlayheading);
   position: absolute;
   bottom: -10px;
-  font-size: 3.8rem;
+  font-size: var(--mobileoverlayheading);
   z-index: 9999;
 }
 .bedroom-project-lightbox {

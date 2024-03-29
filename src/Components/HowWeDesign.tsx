@@ -11,19 +11,17 @@ export default function HowWeDesign({ main_head, array }: Props) {
           <h2 className="how-we-design-heading">{main_head}</h2>
         </div>
         <div className="how-we-design-content-container">
-          {array.map((item: any) => {
+          {array.map((item: any, index: number) => {
             return (
-              <>
-                <div className="how-we-design-card-container">
-                  <img
-                    src={item.image}
-                    alt=""
-                    className="how-we-design-card-image"
-                  />
-                  <h3 className="how-we-design-card-heading">{item.heading}</h3>
-                  <p className="how-we-design-card-para">{item.desc}</p>
-                </div>
-              </>
+              <div className="how-we-design-card-container" key={index}>
+                <img
+                  src={item.image}
+                  alt=""
+                  className="how-we-design-card-image"
+                />
+                <h3 className="how-we-design-card-heading">{item.heading}</h3>
+                <p className="how-we-design-card-para">{item.desc}</p>
+              </div>
             );
           })}
         </div>
