@@ -4,7 +4,10 @@ import { LuMouse } from "react-icons/lu";
 import { FeaturesKitchenData } from "@Data/Kitchen";
 import FeaturesSection from "@Components/FeaturesSection";
 import HowWeDesign from "@Components/HowWeDesign";
-import { HowWeDesignKitchen } from "@Data/Kitchen";
+import { HowWeDesignKitchen, KitchenProjectData } from "@Data/Kitchen";
+import { SlideshowLightbox } from "lightbox.js-react";
+import "lightbox.js-react/dist/index.css";
+
 export default function Kitchen() {
   const HandleKitchenScroll = () => {
     let content = document.querySelector("#kitchen-content-container");
@@ -37,6 +40,28 @@ export default function Kitchen() {
         >
           <FeaturesSection featurescard={FeaturesKitchenData} />
           <HowWeDesign main_head="Kitchen" array={HowWeDesignKitchen} />
+
+          <div className="kitchen-project-showcase-container">
+            <div className="kitchen-project-header-container">
+              <h1 className="kitchen-project-heading">Kitchen</h1>
+            </div>
+            <div className="kitchen-project-content-container">
+              <div className="kitchen-project-lightbox">
+                <SlideshowLightbox className="kitchen-lightbox">
+                  {KitchenProjectData.map((image: any, index) => {
+                    return (
+                      <img
+                        src={image.image}
+                        alt=""
+                        className="kitchen-project-img"
+                        key={index}
+                      />
+                    );
+                  })}
+                </SlideshowLightbox>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>

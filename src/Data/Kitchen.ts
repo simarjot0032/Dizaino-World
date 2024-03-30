@@ -4,6 +4,15 @@ import SeamlessIntegrationofTechnology from "@Assets/kitchen/Seamless Integratio
 import QualityMaterialsandFinishes from "@Assets/kitchen/Quality Materials and Finishes.jpg";
 import ProfessionalSupport from "@Assets/bedroom/clientconsulting.jpg";
 import CustomizedLayouts from "@Assets/kitchen/Customized Layouts.jpg";
+import k1 from "@Assets/kitchen/k1.jpg";
+import k2 from "@Assets/kitchen/k2.jpg";
+import k3 from "@Assets/kitchen/k3.jpg";
+import k4 from "@Assets/kitchen/k4.jpg";
+import k5 from "@Assets/kitchen/k5.jpg";
+import k6 from "@Assets/kitchen/k6.jpg";
+import k7 from "@Assets/kitchen/k7.jpg";
+import k8 from "@Assets/kitchen/k8.jpg";
+
 export const FeaturesKitchenData = [
   {
     cnumber: "01",
@@ -54,5 +63,31 @@ export const HowWeDesignKitchen = [
     image: ProfessionalSupport,
     heading: "Professional Support",
     desc: " Once the design is finalized, our team takes care of the installation process with precision and care. We handle every aspect of the project, from desiging to assembly, ensuring a seamless and stress-free experience from start to finish. ",
+  },
+];
+export const KitchenProjectData = [
+  {
+    image: k1,
+  },
+  {
+    image: k2,
+  },
+  {
+    image: k3,
+  },
+  {
+    image: k4,
+  },
+  {
+    image: k5,
+  },
+  {
+    image: k6,
+  },
+  {
+    image: k7,
+  },
+  {
+    image: k8,
   },
 ];

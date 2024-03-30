@@ -68,6 +68,10 @@ button:hover,
 Link:hover {
   transform: scale(1.1);
 }
+link,
+button {
+  cursor: pointer;
+}
 @media screen and (min-width: 768px) {
   .heading,
   .secondary {

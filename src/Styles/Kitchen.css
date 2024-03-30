@@ -1,5 +1,5 @@
 .kitchen-container {
-  overflow-x: hidden;
+  overflow-y: hidden;
 }
 .kitchen-hero-container {
   height: 100vh;
@@ -54,4 +54,83 @@
   padding: 0.2rem;
   /* overflow-x: hidden; */
   scroll-margin-top: 50px;
+}
+.kitchen-project-showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.kitchen-project-heading {
+  text-align: center;
+  font-family: var(--font);
+  font-weight: 500;
+  font-size: var(--mobileheading);
+  color: var(--headingcolor);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.kitchen-project-heading::after {
+  content: "Project";
+  color: var(--overlayheading);
+  font-size: var(--mobileoverlayheading);
+  position: absolute;
+  inset: 0;
+  top: 32px;
+}
+.kitchen-project-lightbox {
+  margin-top: 50px;
+}
+.kitchen-project-img {
+  max-width: 95vw;
+  filter: grayscale(20%);
+  transition: all 0.2s linear;
+  aspect-ratio: 2/2;
+}
+.kitchen-project-img:hover {
+  border-radius: 5px 50px;
+  filter: grayscale(0);
+  box-shadow: var(--lighthouseshadow);
+}
+.kitchen-lightbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1.5rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .kitchen-project-content-container {
+    max-width: var(--tabwidth);
+  }
+  .kitchen-project-img {
+    max-width: 350px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .kitchen-project-content-container {
+    max-width: var(--smalllaptop);
+  }
+  .kitchen-project-img {
+    max-width: 350px;
+  }
+}
+@media screen and (min-width: 1280px) and (max-width: 1480px) {
+  .kitchen-project-content-container {
+    max-width: var(--laptop);
+  }
+  .kitchen-project-img {
+    max-width: 350px;
+  }
+}
+@media screen and (min-width: 1480px) {
+  .kitchen-project-content-container {
+    max-width: var(--large);
+  }
+  .kitchen-project-img {
+    max-width: 350px;
+  }
 }
