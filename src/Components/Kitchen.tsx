@@ -37,6 +37,12 @@ export default function Kitchen() {
         >
           <FeaturesSection featurescard={FeaturesKitchenData} />
           <HowWeDesign main_head="Kitchen" array={HowWeDesignKitchen} />
+
+          <div className="kitchen-project-showcase-container">
+            <div className="kitchen-project-header-container">
+              <h1 className="kitchen-project-heading">Kitchen</h1>
+            </div>
+          </div>
         </div>
       </div>
     </>

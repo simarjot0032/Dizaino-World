@@ -8,23 +8,22 @@
   width: 100%;
 }
 .how-we-design-heading {
-  font-size: var(--mobileheading);
   font-family: var(--font);
-  color: var(--headingcolor);
   text-align: center;
   position: relative;
   letter-spacing: 2px;
-
   font-weight: 500;
+  font-size: var(--mobileoverlayheading);
+  color: var(--overlayheading);
 }
 .how-we-design-heading::after {
   content: "How We Design";
   position: absolute;
   inset: 0;
-  top: -20px;
-  font-size: var(--mobileoverlayheading);
+  top: -38px;
   z-index: -1;
-  color: var(--overlayheading);
+  font-size: var(--mobileheading);
+  color: var(--headingcolor);
 }
 .how-we-design-content-container {
   padding: 1rem;
@@ -61,6 +60,8 @@
   margin: 0;
   font-family: var(--font);
   color: rgb(68, 68, 68);
+}
+.kitchen-project-showcsae-container {
 }
 @media screen and (min-width: 456px) {
   .how-we-design-card-container {
