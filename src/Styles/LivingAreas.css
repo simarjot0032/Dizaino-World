@@ -1,0 +1,33 @@
+.living-area-container {
+  overflow-y: hidden;
+}
+.living-area-hero-section-container {
+  background: no-repeat center url("../Assets/livingarea/livingarea.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.living-hero-section-heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.living-hero-section-heading {
+  background-color: var(--heroheadingbg);
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 3rem;
+  font-family: var(--font);
+  width: fit-content;
+  text-align: center;
+}
+.living-hero-section-tagline {
+  color: white;
+  font-family: var(--font);
+  font-size: 2rem;
+}
+.livingarea-content-container {
+  padding: 0.5rem;
+}

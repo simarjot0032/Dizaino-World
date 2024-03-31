@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import UnderCons from "@Components/UnderConst";
 import Bedroom from "@Components/Bedroom";
 import Kitchen from "@Components/Kitchen";
+import LivingAreas from "@Components/LivingAreas";
 
 function App() {
   useEffect(() => {
@@ -38,7 +39,7 @@ function App() {
     },
     {
       link: "/Living-area",
-      element: <UnderCons />,
+      element: <LivingAreas />,
     },
     {
       link: "/Pooja-Room",
