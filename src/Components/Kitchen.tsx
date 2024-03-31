@@ -4,9 +4,16 @@ import { LuMouse } from "react-icons/lu";
 import { FeaturesKitchenData } from "@Data/Kitchen";
 import FeaturesSection from "@Components/FeaturesSection";
 import HowWeDesign from "@Components/HowWeDesign";
-import { HowWeDesignKitchen, KitchenProjectData } from "@Data/Kitchen";
+import {
+  HowWeDesignKitchen,
+  KitchenProjectData,
+  AccordianKitchen,
+} from "@Data/Kitchen";
 import { SlideshowLightbox } from "lightbox.js-react";
 import "lightbox.js-react/dist/index.css";
+
+import Accordian from "@Components/Accordian";
+import Footer from "@Components/Footer";
 
 export default function Kitchen() {
   const HandleKitchenScroll = () => {
@@ -61,9 +68,27 @@ export default function Kitchen() {
                 </SlideshowLightbox>
               </div>
             </div>
+            <div className="accordian-container" data-aos="fade-right">
+              <div className="accordian-container-header">
+                <h2 className="accordian-container-heading">
+                  Frequently Asked Question
+                </h2>
+              </div>
+              <div className="accordian-content-container">
+                {AccordianKitchen.map((accordian: any, index: any) => {
+                  return (
+                    <Accordian
+                      objectforquestionandanswer={accordian}
+                      key={index}
+                    />
+                  );
+                })}
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
