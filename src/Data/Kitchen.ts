@@ -91,3 +91,38 @@ export const KitchenProjectData = [
     image: k8,
   },
 ];
+export const AccordianKitchen = [
+  {
+    question: "What services do you offer for kitchen design?",
+    answer:
+      "Our kitchen design services cover everything from initial consultations to final installations. We provide comprehensive solutions to create functional, beautiful, and customized kitchen spaces tailored to your needs.",
+  },
+  {
+    question: "How do you approach kitchen design projects?",
+    answer:
+      "Our approach to kitchen design begins with understanding your lifestyle, cooking habits, and aesthetic preferences. We prioritize functionality, efficiency, and aesthetics to create a kitchen layout that enhances your daily life and reflects your personal style.",
+  },
+  {
+    question:
+      "Can you help me visualize my kitchen design before starting the project?",
+    answer:
+      "Yes, we utilize advanced design tools such as 3D renderings and virtual reality simulations to help you visualize your kitchen design concept before implementation. This allows for better decision-making and ensures that the final result meets your expectations.",
+  },
+  {
+    question: "Do you offer customizable design packages for kitchens?",
+    answer:
+      "Absolutely! We offer customizable design packages tailored to your specific requirements and budget. Whether you need a complete kitchen renovation or assistance with specific design elements, our flexible packages cater to various needs and preferences.",
+  },
+  {
+    question:
+      "What materials and finishes do you recommend for kitchen interiors?",
+    answer:
+      "We recommend high-quality materials and finishes that combine durability, functionality, and aesthetics. From premium cabinetry and countertops to stylish hardware and fixtures, we prioritize quality and craftsmanship in our selections to create timeless kitchen designs.",
+  },
+  {
+    question:
+      "How long does a typical kitchen design project take from start to finish?",
+    answer:
+      "The duration of a kitchen design project varies depending on factors such as the scope of work, size of the space, and complexity of the design. During the initial consultation, we'll provide you with a detailed project timeline based on your specific requirements and preferences.",
+  },
+];
