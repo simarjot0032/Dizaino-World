@@ -41,13 +41,13 @@ export default function LivingAreas() {
             main_head="Living Areas"
             array={HowWeDesignLivingAreas}
           />
-          <div className=" project-showcase-container">
-            <div className=" project-header-container">
-              <h1 className=" project-heading">Living Areas</h1>
+          <div className="project-showcase-container">
+            <div className="project-header-container">
+              <h1 className="project-heading">Living Areas</h1>
             </div>
-            <div className=" project-content-container">
-              <div className=" project-lightbox">
-                <SlideshowLightbox className=" lightbox">
+            <div className="project-content-container">
+              <div className="project-lightbox">
+                <SlideshowLightbox className="lightbox">
                   {LivingProjectData.map((image: any, index) => {
                     return (
                       <img
