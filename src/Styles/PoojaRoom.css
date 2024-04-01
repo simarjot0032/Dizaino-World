@@ -1,3 +1,6 @@
+.pooja-room-main-container {
+  overflow-y: hidden;
+}
 .pooja-room-hero-section-container {
   background: url("https://cdnb.artstation.com/p/assets/images/images/043/792/423/large/bharadwaj-b-r-pooja-1.jpg?1638277801")
     no-repeat center;
@@ -18,9 +21,11 @@
   padding: 1rem;
   border-radius: 12px;
   background: var(--heroheadingbg);
+  text-align: center;
 }
 .pooja-room-hero-tagline {
   color: white;
   font-size: 2rem;
   font-family: var(--font);
+  text-align: center;
 }

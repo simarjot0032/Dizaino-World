@@ -1,3 +1,63 @@
+import UnderstandingSpiritualVision from "@Assets/Pooja Room/Understanding Spiritual Vision.jpg";
+import SpatialHarmonyPlanning from "@Assets/Pooja Room/Spatial Harmony Planning.jpg";
+import ConceptualizingSacredDesigns from "@Assets/Pooja Room/Conceptualizing Sacred Designs.jpg";
+import SacredMaterialandColorSelection from "@Assets/Pooja Room/Sacred Material and Color Selection.jpg";
+import ReverentialFurnishingsandOrnaments from "@Assets/Pooja Room/Reverential Furnishings and Ornaments.jpg";
+import RefinementandExecution from "@Assets/Pooja Room/Refinement and Execution.jpg";
+
+export const FeaturesPoojaRoomData = [
+  {
+    cnumber: "01.",
+    heading: "Customized Sacred Spaces",
+    content:
+      "We specialize in creating customized pooja room designs that resonate with your spiritual beliefs, rituals, and cultural preferences. Each sacred space is meticulously crafted to inspire devotion and tranquility.",
+  },
+  {
+    cnumber: "02.",
+    heading: "Innovative Design Solutions",
+    content:
+      "Our design team utilizes innovative solutions to maximize the functionality and aesthetics of your pooja room. From space-saving layouts to integrated storage solutions, we ensure a harmonious blend of form and function.",
+  },
+  {
+    cnumber: "03.",
+    heading: "Sacred Symbolism and Décor",
+    content:
+      "We incorporate sacred symbols, motifs, and traditional elements into the design of your pooja room to create a spiritually enriching environment. From intricate carvings to auspicious colors, every detail is thoughtfully curated to enhance the sanctity of the space.",
+  },
+];
+export const HowWeDesignPoojaRoom = [
+  {
+    image: UnderstandingSpiritualVision,
+    heading: "1. Understanding Spiritual Vision",
+    desc: "Commence by delving into the client's spiritual beliefs, cultural practices, and personal preferences to comprehend the essence of their envisioned pooja room.",
+  },
+  {
+    image: SpatialHarmonyPlanning,
+    heading: "2. Spatial Harmony Planning",
+    desc: "Strategize the layout of the pooja room, orchestrating a harmonious spatial arrangement that fosters tranquility, accessibility, and efficient utilization of available space.",
+  },
+  {
+    image: ConceptualizingSacredDesigns,
+    heading: "3. Conceptualizing Sacred Designs",
+    desc: "Embark on a journey of ideation, conceptualizing designs infused with sacred symbolism, divine motifs, and architectural elements that resonate with the client's spiritual journey.",
+  },
+  {
+    image: SacredMaterialandColorSelection,
+    heading: "4. Sacred Material and Color Selection",
+    desc: "Select materials, finishes, and colors imbued with spiritual significance, invoking a sense of sacredness and reverence within the pooja room's ambiance.",
+  },
+  {
+    image: ReverentialFurnishingsandOrnaments,
+    heading: "5. Reverential Furnishings and Ornaments",
+    desc: "Curate or craft furnishings and ornamental accents that honor tradition, culture, and spirituality, enriching the pooja room with reverence and aesthetic appeal.",
+  },
+  {
+    image: RefinementandExecution,
+    heading: "6. Refinement and Execution",
+    desc: "Present the refined design concept to the client, incorporating feedback to perfect the vision. Oversee the meticulous execution of the design, ensuring every detail reflects spiritual harmony.",
+  },
+];
+
 export const AccordianPoojaRoom = [
   {
     question: "What services do you offer for pooja room design?",
