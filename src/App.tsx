@@ -7,6 +7,7 @@ import UnderCons from "@Components/UnderConst";
 import Bedroom from "@Components/Bedroom";
 import Kitchen from "@Components/Kitchen";
 import LivingAreas from "@Components/LivingAreas";
+import PoojaRoom from "@Components/PoojaRoom";
 
 function App() {
   useEffect(() => {
@@ -43,7 +44,7 @@ function App() {
     },
     {
       link: "/Pooja-Room",
-      element: <UnderCons />,
+      element: <PoojaRoom />,
     },
     {
       link: "/Washroom",
