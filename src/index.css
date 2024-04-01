@@ -95,6 +95,10 @@ button:focus-visible {
   --laptop: 1150px;
   --large: 1500px;
 }
+::selection {
+  background-color: var(--primarycolor);
+  color: white;
+}
 body::-webkit-scrollbar {
   background-color: transparent;
   width: 10px;
