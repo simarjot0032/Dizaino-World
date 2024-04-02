@@ -8,6 +8,8 @@ import Bedroom from "@Components/Bedroom";
 import Kitchen from "@Components/Kitchen";
 import LivingAreas from "@Components/LivingAreas";
 import PoojaRoom from "@Components/PoojaRoom";
+import Washroom from "@Components/Washroom";
+import DownCelling from "@Components/DownCelling";
 
 function App() {
   useEffect(() => {
@@ -48,11 +50,11 @@ function App() {
     },
     {
       link: "/Washroom",
-      element: <UnderCons />,
+      element: <Washroom />,
     },
     {
       link: "/Down-Celling",
-      element: <UnderCons />,
+      element: <DownCelling />,
     },
     {
       link: "/Theater",
@@ -104,6 +106,10 @@ function App() {
     },
     {
       link: "/Contact",
+      element: <UnderCons />,
+    },
+    {
+      link: "/CommercialInterior",
       element: <UnderCons />,
     },
   ];

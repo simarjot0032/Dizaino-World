@@ -4,7 +4,10 @@ import ConceptualizingSacredDesigns from "@Assets/Pooja Room/Conceptualizing Sac
 import SacredMaterialandColorSelection from "@Assets/Pooja Room/Sacred Material and Color Selection.jpg";
 import ReverentialFurnishingsandOrnaments from "@Assets/Pooja Room/Reverential Furnishings and Ornaments.jpg";
 import RefinementandExecution from "@Assets/Pooja Room/Refinement and Execution.jpg";
-
+import p1 from "@Assets/Pooja Room/p1.jpg";
+import p2 from "@Assets/Pooja Room/p2.jpg";
+import p3 from "@Assets/Pooja Room/p3.jpg";
+import p4 from "@Assets/Pooja Room/p4.jpg";
 export const FeaturesPoojaRoomData = [
   {
     cnumber: "01.",
@@ -58,6 +61,20 @@ export const HowWeDesignPoojaRoom = [
   },
 ];
 
+export const PoojaRoomProject = [
+  {
+    image: p1,
+  },
+  {
+    image: p2,
+  },
+  {
+    image: p3,
+  },
+  {
+    image: p4,
+  },
+];
 export const AccordianPoojaRoom = [
   {
     question: "What services do you offer for pooja room design?",

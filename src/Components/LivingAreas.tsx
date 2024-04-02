@@ -8,11 +8,12 @@ import {
   LivingProjectData,
 } from "@Data/Livingarea";
 import FeaturesSection from "@Components/FeaturesSection";
-import HowWeDesign from "./HowWeDesign";
+import HowWeDesign from "@Components/HowWeDesign";
 import { SlideshowLightbox } from "lightbox.js-react";
-
 import Accordian from "@Components/Accordian";
-import Footer from "./Footer";
+import Footer from "@Components/Footer";
+import "lightbox.js-react/dist/index.css";
+
 export default function LivingAreas() {
   return (
     <>
