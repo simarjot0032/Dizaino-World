@@ -7,9 +7,13 @@ import {
   AccordianPoojaRoom,
   FeaturesPoojaRoomData,
   HowWeDesignPoojaRoom,
+  PoojaRoomProject,
 } from "@Data/PoojaRoom";
 import FeaturesSection from "@Components/FeaturesSection";
 import HowWeDesing from "@Components/HowWeDesign";
+import { SlideshowLightbox } from "lightbox.js-react";
+import "lightbox.js-react/dist/index.css";
+
 export default function PoojaRoom() {
   return (
     <>
@@ -31,11 +35,36 @@ export default function PoojaRoom() {
         </div>
         <div
           className="pooja-room-content-container"
-          style={{ padding: "0.2rem" }}
+          style={{
+            padding: "0.2rem",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
         >
           <FeaturesSection featurescard={FeaturesPoojaRoomData} />
           <HowWeDesing main_head="Pooja Room" array={HowWeDesignPoojaRoom} />
-          <div className="project-sowcase-container"></div>
+          <div className="project-showcase-container">
+            <div className="project-header-container">
+              <h1 className="project-heading">Pooja Room</h1>
+            </div>
+            <div className="project-content-container">
+              <div className="project-lightbox">
+                <SlideshowLightbox className="lightbox">
+                  {PoojaRoomProject.map((image: any, index) => {
+                    return (
+                      <img
+                        src={image.image}
+                        key={index}
+                        alt=""
+                        className="project-img"
+                      />
+                    );
+                  })}
+                </SlideshowLightbox>
+              </div>
+            </div>
+          </div>
           <div className="accordian-container">
             <div className="accordian-container-header">
               <h2 className="accordian-container-heading">
