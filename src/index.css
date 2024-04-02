@@ -188,6 +188,38 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   margin-top: 1rem;
 }
+.main-container {
+  overflow-y: hidden;
+}
+.hero-section-container {
+  background: no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+.hero-section-header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-heading {
+  font-size: 2.8rem;
+  font-family: var(--font);
+  padding: 1rem;
+  border-radius: 12px;
+  background: var(--heroheadingbg);
+  text-align: center;
+}
+.hero-tagline {
+  color: white;
+  font-size: 2rem;
+  font-family: var(--font);
+  text-align: center;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .project-content-container {
     max-width: var(--tabwidth);

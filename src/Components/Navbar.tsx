@@ -145,7 +145,7 @@ export default function Navbar() {
               )}
             </div>
           </div>
-          <div
+          {/* <div
             className="dropdown-menu"
             onMouseEnter={
               menuopen ? undefined : handlehoverandclickforcommercialinterior
@@ -169,7 +169,16 @@ export default function Navbar() {
                 />
               )}
             </div>
-          </div>
+          </div> */}
+          <Link
+            to={"/CommercialInterior"}
+            className="linktag-navbar"
+            onClick={closemenu}
+          >
+            <li className="link-navbar link-navbar-with-bottom-animation">
+              Commercial Interior
+            </li>
+          </Link>
           <div
             className="dropdown-menu"
             onMouseEnter={menuopen ? undefined : handlehoverandclickforplanning}
