@@ -74,12 +74,11 @@
   .how-we-design-content-container {
     max-width: var(--tabwidth);
   }
-  .how-we-design-card-container {
-    max-width: 360px;
-  }
+  .how-we-design-card-container,
   .how-we-design-card-image {
-    max-width: 360px;
+    max-width: 320px;
   }
+
   .how-we-design-card-para {
     font-size: 1.2rem;
   }
@@ -88,12 +87,11 @@
   .how-we-design-content-container {
     max-width: var(--smalllaptop);
   }
-  .how-we-design-card-container {
-    max-width: 360px;
-  }
+  .how-we-design-card-container,
   .how-we-design-card-image {
-    max-width: 360px;
+    max-width: 300px;
   }
+
   .how-we-design-card-para {
     font-size: 1.2rem;
   }
@@ -103,12 +101,11 @@
   .how-we-design-content-container {
     max-width: var(--laptop);
   }
-  .how-we-design-card-container {
-    max-width: 360px;
-  }
+  .how-we-design-card-container,
   .how-we-design-card-image {
     max-width: 360px;
   }
+
   .how-we-design-card-para {
     font-size: 1.2rem;
   }
@@ -117,12 +114,11 @@
   .how-we-design-content-container {
     max-width: var(--large);
   }
-  .how-we-design-card-container {
-    max-width: 360px;
-  }
+  .how-we-design-card-container,
   .how-we-design-card-image {
     max-width: 360px;
   }
+
   .how-we-design-card-para {
     font-size: 1.2rem;
   }

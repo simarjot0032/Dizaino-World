@@ -369,35 +369,7 @@
 .none {
   display: none;
 }
-.accordian-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-.accordian-container-heading {
-  font-family: var(--font);
-  font-size: var(--mobileheading);
-
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: var(--headingcolor);
-  font-weight: 500;
-}
-.accordian-container-heading::after {
-  content: "FAQ";
-  color: var(--overlayheading);
-  position: absolute;
-  font-size: var(--mobileoverlayheading);
-  top: 50px;
-}
-.accordian-content-container {
-  width: 100%;
-  margin-top: 1rem;
-}
 @media screen and (min-width: 500px) {
   .hero-section-main-heading {
     font-size: 3.3rem;
@@ -474,9 +446,6 @@
     object-fit: fill;
     aspect-ratio: 2/2;
   }
-  .accordian-content-container {
-    max-width: var(--tabwidth);
-  }
 }
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
   .aboutus-section {
@@ -541,9 +510,7 @@
   .project-showcase-container {
     max-width: var(--smalllaptop);
   }
-  .accordian-content-container {
-    max-width: var(--tabwidth);
-  }
+
   .project-img {
     width: 100%;
     max-width: 350px;
@@ -631,9 +598,7 @@
   .project-showcase-container {
     max-width: var(--laptop);
   }
-  .accordian-content-container {
-    max-width: var(--tabwidth);
-  }
+
   .project-img {
     width: 100%;
     max-width: 350px;
@@ -738,8 +703,5 @@
     max-width: 350px;
     object-fit: fill;
     aspect-ratio: 2/2;
-  }
-  .accordian-content-container {
-    max-width: var(--laptop);
   }
 }
