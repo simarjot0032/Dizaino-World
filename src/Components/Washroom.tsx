@@ -12,6 +12,7 @@ import FeaturesSection from "@Components/FeaturesSection";
 import HowWeDesign from "@Components/HowWeDesign";
 import { SlideshowLightbox } from "lightbox.js-react";
 import "lightbox.js-react/dist/index.css";
+import hero from "@Assets/Washroom/hero.webp";
 
 export default function Washroom() {
   return (
@@ -21,7 +22,7 @@ export default function Washroom() {
         <div
           className="hero-section-container"
           style={{
-            backgroundImage: "url('../src/Assets/Washroom/hero.webp')",
+            backgroundImage: `url(${hero})`,
           }}
         >
           <div className="hero-section-header-container">

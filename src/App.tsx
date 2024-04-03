@@ -12,6 +12,8 @@ import LivingAreas from "@Components/LivingAreas";
 import PoojaRoom from "@Components/PoojaRoom";
 import Washroom from "@Components/Washroom";
 import DownCeiling from "@Components/DownCeiling";
+import Theater from "@Components/Theater";
+import Dining from "@Components/Dining";
 
 function App() {
   useEffect(() => {
@@ -60,11 +62,11 @@ function App() {
     },
     {
       link: "/Theater",
-      element: <UnderCons />,
+      element: <Theater />,
     },
     {
       link: "/Dining",
-      element: <UnderCons />,
+      element: <Dining />,
     },
     {
       link: "/Residential-Exterior",

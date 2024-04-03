@@ -13,6 +13,7 @@ import FeaturesSection from "@Components/FeaturesSection";
 import HowWeDesign from "./HowWeDesign";
 import { SlideshowLightbox } from "lightbox.js-react";
 import "lightbox.js-react/dist/index.css";
+import hero from "@Assets/DownCelling/hero.webp";
 
 export default function DownCelling() {
   return (
@@ -22,7 +23,7 @@ export default function DownCelling() {
         <div
           className="hero-section-container"
           style={{
-            backgroundImage: "url('../src/Assets/DownCelling/hero.webp')",
+            backgroundImage: `url(${hero})`,
             backgroundPosition: "top",
           }}
         >
