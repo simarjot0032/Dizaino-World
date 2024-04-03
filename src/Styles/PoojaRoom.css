@@ -2,8 +2,7 @@
   overflow-y: hidden;
 }
 .pooja-room-hero-section-container {
-  background: url("https://cdnb.artstation.com/p/assets/images/images/043/792/423/large/bharadwaj-b-r-pooja-1.jpg?1638277801")
-    no-repeat center;
+  background: url("../Assets/PoojaRoom/hero.jpg") no-repeat center;
   background-size: cover;
   height: 100vh;
   display: flex;
