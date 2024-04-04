@@ -42,7 +42,7 @@ export default function Washroom() {
           <HowWeDesign main_head="Washroom" array={HowwedesingWashroomData} />
           <div className="project-showcase-container">
             <div className="project-container-header">
-              <h1 className="project-heading">Kitchen</h1>
+              <h1 className="project-heading">Washroom</h1>
             </div>
             <div className="project-content-container">
               <div className="project-lightbox">
