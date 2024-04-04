@@ -1,20 +1,18 @@
 import Navbar from "@Components/Navbar";
 import { LuMouse } from "react-icons/lu";
 import Footer from "@Components/Footer";
-import Accordian from "@Components/Accordian";
 import {
-  AccordianWashroom,
-  FeaturesWashroomData,
-  HowwedesingWashroomData,
-  WashroomProjects,
-} from "@Data/Washroom";
+  HowWeDesignTheater,
+  TheaterAccordionData,
+  TheaterFeaturesData,
+  TheaterLightboxData,
+} from "@Data/Theater";
+import Accordian from "@Components/Accordian";
 import FeaturesSection from "@Components/FeaturesSection";
-import HowWeDesign from "@Components/HowWeDesign";
+import HowWeDesign from "./HowWeDesign";
+import hero from "@Assets/Theater/hero.webp";
 import { SlideshowLightbox } from "lightbox.js-react";
-import "lightbox.js-react/dist/index.css";
-import hero from "@Assets/Washroom/hero.webp";
-
-export default function Washroom() {
+export default function Theater() {
   return (
     <>
       <Navbar />
@@ -26,11 +24,8 @@ export default function Washroom() {
           }}
         >
           <div className="hero-section-header-container">
-            <h2 className="hero-heading">Elevate Your Daily Rituals</h2>
-            <p className="hero-tagline">
-              Transform Your Washroom into a Sanctuary of Refreshment and
-              Renewal
-            </p>
+            <h2 className="hero-heading">Immerse Yourself in Entertainment</h2>
+            <p className="hero-tagline">Where Every Scene Comes to Life</p>
           </div>
           <div className="scroll-down-container">
             <LuMouse size={23} color="var(--mainbgcolor)" />
@@ -38,16 +33,16 @@ export default function Washroom() {
           </div>
         </div>
         <div className="content-container">
-          <FeaturesSection featurescard={FeaturesWashroomData} />
-          <HowWeDesign main_head="Washroom" array={HowwedesingWashroomData} />
+          <FeaturesSection featurescard={TheaterFeaturesData} />
+          <HowWeDesign main_head="Theater" array={HowWeDesignTheater} />
           <div className="project-showcase-container">
             <div className="project-container-header">
-              <h1 className="project-heading">Washroom</h1>
+              <h2 className="project-heading">Theater</h2>
             </div>
             <div className="project-content-container">
               <div className="project-lightbox">
                 <SlideshowLightbox className="lightbox">
-                  {WashroomProjects.map((image: any, index) => {
+                  {TheaterLightboxData.map((image, index) => {
                     return (
                       <img
                         src={image.image}
@@ -61,7 +56,6 @@ export default function Washroom() {
               </div>
             </div>
           </div>
-
           <div className="accordian-container">
             <div className="accordian-container-header">
               <h2 className="accordian-container-heading">
@@ -69,7 +63,7 @@ export default function Washroom() {
               </h2>
             </div>
             <div className="accordian-content-container">
-              {AccordianWashroom.map((accordian, index) => {
+              {TheaterAccordionData.map((accordian, index) => {
                 return (
                   <Accordian
                     objectforquestionandanswer={accordian}

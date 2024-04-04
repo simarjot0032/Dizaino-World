@@ -1,13 +1,13 @@
-import UnderstandingSpiritualVision from "@Assets/Pooja Room/Understanding Spiritual Vision.jpg";
-import SpatialHarmonyPlanning from "@Assets/Pooja Room/Spatial Harmony Planning.jpg";
-import ConceptualizingSacredDesigns from "@Assets/Pooja Room/Conceptualizing Sacred Designs.jpg";
-import SacredMaterialandColorSelection from "@Assets/Pooja Room/Sacred Material and Color Selection.jpg";
-import ReverentialFurnishingsandOrnaments from "@Assets/Pooja Room/Reverential Furnishings and Ornaments.jpg";
-import RefinementandExecution from "@Assets/Pooja Room/Refinement and Execution.jpg";
-import p1 from "@Assets/Pooja Room/p1.jpg";
-import p2 from "@Assets/Pooja Room/p2.jpg";
-import p3 from "@Assets/Pooja Room/p3.jpg";
-import p4 from "@Assets/Pooja Room/p4.jpg";
+import UnderstandingSpiritualVision from "@Assets/PoojaRoom/Understanding Spiritual Vision.jpg";
+import SpatialHarmonyPlanning from "@Assets/PoojaRoom/Spatial Harmony Planning.jpg";
+import ConceptualizingSacredDesigns from "@Assets/PoojaRoom/Conceptualizing Sacred Designs.jpg";
+import SacredMaterialandColorSelection from "@Assets/PoojaRoom/Sacred Material and Color Selection.jpg";
+import ReverentialFurnishingsandOrnaments from "@Assets/PoojaRoom/Reverential Furnishings and Ornaments.jpg";
+import RefinementandExecution from "@Assets/PoojaRoom/Refinement and Execution.jpg";
+import p1 from "@Assets/PoojaRoom/p1.jpg";
+import p2 from "@Assets/PoojaRoom/p2.jpg";
+import p3 from "@Assets/PoojaRoom/p3.jpg";
+import p4 from "@Assets/PoojaRoom/p4.jpg";
 export const FeaturesPoojaRoomData = [
   {
     cnumber: "01.",

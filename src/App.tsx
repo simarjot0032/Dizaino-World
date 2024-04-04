@@ -2,6 +2,7 @@ import { HashRouter, Route, Routes } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Home from "@Components/Home";
+import "lightbox.js-react/dist/index.css";
 import { useEffect } from "react";
 import UnderCons from "@Components/UnderConst";
 import Bedroom from "@Components/Bedroom";
@@ -9,7 +10,9 @@ import Kitchen from "@Components/Kitchen";
 import LivingAreas from "@Components/LivingAreas";
 import PoojaRoom from "@Components/PoojaRoom";
 import Washroom from "@Components/Washroom";
-import DownCelling from "@Components/DownCelling";
+import DownCeiling from "@Components/DownCeiling";
+import Theater from "@Components/Theater";
+import Dining from "@Components/Dining";
 
 function App() {
   useEffect(() => {
@@ -53,16 +56,16 @@ function App() {
       element: <Washroom />,
     },
     {
-      link: "/Down-Celling",
-      element: <DownCelling />,
+      link: "/Down-Ceiling",
+      element: <DownCeiling />,
     },
     {
       link: "/Theater",
-      element: <UnderCons />,
+      element: <Theater />,
     },
     {
       link: "/Dining",
-      element: <UnderCons />,
+      element: <Dining />,
     },
     {
       link: "/Residential-Exterior",

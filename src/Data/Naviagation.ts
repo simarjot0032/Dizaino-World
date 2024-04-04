@@ -24,8 +24,8 @@ export const dropdownforinterior: dropdownobjectdefination[] = [
     item: "Washroom",
   },
   {
-    link: "/Down-Celling",
-    item: "Down-Celling",
+    link: "/Down-Ceiling",
+    item: "Down-Ceiling",
   },
   {
     link: "/Theater",

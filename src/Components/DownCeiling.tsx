@@ -1,20 +1,21 @@
 import Navbar from "@Components/Navbar";
 import { LuMouse } from "react-icons/lu";
 import Footer from "@Components/Footer";
-import Accordian from "@Components/Accordian";
 import {
-  AccordianWashroom,
-  FeaturesWashroomData,
-  HowwedesingWashroomData,
-  WashroomProjects,
-} from "@Data/Washroom";
+  DownCeilingAccordianData,
+  DownCeilingLightboxData,
+  FeaturesDownCeiling,
+  HowWeDesignDownCeiling,
+} from "@Data/DownCeiling";
+
+import Accordian from "@Components/Accordian";
 import FeaturesSection from "@Components/FeaturesSection";
-import HowWeDesign from "@Components/HowWeDesign";
+import HowWeDesign from "./HowWeDesign";
 import { SlideshowLightbox } from "lightbox.js-react";
 import "lightbox.js-react/dist/index.css";
-import hero from "@Assets/Washroom/hero.webp";
+import hero from "@Assets/DownCelling/hero.webp";
 
-export default function Washroom() {
+export default function DownCelling() {
   return (
     <>
       <Navbar />
@@ -23,31 +24,38 @@ export default function Washroom() {
           className="hero-section-container"
           style={{
             backgroundImage: `url(${hero})`,
+            backgroundPosition: "top",
           }}
         >
           <div className="hero-section-header-container">
-            <h2 className="hero-heading">Elevate Your Daily Rituals</h2>
+            <h2 className="hero-heading">
+              Illuminate Your Space with DownCeiling Designs
+            </h2>
             <p className="hero-tagline">
-              Transform Your Washroom into a Sanctuary of Refreshment and
-              Renewal
+              Elevate Your Ambiance with Stylish and Functional DownCeiling
+              Solutions
             </p>
           </div>
           <div className="scroll-down-container">
-            <LuMouse size={23} color="var(--mainbgcolor)" />
+            <LuMouse size={25} color="white" />
+
             <p className="scroll-down-content">Scroll Down</p>
           </div>
         </div>
         <div className="content-container">
-          <FeaturesSection featurescard={FeaturesWashroomData} />
-          <HowWeDesign main_head="Washroom" array={HowwedesingWashroomData} />
+          <FeaturesSection featurescard={FeaturesDownCeiling} />
+          <HowWeDesign
+            main_head="Down Ceiling"
+            array={HowWeDesignDownCeiling}
+          />
           <div className="project-showcase-container">
-            <div className="project-container-header">
-              <h1 className="project-heading">Washroom</h1>
+            <div className="project-header-container">
+              <h2 className="project-heading">Down Ceiling</h2>
             </div>
             <div className="project-content-container">
               <div className="project-lightbox">
                 <SlideshowLightbox className="lightbox">
-                  {WashroomProjects.map((image: any, index) => {
+                  {DownCeilingLightboxData.map((image, index) => {
                     return (
                       <img
                         src={image.image}
@@ -61,15 +69,14 @@ export default function Washroom() {
               </div>
             </div>
           </div>
-
           <div className="accordian-container">
             <div className="accordian-container-header">
               <h2 className="accordian-container-heading">
-                Frequently Asked Questions
+                Frequently Asked Question
               </h2>
             </div>
             <div className="accordian-content-container">
-              {AccordianWashroom.map((accordian, index) => {
+              {DownCeilingAccordianData.map((accordian, index) => {
                 return (
                   <Accordian
                     objectforquestionandanswer={accordian}
