@@ -13,6 +13,7 @@ import Washroom from "@Components/Washroom";
 import DownCeiling from "@Components/DownCeiling";
 import Theater from "@Components/Theater";
 import Dining from "@Components/Dining";
+import ResidentialExterior from "@Components/ResidentialExterior";
 
 function App() {
   useEffect(() => {
@@ -69,7 +70,7 @@ function App() {
     },
     {
       link: "/Residential-Exterior",
-      element: <UnderCons />,
+      element: <ResidentialExterior />,
     },
     {
       link: "/Commercial-Exterior",
