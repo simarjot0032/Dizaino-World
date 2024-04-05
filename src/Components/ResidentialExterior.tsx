@@ -1,6 +1,13 @@
 import Navbar from "@Components/Navbar";
 import hero from "@Assets/ResidentialExterior/hero.jpg";
 import { LuMouse } from "react-icons/lu";
+import Footer from "@Components/Footer";
+import Accordian from "@Components/Accordian";
+import {
+  ResidentialExteriorAccordionData,
+  ResidentialExteriorFeaturesData,
+} from "@Data/ResidentialExterior";
+import FeaturesSection from "@Components/FeaturesSection";
 export default function ResidentialExterior() {
   return (
     <>
@@ -23,7 +30,28 @@ export default function ResidentialExterior() {
             <p className="scroll-down-content">Scroll Down</p>
           </div>
         </div>
+        <div className="content-container">
+          <FeaturesSection featurescard={ResidentialExteriorFeaturesData} />
+          <div className="accordian-container">
+            <div className="accordian-container-header">
+              <h2 className="accordian-container-heading">
+                Frequently Asked Question
+              </h2>
+            </div>
+            <div className="accordian-content-container">
+              {ResidentialExteriorAccordionData.map((accordian, index) => {
+                return (
+                  <Accordian
+                    objectforquestionandanswer={accordian}
+                    key={index}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        </div>
       </div>
+      <Footer />
     </>
   );
 }
