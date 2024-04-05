@@ -41,7 +41,7 @@ export default function Dining() {
           <HowWeDesign main_head="Dining" array={HowWeDesignDining} />
           <div className="project-showcase-container">
             <div className="project-container-header">
-              <h1 className="project-heading">Washroom</h1>
+              <h1 className="project-heading">Dining</h1>
             </div>
             <div className="project-content-container">
               <div className="project-lightbox">
