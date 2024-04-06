@@ -78,7 +78,7 @@ function App() {
       element: <CommercialExterior />,
     },
     {
-      link: "/Classsical-Exterior",
+      link: "/Classical-Exterior",
       element: <UnderCons />,
     },
     // {
