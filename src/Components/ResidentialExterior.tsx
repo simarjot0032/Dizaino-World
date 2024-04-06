@@ -4,10 +4,15 @@ import { LuMouse } from "react-icons/lu";
 import Footer from "@Components/Footer";
 import Accordian from "@Components/Accordian";
 import {
+  HowWeDesignResidentialExterior,
   ResidentialExteriorAccordionData,
   ResidentialExteriorFeaturesData,
+  ResidentialExteriorLightboxData,
 } from "@Data/ResidentialExterior";
 import FeaturesSection from "@Components/FeaturesSection";
+import HowWeDesign from "./HowWeDesign";
+import { SlideshowLightbox } from "lightbox.js-react";
+
 export default function ResidentialExterior() {
   return (
     <>
@@ -32,6 +37,31 @@ export default function ResidentialExterior() {
         </div>
         <div className="content-container">
           <FeaturesSection featurescard={ResidentialExteriorFeaturesData} />
+          <HowWeDesign
+            main_head="Extrior"
+            array={HowWeDesignResidentialExterior}
+          />
+          <div className="project-showcase-container">
+            <div className="project-container-header">
+              <h2 className="project-heading">Exterior</h2>
+            </div>
+            <div className="project-content-container">
+              <div className="project-lightbox">
+                <SlideshowLightbox className="lightbox">
+                  {ResidentialExteriorLightboxData.map((image, index) => {
+                    return (
+                      <img
+                        src={image.image}
+                        alt=""
+                        className="project-img"
+                        key={index}
+                      />
+                    );
+                  })}
+                </SlideshowLightbox>
+              </div>
+            </div>
+          </div>
           <div className="accordian-container">
             <div className="accordian-container-header">
               <h2 className="accordian-container-heading">
