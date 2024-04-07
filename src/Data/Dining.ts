@@ -15,19 +15,16 @@ import d8 from "@Assets/Dining/d8.jpg";
 
 export const DiningFeaturesData = [
   {
-    cnumber: "01.",
     heading: "Customized Dining Experiences",
     content:
       "We offer personalized dining experiences tailored to your taste, occasion, and dietary preferences, ensuring a memorable culinary journey.",
   },
   {
-    cnumber: "02.",
     heading: "Exquisite Menu Selection",
     content:
       "Indulge in a diverse selection of gourmet dishes crafted by our experienced chefs, featuring seasonal ingredients and innovative flavors to tantalize your palate.",
   },
   {
-    cnumber: "03.",
     heading: "Elegant Ambiance",
     content:
       "Immerse yourself in an elegant dining ambiance characterized by sophisticated decor, ambient lighting, and impeccable service, setting the perfect stage for memorable dining moments.",
@@ -36,32 +33,32 @@ export const DiningFeaturesData = [
 export const HowWeDesignDining = [
   {
     image: ConceptualizationandThemeSelection,
-    heading: "1. Conceptualization and Theme Selection",
+    heading: "Conceptualization and Theme Selection",
     desc: "We begin by conceptualizing the dining experience, taking into account factors such as theme, ambiance, and cuisine style. Our team collaborates closely with clients to understand their vision and preferences, ensuring that the design concept aligns with their unique requirements.",
   },
   {
     image: SpacePlanningandLayoutDesign,
-    heading: "2. Space Planning and Layout Design",
+    heading: "Space Planning and Layout Design",
     desc: "Next, we focus on space planning and layout design to optimize the dining area for functionality and aesthetics. We carefully consider factors such as seating arrangements, traffic flow, and sightlines to create a welcoming and efficient dining environment.",
   },
   {
     image: MaterialandFurnitureSelection,
-    heading: "3. Material and Furniture Selection",
+    heading: "Material and Furniture Selection",
     desc: "Our design team selects high-quality materials, furnishings, and decor elements that enhance the dining experience. From premium furniture pieces to elegant tableware and lighting fixtures, we prioritize comfort, style, and durability in our selections.",
   },
   {
     image: LightingandAmbianceEnhancement,
-    heading: "4. Lighting and Ambiance Enhancement",
+    heading: "Lighting and Ambiance Enhancement",
     desc: "We pay special attention to lighting design to create the desired ambiance and mood within the dining space. Whether it's soft ambient lighting for a romantic setting or bright task lighting for a lively atmosphere, we use lighting strategically to enhance the dining experience.",
   },
   {
     image: CustomizationandPersonalization,
-    heading: "5. Customization and Personalization",
+    heading: "Customization and Personalization",
     desc: "We offer customization options to tailor the dining experience to the client's preferences and brand identity. From custom menu designs to branded tableware and decor accents, we add personal touches that reflect the client's style and vision.",
   },
   {
     image: QualityAssuranceandFinalTouches,
-    heading: "6. Quality Assurance and Final Touches",
+    heading: "Quality Assurance and Final Touches",
     desc: "Throughout the design process, we maintain rigorous quality control standards to ensure that every aspect of the dining experience meets our high standards of excellence. We add final touches such as floral arrangements, table settings, and decor accents to elevate the overall dining ambiance.",
   },
 ];

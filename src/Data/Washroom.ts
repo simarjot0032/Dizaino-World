@@ -14,19 +14,16 @@ import b7 from "@Assets/Washroom/b7.jpg";
 import b8 from "@Assets/Washroom/b8.jpg";
 export const FeaturesWashroomData = [
   {
-    cnumber: "01.",
     heading: "Functional Design",
     content:
       "We prioritize functionality in our washroom designs, ensuring that every element serves a purpose and contributes to an efficient and comfortable space.",
   },
   {
-    cnumber: "02.",
     heading: "Customized Solutions",
     content:
       "Our washroom design solutions are tailored to your specific needs and preferences. Whether you prefer a modern minimalist style or a classic traditional look, we can create a design that reflects your taste.",
   },
   {
-    cnumber: "03.",
     heading: "Premium Fixtures and Finishes",
     content:
       "We source high-quality fixtures, fittings, and finishes for our washroom projects, ensuring durability, functionality, and aesthetic appeal. From luxurious faucets to elegant tiles, we prioritize quality in every detail.",
@@ -36,32 +33,32 @@ export const FeaturesWashroomData = [
 export const HowwedesingWashroomData = [
   {
     image: PersonalizedConsultation,
-    heading: "1.Personalized Consultation",
+    heading: "Personalized Consultation",
     desc: "We begin by understanding your unique needs, preferences, and lifestyle requirements. Our personalized consultation ensures that every aspect of your washroom design is tailored to your individual taste and functional needs.",
   },
   {
     image: InnovativeDesignSolutions,
-    heading: "2.Innovative Design Solutions",
+    heading: "Innovative Design Solutions",
     desc: "Leveraging our expertise in spatial planning and design, we create innovative solutions that maximize space utilization and enhance functionality. Whether it's optimizing layout, maximizing storage, or integrating smart features, we prioritize efficiency without compromising on style.",
   },
   {
     image: BespokeMaterialSelection,
-    heading: "3.Bespoke Material Selection",
+    heading: "Bespoke Material Selection",
     desc: "Elevate your washroom with premium materials, finishes, and fixtures carefully curated to reflect your style and elevate the overall aesthetic. From luxurious tiles and sleek fittings to eco-friendly options, we offer a wide range of choices to suit your taste and budget.",
   },
   {
     image: SeamlessExecution,
-    heading: "4.Seamless Execution",
+    heading: "Seamless Execution",
     desc: "Our experienced team manages every aspect of the design process, from conceptualization to installation, with meticulous attention to detail. We collaborate closely with trusted contractors and suppliers to ensure seamless execution and timely completion of your project.",
   },
   {
     image: TailoredSolutions,
-    heading: "5.Tailored Solutions",
+    heading: "Tailored Solutions",
     desc: "Whether you're renovating an existing washroom or designing a new space from scratch, we offer tailored solutions that meet your specific requirements and exceed your expectations. Our flexible approach allows us to accommodate your needs while delivering exceptional results.",
   },
   {
     image: EcoFriendlyDesign,
-    heading: "6.Eco-Friendly Design",
+    heading: "Eco-Friendly Design",
     desc: "Embrace sustainability and eco-consciousness in your washroom design with our selection of environmentally friendly materials and energy-efficient fixtures. From water-saving toilets and faucets to recycled and renewable materials, we prioritize eco-friendly solutions .",
   },
 ];

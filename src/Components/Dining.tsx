@@ -38,10 +38,13 @@ export default function Dining() {
         </div>
         <div className="content-container">
           <FeaturesSection featurescard={DiningFeaturesData} />
-          <HowWeDesign main_head="Dining" array={HowWeDesignDining} />
+          <HowWeDesign
+            main_head="How We Design Dining"
+            array={HowWeDesignDining}
+          />
           <div className="project-showcase-container">
             <div className="project-container-header">
-              <h1 className="project-heading">Dining</h1>
+              <h1 className="project-heading">Dining Projects</h1>
             </div>
             <div className="project-content-container">
               <div className="project-lightbox">

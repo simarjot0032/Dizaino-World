@@ -41,17 +41,14 @@ export default function Bedroom() {
           style={{ scrollMargin: "50px" }}
         >
           <Featuresbedroom featurescard={FeaturesBedroomData} />
-          <HowWeDesign main_head="Bedroom" array={Howwedesing} />
-          <div
-            className="bedroom-project-showcase-container"
-            data-aos="flip-left"
-          >
+          <HowWeDesign main_head="How We Design Bedrooms" array={Howwedesing} />
+          <div className="bedroom-project-showcase-container">
             <div
               className="bedroom-project-content-container"
               data-aos="flip-left"
             >
               <div className="bedroom-project-content-header-container">
-                <h2 className="project-content-heading">Bedroom</h2>
+                <h2 className="project-content-heading">Bedroom Projects</h2>
               </div>
               <div className="bedroom-project-lightbox">
                 <SlideshowLightbox className="bedroom-lightbox">

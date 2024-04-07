@@ -38,12 +38,12 @@ export default function ResidentialExterior() {
         <div className="content-container">
           <FeaturesSection featurescard={ResidentialExteriorFeaturesData} />
           <HowWeDesign
-            main_head="Extrior"
+            main_head="How We Design Extrior"
             array={HowWeDesignResidentialExterior}
           />
           <div className="project-showcase-container">
             <div className="project-container-header">
-              <h2 className="project-heading">Exterior</h2>
+              <h2 className="project-heading">Residential Exterior</h2>
             </div>
             <div className="project-content-container">
               <div className="project-lightbox">

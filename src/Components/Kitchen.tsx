@@ -50,7 +50,7 @@ export default function Kitchen() {
 
           <div className="kitchen-project-showcase-container">
             <div className="kitchen-project-header-container">
-              <h1 className="kitchen-project-heading">Kitchen</h1>
+              <h1 className="kitchen-project-heading">Kitchen Projects</h1>
             </div>
             <div className="kitchen-project-content-container">
               <div className="kitchen-project-lightbox">

@@ -73,14 +73,14 @@
   flex-direction: column;
   position: relative;
 }
-.kitchen-project-heading::after {
+/* .kitchen-project-heading::after {
   content: "Project";
   color: var(--overlayheading);
   font-size: var(--mobileoverlayheading);
   position: absolute;
   inset: 0;
   top: 32px;
-}
+} */
 .kitchen-project-lightbox {
   margin-top: 50px;
 }
@@ -98,8 +98,8 @@
 .kitchen-lightbox {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 1.5rem;
+  justify-content: center;
+  gap: 3.5rem;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {

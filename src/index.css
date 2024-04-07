@@ -93,7 +93,7 @@ button:focus-visible {
   --tabwidth: 850px;
   --smalllaptop: 1000px;
   --laptop: 1250px;
-  --large: 1500px;
+  --large: 1350px;
 }
 ::selection {
   background-color: var(--primarycolor);
@@ -131,14 +131,14 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   position: relative;
 }
-.project-heading::after {
+/* .project-heading::after {
   content: "Project";
   color: var(--overlayheading);
   font-size: var(--mobileoverlayheading);
   position: absolute;
   inset: 0;
   top: 32px;
-}
+} */
 .project-lightbox {
   margin-top: 50px;
 }
@@ -156,8 +156,8 @@ body::-webkit-scrollbar-thumb {
 .lightbox {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 1.5rem;
+  justify-content: center;
+  gap: 3.8rem;
 }
 .accordian-container {
   display: flex;
@@ -177,13 +177,13 @@ body::-webkit-scrollbar-thumb {
   color: var(--headingcolor);
   font-weight: 500;
 }
-.accordian-container-heading::after {
+/* .accordian-container-heading::after {
   content: "FAQ";
   color: var(--overlayheading);
   position: absolute;
   font-size: var(--mobileoverlayheading);
   top: 50px;
-}
+} */
 .accordian-content-container {
   width: 100%;
   margin-top: 1rem;
@@ -224,6 +224,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: column;
   align-items: center;
+  scroll-margin: 55px;
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .project-content-container {

@@ -15,19 +15,16 @@ import cle8 from "@Assets/ClassicalExterior/cle8.jpg";
 
 export const ClassicalExteriorFeatures = [
   {
-    cnumber: "01.",
     heading: "Timeless Elegance",
     content:
       "Experience the timeless elegance of classical architecture, characterized by symmetry, proportion, and enduring beauty.",
   },
   {
-    cnumber: "02.",
     heading: "Architectural Grandeur",
     content:
       "Immerse yourself in the architectural grandeur of classical exteriors, adorned with columns, pediments, and ornate detailing.",
   },
   {
-    cnumber: "03.",
     heading: "Historical Authenticity",
     content:
       "Enjoy the authenticity of classical design, meticulously crafted to honor historical precedents and classical principles.",
@@ -36,32 +33,32 @@ export const ClassicalExteriorFeatures = [
 export const HowWeDesignClassicalExterior = [
   {
     image: classical_exterior_vision,
-    heading: "1. Visionary Conceptualization",
+    heading: "Visionary Conceptualization",
     desc: "Embark on a journey of visionary conceptualization, where classical design principles meet modern innovation to create timeless architectural masterpieces.",
   },
   {
     image: classical_exterior_planning,
-    heading: "2. Meticulous Planning and Coordination",
+    heading: "Meticulous Planning and Coordination",
     desc: "Engage in meticulous planning and coordination, ensuring that every aspect of the classical exterior design aligns with the client's vision, budget, and timeline.",
   },
   {
     image: classical_exterior_materials,
-    heading: "3. Selection of Premium Materials",
+    heading: "Selection of Premium Materials",
     desc: "Select premium materials and finishes that exude elegance and sophistication, from exquisite stonework to intricately crafted moldings, adding depth and character to the classical facade.",
   },
   {
     image: classical_exterior_craftsmanship,
-    heading: "4. Artisanal Craftsmanship",
+    heading: "Artisanal Craftsmanship",
     desc: "Employ artisanal craftsmanship and attention to detail in the execution of classical architectural elements, ensuring precision and authenticity in every aspect of the exterior design.",
   },
   {
     image: classical_exterior_refinement,
-    heading: "5. Iterative Refinement Process",
+    heading: "Iterative Refinement Process",
     desc: "Iteratively refine the classical exterior design, incorporating client feedback and making adjustments to achieve perfection in symmetry, proportion, and aesthetic appeal.",
   },
   {
     image: classical_exterior_realization,
-    heading: "6. Realization of Timeless Beauty",
+    heading: "Realization of Timeless Beauty",
     desc: "Witness the realization of timeless beauty as the classical exterior design comes to life, captivating hearts and minds with its grace, charm, and enduring allure.",
   },
 ];

@@ -14,19 +14,16 @@ import t7 from "@Assets/Theater/t7.jpg";
 import t8 from "@Assets/Theater/t8.jpg";
 export const TheaterFeaturesData = [
   {
-    cnumber: "01.",
     heading: "Immersive Cinematic Experience",
     content:
       "Transform your space into an immersive cinematic environment with state-of-the-art audio-visual technology and expert design solutions.",
   },
   {
-    cnumber: "02.",
     heading: "Customizable Design Options",
     content:
       "Tailor your theater experience with customizable design packages that cater to your specific preferences, whether it's for a home theater or a commercial cinema.",
   },
   {
-    cnumber: "03.",
     heading: "Expert Consultation and Support",
     content:
       "Receive expert guidance and support throughout the design process, from initial concept development to final installation, ensuring your theater meets the highest standards of quality and performance.",
@@ -35,32 +32,32 @@ export const TheaterFeaturesData = [
 export const HowWeDesignTheater = [
   {
     image: InitialConsultation,
-    heading: "1. Initial Consultation",
+    heading: "Initial Consultation",
     desc: "Initiate the process by conducting an in-depth consultation to understand your vision, requirements, and budget for the theater space.",
   },
   {
     image: ConceptDevelopment,
-    heading: "2. Concept Development",
+    heading: "Concept Development",
     desc: "Collaborate with our design team to develop a concept that integrates your preferences with cutting-edge technology and innovative design elements.",
   },
   {
     image: SpatialPlanning,
-    heading: "3. Spatial Planning",
+    heading: "Spatial Planning",
     desc: "Optimize the layout of the theater room, considering factors such as seating arrangement, acoustics, sightlines, and equipment placement for an immersive viewing experience.",
   },
   {
     image: AudioVisualDesign,
-    heading: "4. Audio-Visual Design",
+    heading: "Audio-Visual Design",
     desc: "Design a bespoke audio-visual system tailored to your theater's specifications, including high-definition projectors, surround sound speakers, and acoustic treatments.",
   },
   {
     image: InteriorDesign,
-    heading: "5. Interior Design",
+    heading: "Interior Design",
     desc: "Curate interior elements such as lighting, seating, decor, and finishes to enhance the ambiance and aesthetics of the theater, creating a luxurious and comfortable environment.",
   },
   {
     image: InstallationandTesting,
-    heading: "6. Installation and Testing",
+    heading: "Installation and Testing",
     desc: "Oversee the installation phase, ensuring precise placement of equipment and conducting rigorous testing to verify audio-visual performance, acoustics, and functionality.",
   },
 ];

@@ -1,0 +1,49 @@
+.what-we-can-design-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.what-we-can-design-heading {
+  font-size: var(--mobileheading);
+  color: var(--headingcolor);
+  font-family: var(--font);
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+}
+/* .what-we-can-design-heading::after {
+  content: "More";
+  font-size: var(--mobileoverlayheading);
+  color: var(--overlayheading);
+  position: absolute;
+  inset: 0;
+  top: 35px;
+} */
+.what-we-can-design-tabs-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.what-we-can-design-tab {
+  font-size: 1.3rem;
+  font-family: var(--font);
+  padding: 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.what-we-can-design-tab:hover {
+  background-color: var(--primarycolor);
+  color: whitesmoke;
+}
+.what-we-design-active-tab {
+  background-color: var(--primarycolor);
+  color: white;
+  font-size: 1.3rem;
+  font-family: var(--font);
+  padding: 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}

@@ -43,10 +43,13 @@ export default function PoojaRoom() {
           }}
         >
           <FeaturesSection featurescard={FeaturesPoojaRoomData} />
-          <HowWeDesing main_head="Pooja Room" array={HowWeDesignPoojaRoom} />
+          <HowWeDesing
+            main_head="How We Design Pooja Room"
+            array={HowWeDesignPoojaRoom}
+          />
           <div className="project-showcase-container">
             <div className="project-header-container">
-              <h1 className="project-heading">Pooja Room</h1>
+              <h1 className="project-heading">Pooja Room Proejcts</h1>
             </div>
             <div className="project-content-container">
               <div className="project-lightbox">

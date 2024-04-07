@@ -143,7 +143,7 @@ export default function Home() {
             <div className="experiance-container">
               <div className="left-experiance">
                 <h2 className="experiance-number">500+</h2>
-                <p className="experiance-text">Reglar-Clients</p>
+                <p className="experiance-text">Regular-Clients</p>
               </div>
               <div className="right-experiance">
                 <IoMdHappy size={60} color="var(--primarycolor)" />
@@ -153,7 +153,7 @@ export default function Home() {
           {/* why to choose us section */}
           <div className="choose-us-container">
             <div className="choose-us-header">
-              <h2 className="choose-us-heading">WHY TO US?</h2>
+              <h2 className="choose-us-heading">WHY TO CHOOSE US?</h2>
             </div>
             <div className="choose-us-main-content">
               <div className="choose-main-right" data-aos="fade-left">

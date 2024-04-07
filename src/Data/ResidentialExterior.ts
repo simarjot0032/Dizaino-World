@@ -14,19 +14,16 @@ import re7 from "@Assets/ResidentialExterior/re6.jpg";
 import re8 from "@Assets/ResidentialExterior/re8.jpg";
 export const ResidentialExteriorFeaturesData = [
   {
-    cnumber: "01.",
     heading: "Landscape Design Variety",
     content:
       "Explore a diverse range of landscape designs, from lush gardens to minimalist courtyards, tailored to suit your preferences and lifestyle.",
   },
   {
-    cnumber: "02.",
     heading: "Architectural Features Showcase",
     content:
       "Browse through a curated selection of architectural features, including facades, entryways, and decorative elements, to add character and charm to your home's exterior.",
   },
   {
-    cnumber: "03.",
     heading: "Outdoor Living Space Inspiration",
     content:
       "Discover ideas for creating inviting outdoor living spaces that extend your home's footprint, featuring cozy seating areas, fire pits, and dining zones for al fresco entertaining.",
@@ -35,32 +32,32 @@ export const ResidentialExteriorFeaturesData = [
 export const HowWeDesignResidentialExterior = [
   {
     image: UnderstandingClientVision,
-    heading: "1. Understanding Client Vision",
+    heading: "Understanding Client Vision",
     desc: "Initiate the design process by thoroughly understanding the client's vision, preferences, and lifestyle requirements for their residential exterior, including desired architectural style and outdoor amenities.",
   },
   {
     image: SiteAnalysisandAssessment,
-    heading: "2. Site Analysis and Assessment",
+    heading: "Site Analysis and Assessment",
     desc: "Conduct a comprehensive analysis of the site, considering factors such as topography, orientation, climate, existing vegetation, and neighboring structures to inform the design approach.",
   },
   {
     image: ConceptualizingDesignConcepts,
-    heading: "3. Conceptualizing Design Concepts",
+    heading: "Conceptualizing Design Concepts",
     desc: "Develop design concepts that integrate the client's vision with site-specific considerations, exploring options for layout, circulation, outdoor spaces, and focal points.",
   },
   {
     image: DrawingandRendering,
-    heading: "4. Drawing and Rendering",
+    heading: "Drawing and Rendering",
     desc: "Translate design concepts into detailed drawings and 3D renderings, allowing the client to visualize the proposed residential exterior design and make informed decisions.",
   },
   {
     image: MaterialandPlantSelection,
-    heading: "5. Material and Plant Selection",
+    heading: "Material and Plant Selection",
     desc: "Carefully select materials, finishes, and landscaping elements that enhance the aesthetic appeal and functionality of the residential exterior, considering durability, maintenance requirements, and environmental impact.",
   },
   {
     image: CollaborationandRefinement,
-    heading: "6. Collaboration and Refinement",
+    heading: "Collaboration and Refinement",
     desc: "Collaborate closely with the client to refine the design, incorporating feedback and making adjustments as necessary to ensure the final residential exterior design exceeds expectations.",
   },
 ];

@@ -15,19 +15,16 @@ import l8 from "@Assets/livingarea/l8.jpg";
 
 export const FeaturesLivingAreaData = [
   {
-    cnumber: "01.",
     heading: "Full-Spectrum Design Solutions",
     content:
       "Embark on a journey of transformation with our full-service design solutions tailored to elevate your living area. From initial consultations to final installations, we offer a comprehensive approach to redefine your space.",
   },
   {
-    cnumber: "02.",
     heading: "Customizable Design Packages",
     content:
       "Discover flexibility and versatility in our design packages, allowing you to personalize your experience based on your unique preferences and budgetary considerations. Choose from a range of options to curate the perfect living area solution.",
   },
   {
-    cnumber: "03.",
     heading: "Expert Guidance and Collaboration",
     content:
       "Experience the guidance of seasoned experts as we collaborate closely with you throughout the design process. Your vision is our priority, and we ensure that every decision reflects your style, personality, and lifestyle, resulting in a living area that feels uniquely yours.",
@@ -36,32 +33,32 @@ export const FeaturesLivingAreaData = [
 export const HowWeDesignLivingAreas = [
   {
     image: clientConsultation,
-    heading: "1. Initial Consultation",
+    heading: "Initial Consultation",
     desc: "We begin by understanding your vision, requirements, and lifestyle. This initial discussion helps us gain insights into your preferences, budget, and functional needs.",
   },
   {
     image: Conceptualization,
-    heading: "2. Conceptualization",
+    heading: "Conceptualization",
     desc: "Based on the information gathered, we develop initial concepts and design ideas for your living area. This stage involves brainstorming, sketching, and exploring various possibilities to ensure that the design aligns with your vision.",
   },
   {
     image: MoodBoards,
-    heading: "3. Mood Boards",
+    heading: "Mood Boards",
     desc: "We create mood boards to visually communicate the overall look, feel, and style of the proposed design. Mood boards incorporate elements such as color schemes, textures, furniture styles, and decorative accents to help you visualize the aesthetic direction of the project.",
   },
   {
     image: Renderings,
-    heading: "4. 3D Renderings",
+    heading: "3D Renderings",
     desc: "Utilizing advanced software, we generate realistic 3D renderings of the proposed design. These renderings provide a detailed preview of how your living area will look once completed, allowing you to make informed decisions and provide feedback before construction begins.",
   },
   {
     image: Materialselection,
-    heading: "5. Material Selection",
+    heading: "Material Selection",
     desc: "We assist you in selecting high-quality materials, finishes, furnishings, and accessories that complement the design concept and meet your requirements for durability, aesthetics, and sustainability. Our extensive network of suppliers ensures access to a wide range of options to suit your preferences.",
   },
   {
     image: ProjectManagement,
-    heading: "6. Project Management",
+    heading: "Project Management",
     desc: "Throughout the design and implementation phases, our team oversees the project to ensure smooth execution and timely delivery. We coordinate with contractors, vendors, and craftsmen to bring the design to life while adhering to budgetary constraints and maintaining quality standards. ",
   },
 ];

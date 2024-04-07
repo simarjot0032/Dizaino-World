@@ -34,10 +34,13 @@ export default function Theater() {
         </div>
         <div className="content-container">
           <FeaturesSection featurescard={TheaterFeaturesData} />
-          <HowWeDesign main_head="Theater" array={HowWeDesignTheater} />
+          <HowWeDesign
+            main_head="How We Design Theater"
+            array={HowWeDesignTheater}
+          />
           <div className="project-showcase-container">
             <div className="project-container-header">
-              <h2 className="project-heading">Theater</h2>
+              <h2 className="project-heading">Theater Projects</h2>
             </div>
             <div className="project-content-container">
               <div className="project-lightbox">
