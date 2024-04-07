@@ -14,6 +14,8 @@ import DownCeiling from "@Components/DownCeiling";
 import Theater from "@Components/Theater";
 import Dining from "@Components/Dining";
 import ResidentialExterior from "@Components/ResidentialExterior";
+import CommercialExterior from "@Components/CommercialExterior";
+import ClassicalExterior from "@Components/ClassicalExterior";
 
 function App() {
   useEffect(() => {
@@ -74,24 +76,24 @@ function App() {
     },
     {
       link: "/Commercial-Exterior",
-      element: <UnderCons />,
+      element: <CommercialExterior />,
     },
     {
-      link: "/Classsical-Exterior",
-      element: <UnderCons />,
+      link: "/Classical-Exterior",
+      element: <ClassicalExterior />,
     },
-    {
-      link: "/Offices",
-      element: <UnderCons />,
-    },
-    {
-      link: "/Restruants",
-      element: <UnderCons />,
-    },
-    {
-      link: "/Salons",
-      element: <UnderCons />,
-    },
+    // {
+    //   link: "/Offices",
+    //   element: <UnderCons />,
+    // },
+    // {
+    //   link: "/Restruants",
+    //   element: <UnderCons />,
+    // },
+    // {
+    //   link: "/Salons",
+    //   element: <UnderCons />,
+    // },
     {
       link: "/2d-Planning",
       element: <UnderCons />,
