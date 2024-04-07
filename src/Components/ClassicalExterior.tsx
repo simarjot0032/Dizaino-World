@@ -39,13 +39,13 @@ export default function ClassicalExterior() {
           {<FeaturesSection featurescard={ClassicalExteriorFeatures} />}
           {
             <HowWeDesign
-              main_head="Exterior"
+              main_head="How We Design Exterior"
               array={HowWeDesignClassicalExterior}
             />
           }
           <div className="project-showcase-container">
             <div className="project-header-container">
-              <h2 className="project-heading">Exterior</h2>
+              <h2 className="project-heading">Classical Exterior</h2>
             </div>
             <div className="project-content-container">
               <div className="project-lightbox">

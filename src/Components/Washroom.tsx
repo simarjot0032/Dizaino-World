@@ -39,10 +39,13 @@ export default function Washroom() {
         </div>
         <div className="content-container">
           <FeaturesSection featurescard={FeaturesWashroomData} />
-          <HowWeDesign main_head="Washroom" array={HowwedesingWashroomData} />
+          <HowWeDesign
+            main_head="How We Design Washroom"
+            array={HowwedesingWashroomData}
+          />
           <div className="project-showcase-container">
             <div className="project-container-header">
-              <h1 className="project-heading">Washroom</h1>
+              <h1 className="project-heading">Washroom Projects</h1>
             </div>
             <div className="project-content-container">
               <div className="project-lightbox">

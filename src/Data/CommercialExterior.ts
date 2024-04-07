@@ -14,19 +14,16 @@ import ce7 from "@Assets/CommercialExterior/ce7.jpg";
 import ce8 from "@Assets/CommercialExterior/ce8.jpg";
 export const CommercialExteriorFeaturesData = [
   {
-    cnumber: "01.",
     heading: "Dynamic Architectural Solutions",
     content:
       "Elevate your business image with innovative architectural designs that captivate attention and enhance brand identity. Our team specializes in creating dynamic exterior structures tailored to your business needs.",
   },
   {
-    cnumber: "02.",
     heading: "Sustainable Design Practices",
     content:
       "Embrace eco-friendly design principles with our sustainable solutions for commercial exteriors. From energy-efficient materials to green spaces and renewable energy integration, we prioritize sustainability to minimize environmental impact.",
   },
   {
-    cnumber: "03.",
     heading: "Brand Integration and Signage Expertise",
     content:
       "Seamlessly integrate your brand identity into the architectural design with our expertise in signage solutions. Whether it's eye-catching logos, illuminated signs, or digital displays, we ensure your business message shines through in every detail of the exterior design.",
@@ -35,32 +32,32 @@ export const CommercialExteriorFeaturesData = [
 export const HowWeDesignCommercialExterior = [
   {
     image: UnderstandingClientNeeds,
-    heading: "1. Understanding Client Needs",
+    heading: "Understanding Client Needs",
     desc: "Initiate the design process by thoroughly understanding the client's requirements, brand identity, target audience, and functional objectives for the commercial exterior space.",
   },
   {
     image: SiteAnalysisandAssessment,
-    heading: "2. Site Analysis and Assessment",
+    heading: "Site Analysis and Assessment",
     desc: "Conduct a comprehensive analysis of the site, considering factors such as location, climate, topography, zoning regulations, and existing infrastructure to inform the design approach.",
   },
   {
     image: ConceptDevelopmentandVisualization,
-    heading: "3. Concept Development and Visualization",
+    heading: "Concept Development and Visualization",
     desc: "Collaborate with the client to develop conceptual designs that reflect their brand identity, values, and vision. Utilize mood boards, sketches, and 3D visualizations to bring concepts to life.",
   },
   {
     image: MaterialSelectionandPalette,
-    heading: "4. Material Selection and Palette",
+    heading: "Material Selection and Palette",
     desc: "Carefully curate materials, textures, and color palettes that align with the brand aesthetic, evoke desired emotions, and enhance the visual appeal and durability of the commercial exterior.",
   },
   {
     image: FunctionalandAestheticIntegration,
-    heading: "5. Functional and Aesthetic Integration",
+    heading: "Functional and Aesthetic Integration",
     desc: "Integrate functional elements such as signage, lighting, landscaping, and wayfinding seamlessly into the design, ensuring they enhance both the user experience and the overall aesthetic.",
   },
   {
     image: CollaborationandExecution,
-    heading: "6. Collaboration and Execution",
+    heading: "Collaboration and Execution",
     desc: "Collaborate closely with architects, engineers, contractors, and other stakeholders to execute the design vision efficiently and effectively. Monitor construction progress to ensure adherence to design intent and quality standards.",
   },
 ];

@@ -13,10 +13,10 @@
   position: relative;
   letter-spacing: 2px;
   font-weight: 500;
-  font-size: var(--mobileoverlayheading);
-  color: var(--overlayheading);
+  font-size: var(--mobileheading);
+  color: var(--headingcolor);
 }
-.how-we-design-heading::after {
+/* .how-we-design-heading::after {
   content: "How We Design";
   position: absolute;
   inset: 0;
@@ -24,7 +24,7 @@
   z-index: -1;
   font-size: var(--mobileheading);
   color: var(--headingcolor);
-}
+} */
 .how-we-design-content-container {
   padding: 1rem;
   display: flex;

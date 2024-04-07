@@ -13,7 +13,6 @@ export default function Featuresbedroom({ featurescard }: Props) {
           {featurescard.map((card: any, index: number) => {
             return (
               <div className="features-card" key={index}>
-                <div className="features-card-number">{card.cnumber}</div>
                 <h2 className="features-card-heading">{card.heading}</h2>
                 <p className="features-card-content">{card.content}</p>
               </div>

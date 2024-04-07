@@ -14,14 +14,14 @@
   color: var(--headingcolor);
   font-weight: 500;
 }
-.features-header-heading::after {
+/* .features-header-heading::after {
   content: "Features";
   position: absolute;
   color: var(--overlayheading);
   font-size: var(--mobileoverlayheading);
   inset: 0;
   top: 38px;
-}
+} */
 .features-content-container {
   display: flex;
   flex-wrap: wrap;

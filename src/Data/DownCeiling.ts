@@ -14,19 +14,16 @@ import d7 from "@Assets/DownCelling/d7.jpg";
 import d8 from "@Assets/DownCelling/d8.jpg";
 export const FeaturesDownCeiling = [
   {
-    cnumber: "01.",
     heading: "Enhanced Aesthetics",
     content:
       "Downceiling installations enhance the visual appeal of any space by providing a sleek and modern look. They can conceal imperfections in the ceiling surface and create a clean, finished appearance.",
   },
   {
-    cnumber: "02.",
     heading: "Improved Lighting ",
     content:
       "Downceiling designs offer versatility in lighting options, allowing for the integration of various fixtures such as recessed lights, LED strips, and pendant lights. This enables customized lighting solutions to suit different moods.",
   },
   {
-    cnumber: "03.",
     heading: "Sound Insulation",
     content:
       "Downceiling installations can improve acoustic properties by reducing noise transmission between floors and rooms. This is particularly beneficial in commercial spaces, offices, or residential areas where privacy and noise control are important considerations.",
@@ -35,32 +32,32 @@ export const FeaturesDownCeiling = [
 export const HowWeDesignDownCeiling = [
   {
     image: ClientConsultation,
-    heading: "1. Client Consultation",
+    heading: "Client Consultation",
     desc: "Initiate the design process with a comprehensive consultation to understand clients' unique requirements, preferences, and vision for the down ceiling.",
   },
   {
     image: SpacePlanning,
-    heading: "2. Space Planning",
+    heading: "Space Planning",
     desc: "Analyze the dimensions and layout of the space to determine the optimal configuration for the down ceiling grid, considering factors such as lighting fixtures, HVAC systems, and room usage.",
   },
   {
     image: Conceptualization,
-    heading: "3. Conceptualization",
+    heading: "Conceptualization",
     desc: "Develop design concepts and mood boards that capture the desired aesthetic and functionality of the down ceiling, exploring various design themes, color schemes, and material options.",
   },
   {
     image: MaterialandFixtureSelection,
-    heading: "4. Material and Fixture Selection",
+    heading: "Material and Fixture Selection",
     desc: "Meticulously select high-quality materials and fixtures for the down ceiling, focusing on durability, acoustics, and aesthetic appeal to create a cohesive design.",
   },
   {
     image: InstallationPlanning,
-    heading: "5. Installation Planning",
+    heading: "Installation Planning",
     desc: "Meticulously plan the installation process, calculating the quantity of materials needed and coordinating with contractors and vendors to ensure seamless execution and timely completion.",
   },
   {
     image: ExecutionandQualityControl,
-    heading: "6. Execution and Quality Control",
+    heading: "Execution and Quality Control",
     desc: "Oversee installation, ensure precise placement of main runners, cross tees, and tiles, conduct rigorous quality checks..",
   },
 ];

@@ -16,6 +16,8 @@ import Dining from "@Components/Dining";
 import ResidentialExterior from "@Components/ResidentialExterior";
 import CommercialExterior from "@Components/CommercialExterior";
 import ClassicalExterior from "@Components/ClassicalExterior";
+import Contact from "@Components/Contact";
+import CommercialInterior from "@Components/CommercialInterior";
 
 function App() {
   useEffect(() => {
@@ -112,11 +114,11 @@ function App() {
     },
     {
       link: "/Contact",
-      element: <UnderCons />,
+      element: <Contact />,
     },
     {
       link: "/CommercialInterior",
-      element: <UnderCons />,
+      element: <CommercialInterior />,
     },
   ];
   return (

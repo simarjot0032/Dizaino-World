@@ -39,12 +39,12 @@ export default function LivingAreas() {
         <div className="livingarea-content-container">
           <FeaturesSection featurescard={FeaturesLivingAreaData} />
           <HowWeDesign
-            main_head="Living Areas"
+            main_head="How We Design Living Areas"
             array={HowWeDesignLivingAreas}
           />
           <div className="project-showcase-container">
             <div className="project-header-container">
-              <h1 className="project-heading">Living Areas</h1>
+              <h1 className="project-heading">Living Areas Projects</h1>
             </div>
             <div className="project-content-container">
               <div className="project-lightbox">

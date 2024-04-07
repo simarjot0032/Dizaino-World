@@ -45,12 +45,12 @@ export default function DownCelling() {
         <div className="content-container">
           <FeaturesSection featurescard={FeaturesDownCeiling} />
           <HowWeDesign
-            main_head="Down Ceiling"
+            main_head="How We Design Down Ceiling"
             array={HowWeDesignDownCeiling}
           />
           <div className="project-showcase-container">
             <div className="project-header-container">
-              <h2 className="project-heading">Down Ceiling</h2>
+              <h2 className="project-heading">Down Ceiling Projects</h2>
             </div>
             <div className="project-content-container">
               <div className="project-lightbox">

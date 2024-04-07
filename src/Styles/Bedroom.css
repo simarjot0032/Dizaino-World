@@ -71,24 +71,22 @@
   padding: 1rem;
 }
 .project-content-heading {
-  font-size: 4.5rem;
+  font-size: var(--mobileheading);
   font-family: var(--font);
   color: var(--headingcolor);
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: end;
+  text-align: center;
   font-size: var(--mobileheading);
   font-weight: 500;
 }
-.project-content-heading::after {
+/* .project-content-heading::after {
   content: "Projects";
   color: var(--overlayheading);
   position: absolute;
   bottom: -10px;
   font-size: var(--mobileoverlayheading);
   z-index: 9999;
-}
+} */
 .bedroom-project-lightbox {
   margin-top: 50px;
 }
@@ -106,8 +104,8 @@
 .bedroom-lightbox {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 1.5rem;
+  justify-content: center;
+  gap: 3.5rem;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
