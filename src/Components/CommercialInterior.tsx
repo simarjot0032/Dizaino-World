@@ -1,14 +1,16 @@
 import Navbar from "@Components/Navbar";
 import { LuMouse } from "react-icons/lu";
 import Footer from "@Components/Footer";
-import { CommercialExteriorAccordionData } from "@Data/CommercialExterior";
+import SimpleImageSlider from "react-simple-image-slider";
 import Accordian from "@Components/Accordian";
 import "@Styles/CommercialInterior.css";
 import { useState } from "react";
 import {
   CommercialInteriorAccordionData,
+  Whatwecandesigntabcontent,
   Whatwecandesigntabs,
 } from "@Data/CommercialInterior";
+import ImageSlider from "react-simple-image-slider";
 export default function CommercialInterior() {
   const Handlescroll = () => {
     let content = document.querySelector("#content-container");
@@ -79,7 +81,57 @@ export default function CommercialInterior() {
                 );
               })}
             </div>
-            <div className="what-we-design-content-container"></div>
+            <div className="what-we-design-content-container">
+              {/* <div className="what-we-design-left-content-container">
+                <p className="what-we-design-left-content">
+                  Crafting Inspiring Interiors. Our talented team of designers
+                  and architects transform your visions into captivating,
+                  functional spaces. Whether its your home or workplace, were
+                  dedicated to making your dreams a reality through innovative
+                  design and sustainable practices. Experience the Meikle Design
+                  difference today.
+                </p>
+              </div>
+              <div className="what-we-design-right-container">
+                <img
+                  src="https://www.litchfieldbuilders.com/hubfs/Design%20Tips%20To%20Get%20The%20Most%20Out%20Of%20Your%20Commercial%20Interior%20Construction.jpg"
+                  alt=""
+                  className="what-we-design-img
+                  "
+                />
+              </div> */}
+              {Whatwecandesigntabcontent.map((tabcontent, index) => {
+                return (
+                  <>
+                    <div
+                      className={
+                        tabdataandindex === index
+                          ? "what-wedesign-tab-content"
+                          : "none"
+                      }
+                    >
+                      <div className="what-we-design-left-content-container">
+                        <p className="what-we-design-left-content">
+                          {tabcontent.conten}
+                        </p>
+                      </div>
+                      <div className="what-we-design-right-container">
+                        <div className="what-we-design-left-content-container">
+                          {/* <SimpleImageSlider
+                            images={tabcontent.imagearray}
+                            showBullets={false}
+                            showNavs={true}
+                            width={"100px"}
+                            height={"300px"}
+                            style={{ maxWidth: "500px" }}
+                          /> */}
+                        </div>
+                      </div>
+                    </div>
+                  </>
+                );
+              })}
+            </div>
           </div>
           <div className="accordian-container">
             <div className="accordian-container-header">

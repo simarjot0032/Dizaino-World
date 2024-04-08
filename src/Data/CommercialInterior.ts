@@ -15,6 +15,25 @@ export const Whatwecandesigntabs = [
     tab: "And Many More",
   },
 ];
+export const Officesarray = [
+  {
+    url: "https://i.pinimg.com/564x/a5/e1/c3/a5e1c31c327694f86c8a1f33fc3ff732.jpg",
+  },
+  {
+    url: "https://i.pinimg.com/564x/d6/7c/be/d67cbea3711a42d7efc9cb5c234f8dce.jpg",
+  },
+];
+export const Whatwecandesigntabcontent = [
+  {
+    imagearray: Officesarray,
+    conten:
+      " we pride ourselves on our versatility in designing dynamic workspaces that inspire productivity, creativity, and collaboration. Our expertise extends beyond residential and commercial projects to crafting innovative office environments tailored to the unique needs and culture of your organization.",
+  },
+  {
+    imagearray: Officesarray,
+    conten: " asgagfjbuyggg hbdh",
+  },
+];
 export const CommercialInteriorAccordionData = [
   {
     question: "What services do you offer for commercial interior design?",
