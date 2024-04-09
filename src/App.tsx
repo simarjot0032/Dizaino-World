@@ -19,6 +19,7 @@ import ClassicalExterior from "@Components/ClassicalExterior";
 import Contact from "@Components/Contact";
 import CommercialInterior from "@Components/CommercialInterior";
 import { BiUnderline } from "react-icons/bi";
+import TwoDPlanning from "@Components/TwoDPlanning";
 
 function App() {
   useEffect(() => {
@@ -99,7 +100,7 @@ function App() {
     // },
     {
       link: "/2d-Planning",
-      element: <UnderCons />,
+      element: <TwoDPlanning />,
     },
     {
       link: "/3D-Planning",
