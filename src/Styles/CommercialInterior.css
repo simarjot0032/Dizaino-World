@@ -48,38 +48,80 @@
   cursor: pointer;
   transition: all 0.2s linear;
 }
-.what-wedesign-tab-content {
+
+.what-we-design-tab-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   gap: 3rem;
+  position: relative;
+  margin-top: 3rem;
+  scroll-margin: 350px;
+}
+.tab-content-heading {
+  position: absolute;
+  top: -50px;
+  font-size: 1.8rem;
+  font-family: var(--font);
+  color: var(--primarycolor);
 }
 .what-we-design-left-content-container {
   max-width: 500px;
+  padding: 0 10px;
 }
-.what-we-design-left-content {
+.what-we-design-left-container-content {
   font-family: var(--font);
   font-size: 1.5rem;
   line-height: 3rem;
+  text-align: justify;
 }
+.what-we-design-image {
+  width: 100%;
+  border-radius: 12px;
+}
+@media screen and (min-width: 500px) {
+  .what-we-design-image {
+    width: 500px;
 
-@media screen and (min-width: 768px) and(max-widrh:1023px) {
+    height: 350px;
+    object-fit: cover;
+  }
+  .what-we-design-left-container-content {
+    font-size: 1.6rem;
+    line-height: 3.5rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .what-we-can-design-tabs-container,
   .what-we-design-content-container {
     max-width: var(--tabwidth);
   }
 }
-@media screen and (min-width: 1024px) and(max-widrh:1279px) {
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
   .what-we-can-design-tabs-container,
   .what-we-design-content-container {
     max-width: var(--smalllaptop);
   }
+  .what-we-design-left-container-content {
+    font-size: 1.5rem;
+    padding: 0;
+  }
+  .what-we-design-image {
+    max-width: 350px;
+    width: 100%;
+  }
+  .what-we-design-tab-content {
+    scroll-margin: 250px;
+  }
 }
-@media screen and (min-width: 1280px) and(max-widrh:1479px) {
+@media screen and (min-width: 1280px) and (max-width: 1479px) {
   .what-we-can-design-tabs-container,
   .what-we-design-content-container {
     max-width: var(--laptop);
+  }
+  .what-we-design-tab-content {
+    gap: 5rem;
   }
 }
 @media screen and (min-width: 1480px) {
@@ -87,8 +129,7 @@
   .what-we-design-content-container {
     max-width: var(--large);
   }
-}
-.rsis-image,
-.rsis-container {
-  width: 500px !important;
+  .what-we-design-tab-content {
+    gap: 5rem;
+  }
 }
