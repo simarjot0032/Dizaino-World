@@ -1,16 +1,17 @@
 import Navbar from "@Components/Navbar";
 import Footer from "./Footer";
-import {
-  HowWeDesignThreeDPlanning,
-  ThreeDPlanningAccordionData,
-  ThreeDPlanningFeaturesData,
-  ThreeDPlanningLightboxData,
-} from "@Data/ThreeDPlanning";
+
 import Accordian from "./Accordian";
 import { SlideshowLightbox } from "lightbox.js-react";
 import HowWeDesign from "./HowWeDesign";
 import FeaturesSection from "./FeaturesSection";
 import { LuMouse } from "react-icons/lu";
+import {
+  HowWeDesignTerraceGarden,
+  TerraceGardenAccordionData,
+  TerraceGardenFeaturesData,
+  TerraceGargenLightboxData,
+} from "@Data/TerraceGarden";
 
 export default function TerraceGardern() {
   return (
@@ -21,13 +22,15 @@ export default function TerraceGardern() {
           className="hero-section-container"
           style={{
             backgroundImage:
-              "url('https://archicgi.com/wp-content/uploads/2023/05/3d-floor-plan-visualization-real-estate.jpg')",
+              "url('https://www.homelane.com/blog/wp-content/uploads/2021/03/terrace-garden-ideas.jpg')",
           }}
         >
           <div className="hero-section-header-container">
-            <h2 className="hero-heading">Immersive 3D Planning Solutions</h2>
+            <h2 className="hero-heading">
+              Elevate Your Urban Living with Tranquil Terrace Gardens
+            </h2>
             <p className="hero-tagline">
-              Transforming Visions into Virtual Reality
+              Transform Your Rooftop into a Verdant Haven of Serenity and Style
             </p>
           </div>
           <div className="scroll-down-container">
@@ -36,19 +39,19 @@ export default function TerraceGardern() {
           </div>
         </div>
         <div className="content-container">
-          <FeaturesSection featurescard={ThreeDPlanningFeaturesData} />
+          <FeaturesSection featurescard={TerraceGardenFeaturesData} />
           <HowWeDesign
             main_head="How We Design 3D Plans"
-            array={HowWeDesignThreeDPlanning}
+            array={HowWeDesignTerraceGarden}
           />
           <div className="project-showcase-container">
             <div className="project-container-header">
-              <h1 className="project-heading">3D - Planning Projects</h1>
+              <h1 className="project-heading">Terrace Gargern Projects</h1>
             </div>
             <div className="project-content-container">
               <div className="project-lightbox">
                 <SlideshowLightbox className="lightbox">
-                  {ThreeDPlanningLightboxData.map((image, index) => {
+                  {TerraceGargenLightboxData.map((image, index) => {
                     return (
                       <img
                         src={image.image}
@@ -69,7 +72,7 @@ export default function TerraceGardern() {
               </h2>
             </div>
             <div className="accordian-content-container">
-              {ThreeDPlanningAccordionData.map((accordian, index) => {
+              {TerraceGardenAccordionData.map((accordian, index) => {
                 return (
                   <Accordian
                     objectforquestionandanswer={accordian}
