@@ -1,23 +1,35 @@
 import Navbar from "@Components/Navbar";
 import { LuMouse } from "react-icons/lu";
 import Footer from "@Components/Footer";
-import { CommercialExteriorAccordionData } from "@Data/CommercialExterior";
+
 import Accordian from "@Components/Accordian";
 import "@Styles/CommercialInterior.css";
 import { useState } from "react";
 import {
   CommercialInteriorAccordionData,
+  CommercialInteriorFeaturesData,
+  CommercialInteriorLightBoxData,
+  HowWeDesignCommercialInterior,
+  Whatwecandesigntabcontent,
   Whatwecandesigntabs,
 } from "@Data/CommercialInterior";
+import FeaturesSection from "./FeaturesSection";
+import HowWeDesign from "./HowWeDesign";
+import { SlideshowLightbox } from "lightbox.js-react";
+// import FeaturesSection from "./FeaturesSection";
+
 export default function CommercialInterior() {
   const Handlescroll = () => {
     let content = document.querySelector("#content-container");
     content?.scrollIntoView({ behavior: "smooth" });
   };
+
   const [tabdataandindex, settabdataandindex] = useState(0);
   const handleTabClick = (index: number) => {
     console.log(index);
     settabdataandindex(index);
+    let tabcontent = document.querySelector(".what-we-design-tab-content");
+    tabcontent?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -79,7 +91,107 @@ export default function CommercialInterior() {
                 );
               })}
             </div>
-            <div className="what-we-design-content-container"></div>
+            <div className="what-we-design-content-container">
+              {/* <div className="what-we-design-left-content-container">
+                <p className="what-we-design-left-content">
+                  Crafting Inspiring Interiors. Our talented team of designers
+                  and architects transform your visions into captivating,
+                  functional spaces. Whether its your home or workplace, were
+                  dedicated to making your dreams a reality through innovative
+                  design and sustainable practices. Experience the Meikle Design
+                  difference today.
+                </p>
+              </div>
+              <div className="what-we-design-right-container">
+                <img
+                  src="https://www.litchfieldbuilders.com/hubfs/Design%20Tips%20To%20Get%20The%20Most%20Out%20Of%20Your%20Commercial%20Interior%20Construction.jpg"
+                  alt=""
+                  className="what-we-design-img
+                  "
+                />
+              </div> */}
+              {Whatwecandesigntabcontent.map((tabcontent, index) => {
+                return (
+                  <>
+                    <div
+                      className={
+                        tabdataandindex === index
+                          ? "what-we-design-tab-content"
+                          : "none"
+                      }
+                    >
+                      <div className="tab-content-heading">
+                        {tabcontent.heading}
+                      </div>
+                      <div className="what-we-design-left-content-container">
+                        <p className="what-we-design-left-container-content">
+                          {tabcontent.content}
+                        </p>
+                      </div>
+                      <div className="what-we-design-right-container">
+                        {/* <SimpleImageSlider
+                            images={tabcontent.imagearray}
+                            showBullets={false}
+                            showNavs={true}
+                            width={"100px"}
+                            height={"300px"}
+                            style={{ maxWidth: "500px" }}
+                          /> */}
+                        {/* <img
+                            src={tabcontent.imagearray.map((image, index) => {
+                              image.url;
+                            })}
+                            alt=""
+                            className="waht-we-design-image"
+                          /> */}
+                        {/* {tabcontent.imagearray.map((image, index) => {
+                            return (
+                              <img
+                                src={image.url}
+                                alt=""
+                                className="what-we-design-image"
+                                key={index}
+                              />
+                            );
+                          })} */}
+                        <img
+                          src={tabcontent.image}
+                          alt=""
+                          className="what-we-design-image"
+                          key={index}
+                        />
+                      </div>
+                    </div>
+                  </>
+                );
+              })}
+            </div>
+            <FeaturesSection featurescard={CommercialInteriorFeaturesData} />
+            <HowWeDesign
+              main_head="How We Design Interior"
+              array={HowWeDesignCommercialInterior}
+            />
+          </div>
+          <div className="project-showcase-container">
+            <div className="project-header-container">
+              <h2 className="project-heading">Commercial Interior Projects</h2>
+            </div>
+            <div className="project-content-container">
+              <div className="project-lightbox">
+                <SlideshowLightbox className="lightbox">
+                  {CommercialInteriorLightBoxData.map((image, index) => {
+                    return (
+                      <img
+                        src={image.image}
+                        alt=""
+                        className="project-img"
+                        key={index}
+                      />
+                    );
+                  })}
+                </SlideshowLightbox>
+              </div>
+            </div>
           </div>
           <div className="accordian-container">
             <div className="accordian-container-header">
