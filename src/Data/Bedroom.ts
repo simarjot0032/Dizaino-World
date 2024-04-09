@@ -84,7 +84,9 @@ export const BedroomLightHouseData = [
   {
     image: b7,
   },
-  { image: b8 },
+  {
+    image: b8,
+  },
 ];
 export const AccordianBedroom = [
   {

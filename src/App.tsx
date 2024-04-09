@@ -20,6 +20,8 @@ import Contact from "@Components/Contact";
 import CommercialInterior from "@Components/CommercialInterior";
 import { BiUnderline } from "react-icons/bi";
 import TwoDPlanning from "@Components/TwoDPlanning";
+import ThreeDPlanning from "@Components/ThreeDPlanning";
+import TerraceGardern from "@Components/TerraceGardern";
 
 function App() {
   useEffect(() => {
@@ -104,11 +106,11 @@ function App() {
     },
     {
       link: "/3D-Planning",
-      element: <UnderCons />,
+      element: <ThreeDPlanning />,
     },
     {
       link: "/TerraceGarden",
-      element: <UnderCons />,
+      element: <TerraceGardern />,
     },
     {
       link: "/Projects",
