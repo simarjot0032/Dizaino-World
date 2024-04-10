@@ -1,0 +1,30 @@
+.admin-navbar-container {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  backdrop-filter: blur(5px);
+  padding: 1rem 0.2rem;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.2s linear;
+}
+.admin-navbar-container-scrolled {
+  background-color: rgba(0, 0, 0, 0.388);
+  transition: all 0.2s linear;
+}
+.left-admin-navbar-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.admin-navbar-heading {
+  color: var(--primarycolor);
+  font-family: var(--font);
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+@media screen and (min-width: 768px) {
+  .admin-menu-icon {
+    display: none;
+  }
+}

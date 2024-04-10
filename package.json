@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "firebase": "^10.10.0",
     "image-slider-react": "^1.0.6",
     "lightbox.js-react": "^1.0.0",
     "lightgallery": "^2.7.2",

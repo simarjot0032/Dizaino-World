@@ -19,6 +19,11 @@ import ClassicalExterior from "@Components/ClassicalExterior";
 import Contact from "@Components/Contact";
 import CommercialInterior from "@Components/CommercialInterior";
 import { BiUnderline } from "react-icons/bi";
+import TwoDPlanning from "@Components/TwoDPlanning";
+import ThreeDPlanning from "@Components/ThreeDPlanning";
+import TerraceGardern from "@Components/TerraceGardern";
+import Admin from "@Components/ADMIN/Admin";
+import Login from "@Components/ADMIN/Login";
 
 function App() {
   useEffect(() => {
@@ -99,15 +104,15 @@ function App() {
     // },
     {
       link: "/2d-Planning",
-      element: <UnderCons />,
+      element: <TwoDPlanning />,
     },
     {
       link: "/3D-Planning",
-      element: <UnderCons />,
+      element: <ThreeDPlanning />,
     },
     {
       link: "/TerraceGarden",
-      element: <UnderCons />,
+      element: <TerraceGardern />,
     },
     {
       link: "/Projects",
@@ -121,12 +126,21 @@ function App() {
       link: "/CommercialInterior",
       element: <CommercialInterior />,
     },
+    {
+      link: "Admin",
+      element: <Admin />,
+    },
+    {
+      link: "/Admin-login",
+      element: <Login />,
+    },
   ];
   return (
     <>
       <HashRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+
           {routesarray.map((item, index): any => {
             return (
               <Route path={item.link} element={item.element} key={index} />
