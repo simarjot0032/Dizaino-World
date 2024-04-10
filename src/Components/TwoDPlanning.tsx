@@ -20,8 +20,7 @@ export default function TwoDPlanning() {
         <div
           className="hero-section-container"
           style={{
-            backgroundImage:
-              "url('https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/108488078/original/54d2a4f4ba857c975f160d4d50ab85bf6f261911/draw-a-2d-colored-floor-plan-in-illustrator-or-photoshop.jpg')",
+            backgroundImage: "url('../src/Assets/2Dplanning/hero2.jpg')",
           }}
         >
           <div className="hero-section-header-container">

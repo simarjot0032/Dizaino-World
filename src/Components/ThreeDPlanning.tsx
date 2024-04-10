@@ -21,7 +21,7 @@ export default function ThreeDPlanning() {
           className="hero-section-container"
           style={{
             backgroundImage:
-              "url('https://archicgi.com/wp-content/uploads/2023/05/3d-floor-plan-visualization-real-estate.jpg')",
+              "url('https://d1swvgohc7oxrg.cloudfront.net/filer_public/4b/68/4b68c746-6e4d-44ac-8d76-b71cc78a1383/squamish_interior.jpg')",
           }}
         >
           <div className="hero-section-header-container">
