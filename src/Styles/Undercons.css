@@ -54,7 +54,7 @@
   justify-content: center;
   /* box-shadow: 0cap 0px 5px 5px rgb(21, 21, 21); */
 }
-button {
+.button {
   padding: 1rem 1.8rem;
   background: transparent;
   border: 2px solid var(--primarycolor);
@@ -64,7 +64,7 @@ button {
   margin-top: 1rem;
   transition: all 0.3s linear;
 }
-button:hover,
+
 Link:hover {
   transform: scale(1.1);
 }
