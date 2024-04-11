@@ -1,10 +1,26 @@
 .login-container {
-  background-color: black;
+  background-color: #191c24;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0.5rem;
+  flex-direction: column;
+  user-select: none;
+}
+.company-profile-login {
+  display: flex;
+  align-items: center;
+}
+.login-page-logo {
+  width: 80px;
+}
+.company-profile-name {
+  margin-top: 12px;
+  color: white;
+  font-size: 2rem;
+  font-family: var(--font);
+  font-weight: 500;
 }
 .login-form-container {
   background-color: white;
@@ -28,7 +44,7 @@
 }
 .label {
   margin-top: 16px;
-  margin-bottom: 5px;
+
   font-size: 1.5rem;
   font-family: var(--font);
 }
@@ -54,4 +70,12 @@ input::placeholder {
   border: 2px solid var(--primarycolor);
   margin-top: 25px;
   border-radius: 10px;
+}
+.go-back-text {
+  margin: 1rem;
+  color: dodgerblue;
+  font-size: 1.3rem;
+}
+.go-back-text::before {
+  content: "<-";
 }

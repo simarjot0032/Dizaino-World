@@ -1,0 +1,10 @@
+.admin-home-container {
+  background-color: rgb(235, 235, 235);
+  height: 100vh;
+  padding: 1rem;
+}
+.welcome-admin-user {
+  font-family: var(--font);
+  color: #191c24;
+  font-size: 2rem;
+}

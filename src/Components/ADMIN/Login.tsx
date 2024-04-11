@@ -2,7 +2,8 @@ import "@Styles/Admin/Login.css";
 import { useEffect, useRef } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "src/Config/Firebase-config";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import Logo from "/icon.png";
 
 export default function Login() {
   const navigate = useNavigate();
@@ -29,6 +30,7 @@ export default function Login() {
     try {
       const userlogin = await signInWithEmailAndPassword(auth, email, password);
       localStorage.setItem("authentication", "true");
+      localStorage.setItem("username", credentials.email);
       navigate("/Admin");
     } catch (error) {
       console.log(error);
@@ -39,6 +41,10 @@ export default function Login() {
   return (
     <>
       <div className="login-container">
+        <div className="company-profile-login">
+          <img src={Logo} alt="" className="login-page-logo" />
+          <h2 className="company-profile-name">Dizaino-World</h2>
+        </div>
         <div className="login-form-container">
           <h2 className="login-form-heading">Login</h2>
           <form action="" className="login-form" onSubmit={HandleSubmit}>
@@ -65,6 +71,11 @@ export default function Login() {
               Login
             </button>
           </form>
+        </div>
+        <div className="login-return">
+          <Link to={"/"} className="linktag-admin">
+            <p className="go-back-text">Go Back To Dizaino World</p>
+          </Link>
         </div>
       </div>
     </>
