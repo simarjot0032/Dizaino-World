@@ -1,6 +1,7 @@
 import { useEffect } from "react";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import AdminNavbar from "./AdminNavbar";
+import AdminHome from "./AdminHome";
 
 export default function Admin() {
   const authentication = localStorage.getItem("authentication");
@@ -15,7 +16,7 @@ export default function Admin() {
   }, [navigate]);
   return (
     <>
-      <AdminNavbar />
+      <AdminHome />
     </>
   );
 }
