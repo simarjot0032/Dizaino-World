@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import AdminNavbar from "./AdminNavbar";
+import AdminNavbar from "./AdminSidebar";
 import AdminHome from "./AdminHome";
 
 export default function Admin() {
