@@ -1,13 +1,36 @@
 .admin-home-container {
   background-color: rgb(235, 235, 235);
   height: 100vh;
-  padding: 1rem;
+  padding: 25px 20px;
   float: left;
-  grid-column: 2;
+
   width: 100%;
 }
 .welcome-admin-user {
   font-family: var(--font);
   color: #191c24;
   font-size: 2rem;
+}
+.admin-home-content-container {
+  margin-top: 50px;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.admin-home-logo {
+  width: 100%;
+  max-width: 250px;
+  background-color: #191c24;
+  border-radius: 100%;
+  padding: 15px 12px;
+}
+@media screen and (min-width: 768px) {
+  .admin-main-container {
+    display: grid;
+    grid-template-columns: 250px auto;
+  }
+  .admin-home-container {
+    grid-column: 2;
+  }
 }
