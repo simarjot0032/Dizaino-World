@@ -25,6 +25,33 @@
   border-radius: 100%;
   padding: 15px 12px;
 }
+.admin-home-heading {
+  font-family: var(--font);
+  font-size: 3.2rem;
+  color: var(--primarycolor);
+  font-weight: 500;
+}
+.current-user {
+  font-family: var(--font);
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+.current-user-heading {
+  font-family: var(--font);
+  font-weight: 300;
+}
+.log-out {
+  padding: 1rem 1.5rem;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  border: 0;
+  background-color: red;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
 @media screen and (min-width: 768px) {
   .admin-main-container {
     display: grid;

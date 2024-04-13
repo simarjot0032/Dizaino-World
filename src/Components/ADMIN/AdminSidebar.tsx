@@ -46,6 +46,9 @@ export default function AdminNavbar() {
               <Link to={"/ProjectCRUD"} className="linktag-admin">
                 <li className="link-admin">Project</li>
               </Link>
+              <Link to="" className="linktag-admin">
+                <li className="link-admin">Forget Password</li>
+              </Link>
             </div>
           </div>
         </div>

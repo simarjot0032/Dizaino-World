@@ -2,6 +2,8 @@ import "@Styles/Admin/Admin.css";
 import AdminNavbar from "./AdminSidebar";
 import Logo from "/icon.png";
 import { useNavigate } from "react-router-dom";
+import { IoLogOut } from "react-icons/io5";
+import toast from "react-hot-toast";
 export default function AdminHome() {
   const useremailfull = localStorage.getItem("username");
   const useremailarray = useremailfull?.split("@");
@@ -11,6 +13,7 @@ export default function AdminHome() {
     localStorage.setItem("authentication", "false");
     localStorage.setItem("username", "");
     navigate("/Admin-login");
+    toast.success("Logged Out");
   };
   return (
     <>
@@ -36,7 +39,7 @@ export default function AdminHome() {
               </p>
               <div className="log-out-btn-container">
                 <button className="log-out" onClick={HandleLogOut}>
-                  LogOut
+                  <IoLogOut color="white" size={30} /> LogOut
                 </button>
               </div>
             </div>
