@@ -1,4 +1,4 @@
-.admin-navbar-container {
+.admin-sidebar-container {
   position: sticky;
   top: 0;
   background-color: black;
@@ -8,7 +8,8 @@
   justify-content: space-between;
   transition: all 0.2s linear;
   align-items: center;
-  /* position: relative; */
+  max-width: 100%;
+  height: fit-content;
 }
 .admin-navbar-container-scrolled {
   background-color: rgba(0, 0, 0, 0.388);
@@ -67,6 +68,15 @@
   font-family: var(--font);
 }
 @media screen and (min-width: 768px) {
+  .admin-sidebar-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 250px;
+    position: fixed;
+    left: 0;
+    float: left;
+  }
   .admin-menu-icon {
     display: none;
   }
@@ -74,11 +84,17 @@
   .menu-container {
     position: static;
     width: fit-content;
-    height: fit-content;
+    height: 100vh;
     background: transparent;
+  }
+  .admin-navbar-right-container {
+    width: 100%;
   }
   .laptopmenu {
     display: block;
+    height: 100vh;
+    margin-top: 50px;
+    padding: 0;
   }
   .admin-menu-widgets {
     display: none;
@@ -86,5 +102,13 @@
   .admin-menu {
     display: flex;
     gap: 2rem;
+    flex-direction: column;
+  }
+  .link-admin {
+    border-right: 2px solid grey;
+    transition: all 0.2s ease;
+  }
+  .link-admin:hover {
+    border-color: white;
   }
 }

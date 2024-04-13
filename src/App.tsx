@@ -24,6 +24,7 @@ import ThreeDPlanning from "@Components/ThreeDPlanning";
 import TerraceGardern from "@Components/TerraceGardern";
 import Admin from "@Components/ADMIN/Admin";
 import Login from "@Components/ADMIN/Login";
+import ResetPass from "@Components/ADMIN/ResetPass";
 
 function App() {
   useEffect(() => {
@@ -127,12 +128,17 @@ function App() {
       element: <CommercialInterior />,
     },
     {
-      link: "Admin",
+      link: "/Admin",
       element: <Admin />,
     },
+
     {
       link: "/Admin-login",
       element: <Login />,
+    },
+    {
+      link: "/Si",
+      element: <ResetPass />,
     },
   ];
   return (

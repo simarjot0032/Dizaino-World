@@ -15,7 +15,8 @@
 .login-page-logo {
   width: 80px;
 }
-.company-profile-name {
+.company-profile-name,
+.forget-password-heading {
   margin-top: 12px;
   color: white;
   font-size: 2rem;
@@ -61,7 +62,8 @@ input::placeholder {
   font-family: var(--font);
   font-size: 1.3rem;
 }
-.submitbtn {
+.submitbtn,
+.forget-password-btn {
   color: var(--primarycolor);
   background-color: transparent;
   border: 0;
@@ -71,11 +73,35 @@ input::placeholder {
   margin-top: 25px;
   border-radius: 10px;
 }
-.go-back-text {
+.go-back-text,
+.go-back-text-login {
   margin: 1rem;
   color: dodgerblue;
   font-size: 1.3rem;
+  cursor: pointer;
 }
 .go-back-text::before {
   content: "<-";
+}
+.forget-password,
+.go-back-text-login {
+  font-size: 1.2rem;
+  color: red;
+  font-family: var(--font);
+  text-align: end;
+  margin-top: 8px;
+  cursor: pointer;
+}
+.forget-password-form,
+.forget {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+.forget-password-form {
+  padding: 1rem;
+  border-radius: 15px;
+}
+.forget-password-heading {
+  color: var(--primarycolor);
 }

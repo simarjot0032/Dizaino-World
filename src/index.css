@@ -113,6 +113,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px;
   background-color: rgba(104, 104, 104, 0.35);
 }
+
 .project-showcase-container {
   display: flex;
   flex-direction: column;
