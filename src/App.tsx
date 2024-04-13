@@ -25,6 +25,7 @@ import TerraceGardern from "@Components/TerraceGardern";
 import Admin from "@Components/ADMIN/Admin";
 import Login from "@Components/ADMIN/Login";
 import ResetPass from "@Components/ADMIN/ResetPass";
+import ChangePassword from "@Components/ADMIN/ChangePassword";
 
 function App() {
   useEffect(() => {
@@ -137,8 +138,8 @@ function App() {
       element: <Login />,
     },
     {
-      link: "/Si",
-      element: <ResetPass />,
+      link: "/ChangePassword",
+      element: <ChangePassword />,
     },
   ];
   return (

@@ -41,14 +41,13 @@ export default function Login() {
 
     try {
       const userlogin = await signInWithEmailAndPassword(auth, email, password);
-      localStorage.setItem("authentication", "true");
-      localStorage.setItem("username", credentials.email);
+
       toast.success("Logged In Sucessfully");
       navigate("/Admin");
     } catch (error) {
       console.log(error);
       navigate("/Admin-login");
-      localStorage.setItem("authentication", "false");
+
       toast.error("Email and password does not match");
     }
   };
