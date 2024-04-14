@@ -14,16 +14,16 @@ export default function Contact() {
     }
     const { name, email } = person;
     console.log(person);
-    const fetchapi = await fetch(
-      "https://dizainoworld-f1a6d-default-rtdb.firebaseio.com/Contact.json",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ name, email }),
-      }
-    );
+    // const fetchapi = await fetch(
+    //   "https://dizainoworld-f1a6d-default-rtdb.firebaseio.com/Contact.json",
+    //   {
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify({ name, email }),
+    //   }
+    // );
   };
   return (
     <>

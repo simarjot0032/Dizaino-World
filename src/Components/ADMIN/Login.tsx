@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import {
   Auth,
   getAuth,
+  onAuthStateChanged,
   sendPasswordResetEmail,
   signInWithEmailAndPassword,
 } from "firebase/auth";
@@ -74,7 +75,11 @@ export default function Login() {
       toast.error("Email address not found. Please try a different email.");
     }
   };
-
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      user ? navigate("/Admin") : "";
+    });
+  });
   return (
     <>
       <div className="login-container">

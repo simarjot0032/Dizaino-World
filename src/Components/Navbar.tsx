@@ -215,14 +215,14 @@ export default function Navbar() {
               Projects
             </li>
           </Link>
-          <Link to="/Contact" className="linktag-navbar " onClick={closemenu}>
+          {/* <Link to="/Contact" className="linktag-navbar " onClick={closemenu}>
             <li
               className={"link-navbar link-navbar-with-bottom-animation"}
               onClick={handleclick}
             >
               Contact us
             </li>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </>

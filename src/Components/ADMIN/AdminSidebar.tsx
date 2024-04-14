@@ -43,7 +43,7 @@ export default function AdminNavbar() {
               <Link to={"/Contact Form"} className="linktag-admin">
                 <li className="link-admin">Contact Form </li>
               </Link>
-              <Link to={"/ProjectCRUD"} className="linktag-admin">
+              <Link to={"/ProjectUpload"} className="linktag-admin">
                 <li className="link-admin">Project</li>
               </Link>
               <Link to="/ChangePassword" className="linktag-admin">
