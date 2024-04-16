@@ -25,6 +25,10 @@ import TerraceGardern from "@Components/TerraceGardern";
 import Admin from "@Components/ADMIN/Admin";
 import Login from "@Components/ADMIN/Login";
 import ResetPass from "@Components/ADMIN/ResetPass";
+import ChangePassword from "@Components/ADMIN/ChangePassword";
+import AdminProjectUpload from "@Components/ADMIN/AdminProjectUpload";
+import Projects from "@Components/Projects";
+import ContactForm from "@Components/ADMIN/ContactForm";
 
 function App() {
   useEffect(() => {
@@ -117,7 +121,7 @@ function App() {
     },
     {
       link: "/Projects",
-      element: <UnderCons />,
+      element: <Projects />,
     },
     {
       link: "/Contact",
@@ -137,8 +141,16 @@ function App() {
       element: <Login />,
     },
     {
-      link: "/Si",
-      element: <ResetPass />,
+      link: "/ProjectUpload",
+      element: <AdminProjectUpload />,
+    },
+    {
+      link: "/ChangePassword",
+      element: <ChangePassword />,
+    },
+    {
+      link: "/Contact Form",
+      element: <ContactForm />,
     },
   ];
   return (

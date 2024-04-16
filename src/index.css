@@ -143,7 +143,8 @@ body::-webkit-scrollbar-thumb {
 .project-lightbox {
   margin-top: 50px;
 }
-.project-img {
+.project-img,
+.lightbox > img {
   max-width: 95vw;
   filter: grayscale(20%);
   transition: all 0.2s linear;
@@ -227,14 +228,19 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   scroll-margin: 55px;
 }
+.admin-main-container {
+  background-color: rgb(235, 235, 235);
+}
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .project-content-container {
     max-width: var(--tabwidth);
   }
-  .project-img {
+  .project-img,
+  .lightbox > img {
     max-width: 350px;
   }
-  .accordian-content-container {
+  .accordian-content-container,
+  .contact-form-container {
     max-width: var(--tabwidth);
   }
 }
@@ -242,10 +248,12 @@ body::-webkit-scrollbar-thumb {
   .project-content-container {
     max-width: var(--smalllaptop);
   }
-  .project-img {
+  .project-img,
+  .lightbox > img {
     max-width: 350px;
   }
-  .accordian-content-container {
+  .accordian-content-container,
+  .contact-form-container {
     max-width: var(--tabwidth);
   }
 }
@@ -253,10 +261,12 @@ body::-webkit-scrollbar-thumb {
   .project-content-container {
     max-width: var(--laptop);
   }
-  .project-img {
+  .project-img,
+  .lightbox > img {
     max-width: 350px;
   }
-  .accordian-content-container {
+  .accordian-content-container,
+  .contact-form-container {
     max-width: var(--tabwidth);
   }
 }
@@ -264,10 +274,12 @@ body::-webkit-scrollbar-thumb {
   .project-content-container {
     max-width: var(--large);
   }
-  .project-img {
+  .project-img,
+  .lightbox > img {
     max-width: 350px;
   }
-  .accordian-content-container {
+  .accordian-content-container,
+  .contact-form-container {
     max-width: var(--laptop);
   }
 }

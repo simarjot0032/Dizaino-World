@@ -4,21 +4,22 @@ import Logo from "/icon.png";
 import { useNavigate } from "react-router-dom";
 import { IoLogOut } from "react-icons/io5";
 import toast from "react-hot-toast";
+import { signOut } from "firebase/auth";
+import { auth } from "src/Config/Firebase-config";
 export default function AdminHome() {
   const useremailfull = localStorage.getItem("username");
   const useremailarray = useremailfull?.split("@");
   const username = useremailarray ? useremailarray[0] : "";
   const navigate = useNavigate();
   const HandleLogOut = () => {
-    localStorage.setItem("authentication", "false");
-    localStorage.setItem("username", "");
+    signOut(auth);
     navigate("/Admin-login");
     toast.success("Logged Out");
   };
   return (
     <>
       <div className="admin-main-container">
-        <AdminNavbar />
+        <AdminNavbar activeclass="AdminHome" />
         <div className="admin-home-container">
           <div className="admin-user-welcome-container">
             <p className="welcome-admin-user">Welcome Admin!</p>

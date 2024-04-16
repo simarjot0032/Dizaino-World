@@ -80,7 +80,8 @@ input::placeholder {
   font-size: 1.3rem;
   cursor: pointer;
 }
-.go-back-text::before {
+.go-back-text::before,
+.go-back-text-login::before {
   content: "<-";
 }
 .forget-password,

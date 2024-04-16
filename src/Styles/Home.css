@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  overflow-x: hidden;
 }
 .home-hero-section {
   background: url("../Assets/more_dark-hero-img.webp");

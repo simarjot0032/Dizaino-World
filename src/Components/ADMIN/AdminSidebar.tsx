@@ -4,7 +4,10 @@ import Logo from "/icon.png";
 import { GrMenu } from "react-icons/gr";
 import { Link } from "react-router-dom";
 import { RxCrossCircled } from "react-icons/rx";
-export default function AdminNavbar() {
+interface Props {
+  activeclass?: string;
+}
+export default function AdminNavbar({ activeclass }: Props) {
   const [mobilemenu, setmobilemenu] = useState(false);
 
   const Handleclick = () => {
@@ -38,16 +41,48 @@ export default function AdminNavbar() {
             </div>
             <div className="admin-menu">
               <Link to={"/Admin"} className="linktag-admin">
-                <li className="link-admin">Admin Home</li>
+                <li
+                  className={
+                    activeclass === "AdminHome"
+                      ? "link-admin AdminHome"
+                      : "link-admin "
+                  }
+                >
+                  Admin Home
+                </li>
               </Link>
               <Link to={"/Contact Form"} className="linktag-admin">
-                <li className="link-admin">Contact Form </li>
+                <li
+                  className={
+                    activeclass === "AdminContact"
+                      ? "link-admin AdminContact"
+                      : "link-admin "
+                  }
+                >
+                  Contact Form{" "}
+                </li>
               </Link>
-              <Link to={"/ProjectCRUD"} className="linktag-admin">
-                <li className="link-admin">Project</li>
+              <Link to={"/ProjectUpload"} className="linktag-admin">
+                <li
+                  className={
+                    activeclass === "AdminProject"
+                      ? "link-admin AdminProject"
+                      : "link-admin "
+                  }
+                >
+                  Project
+                </li>
               </Link>
-              <Link to="" className="linktag-admin">
-                <li className="link-admin">Forget Password</li>
+              <Link to="/ChangePassword" className="linktag-admin">
+                <li
+                  className={
+                    activeclass === "AdminChange"
+                      ? "link-admin AdminChange"
+                      : "link-admin "
+                  }
+                >
+                  Change Password
+                </li>
               </Link>
             </div>
           </div>
