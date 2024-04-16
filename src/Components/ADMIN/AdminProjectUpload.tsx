@@ -61,7 +61,7 @@ export default function AdminProjectUpload() {
 
   return (
     <div className="admin-main-container">
-      <AdminSidebar />
+      <AdminSidebar activeclass="AdminProject" />
       <div className="project-upload-content-container">
         <div className="project-upload-header">
           <h2 className="project-upload-heading">Upload Projects</h2>

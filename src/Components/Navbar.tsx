@@ -207,7 +207,7 @@ export default function Navbar() {
               className="link-navbar link-navbar-with-bottom-animation"
               onClick={handleclick}
             >
-              Terrance Garden
+              Terrace Garden
             </li>
           </Link>
           <Link to="/Projects" className="linktag-navbar">

@@ -67,6 +67,7 @@
   list-style: none;
   font-family: var(--font);
 }
+
 @media screen and (min-width: 768px) {
   .admin-sidebar-container {
     display: flex;
@@ -110,5 +111,29 @@
   }
   .link-admin:hover {
     border-color: white;
+  }
+  .AdminHome {
+    background-color: var(--primarycolor);
+    color: aliceblue;
+    padding: 0.2rem;
+    border-radius: 10px;
+  }
+  .AdminContact {
+    background-color: var(--primarycolor);
+    color: aliceblue;
+    padding: 0.2rem;
+    border-radius: 10px;
+  }
+  .AdminProject {
+    background-color: var(--primarycolor);
+    color: aliceblue;
+    padding: 0.2rem;
+    border-radius: 10px;
+  }
+  .AdminChange {
+    background-color: var(--primarycolor);
+    color: aliceblue;
+    padding: 0.2rem;
+    border-radius: 10px;
   }
 }

@@ -57,7 +57,7 @@ export default function ChangePassword() {
   return (
     <>
       <div className="admin-main-container">
-        <AdminSidebar />
+        <AdminSidebar activeclass="AdminChange" />
         <div className="change-password-container">
           <div className="change-password-header">
             <h2 className="change-password-heading">Change Password</h2>

@@ -45,7 +45,7 @@ export default function ContactForm() {
   };
   return (
     <div className="admin-main-container">
-      <AdminSidebar />
+      <AdminSidebar activeclass="AdminContact" />
       <div className="contact-content-container" style={{ gridColumn: 2 }}>
         <div className="btn-container">
           <button

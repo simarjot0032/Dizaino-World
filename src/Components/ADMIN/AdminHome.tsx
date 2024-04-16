@@ -19,7 +19,7 @@ export default function AdminHome() {
   return (
     <>
       <div className="admin-main-container">
-        <AdminNavbar />
+        <AdminNavbar activeclass="AdminHome" />
         <div className="admin-home-container">
           <div className="admin-user-welcome-container">
             <p className="welcome-admin-user">Welcome Admin!</p>
