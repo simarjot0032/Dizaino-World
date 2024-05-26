@@ -53,7 +53,6 @@ export default function ContactForm() {
             onClick={HandleLogOut}
             style={{ marginBottom: "10px", margin: "10px " }}
           >
-            {" "}
             <IoLogOut color="white" size={30} />
             Log Out
           </button>

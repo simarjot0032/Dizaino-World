@@ -33,7 +33,10 @@ export default function Projects() {
     fun();
   }, []);
   console.log(images);
-
+  const handlebedroomscroll = () => {
+    const bedroomtobescrolled = document.getElementById("content-container");
+    bedroomtobescrolled?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
   return (
     <>
       <Navbar />
@@ -48,12 +51,12 @@ export default function Projects() {
           <div className="hero-section-header-container">
             <h2 className="hero-heading">Our Projects!</h2>
           </div>
-          <div className="scroll-down-container">
+          <div className="scroll-down-container" onClick={handlebedroomscroll}>
             <LuMouse size={23} color="white" />
             <p className="scroll-down-content">Scroll Down</p>
           </div>
         </div>
-        <div className="content-container">
+        <div className="content-container" id="content-container">
           <div className="project-showcase-container">
             <div className="project-container-header">
               <h1 className="project-heading">Projects</h1>

@@ -14,6 +14,10 @@ import hero from "@Assets/Dining/hero.webp";
 import { SlideshowLightbox } from "lightbox.js-react";
 
 export default function Dining() {
+  const handlebedroomscroll = () => {
+    const bedroomtobescrolled = document.getElementById("content-container");
+    bedroomtobescrolled?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
   return (
     <>
       <Navbar />
@@ -30,13 +34,13 @@ export default function Dining() {
               Crafting Memories, One Bite at a Time
             </p>
           </div>
-          <div className="scroll-down-container">
+          <div className="scroll-down-container" onClick={handlebedroomscroll}>
             <LuMouse size={23} color="var(--mainbgcolor)" />
 
             <p className="scroll-down-content">Scroll Down</p>
           </div>
         </div>
-        <div className="content-container">
+        <div className="content-container" id="content-container">
           <FeaturesSection featurescard={DiningFeaturesData} />
           <HowWeDesign
             main_head="How We Design Dining"

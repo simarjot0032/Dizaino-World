@@ -16,6 +16,10 @@ import "lightbox.js-react/dist/index.css";
 import hero from "@Assets/DownCelling/hero.webp";
 
 export default function DownCelling() {
+  const handlebedroomscroll = () => {
+    const bedroomtobescrolled = document.getElementById("content-container");
+    bedroomtobescrolled?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
   return (
     <>
       <Navbar />
@@ -36,13 +40,13 @@ export default function DownCelling() {
               Solutions
             </p>
           </div>
-          <div className="scroll-down-container">
+          <div className="scroll-down-container" onClick={handlebedroomscroll}>
             <LuMouse size={25} color="white" />
 
             <p className="scroll-down-content">Scroll Down</p>
           </div>
         </div>
-        <div className="content-container">
+        <div className="content-container" id="content-container">
           <FeaturesSection featurescard={FeaturesDownCeiling} />
           <HowWeDesign
             main_head="How We Design Down Ceiling"

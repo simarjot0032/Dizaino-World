@@ -14,6 +14,10 @@ import {
 } from "@Data/TerraceGarden";
 
 export default function TerraceGardern() {
+  const handlebedroomscroll = () => {
+    const bedroomtobescrolled = document.getElementById("content-container");
+    bedroomtobescrolled?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
   return (
     <>
       <Navbar />
@@ -33,12 +37,12 @@ export default function TerraceGardern() {
               Transform Your Rooftop into a Verdant Haven of Serenity and Style
             </p>
           </div>
-          <div className="scroll-down-container">
+          <div className="scroll-down-container" onClick={handlebedroomscroll}>
             <LuMouse size={23} color="white" />
             <p className="scroll-down-content">Scroll Down</p>
           </div>
         </div>
-        <div className="content-container">
+        <div className="content-container" id="content-container">
           <FeaturesSection featurescard={TerraceGardenFeaturesData} />
           <HowWeDesign
             main_head="How We Design 3D Plans"

@@ -13,6 +13,10 @@ import HowWeDesign from "./HowWeDesign";
 import hero from "@Assets/Theater/hero.webp";
 import { SlideshowLightbox } from "lightbox.js-react";
 export default function Theater() {
+  const handlebedroomscroll = () => {
+    const bedroomtobescrolled = document.getElementById("content-container");
+    bedroomtobescrolled?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
   return (
     <>
       <Navbar />
@@ -27,12 +31,12 @@ export default function Theater() {
             <h2 className="hero-heading">Immerse Yourself in Entertainment</h2>
             <p className="hero-tagline">Where Every Scene Comes to Life</p>
           </div>
-          <div className="scroll-down-container">
+          <div className="scroll-down-container" onClick={handlebedroomscroll}>
             <LuMouse size={23} color="var(--mainbgcolor)" />
             <p className="scroll-down-content">Scroll Down</p>
           </div>
         </div>
-        <div className="content-container">
+        <div className="content-container" id="content-container">
           <FeaturesSection featurescard={TheaterFeaturesData} />
           <HowWeDesign
             main_head="How We Design Theater"
