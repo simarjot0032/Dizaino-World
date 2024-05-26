@@ -13,6 +13,10 @@ import Accordian from "@Components/Accordian";
 import HowWeDesign from "@Components/HowWeDesign";
 import { SlideshowLightbox } from "lightbox.js-react";
 export default function CommercialExterior() {
+  const handlebedroomscroll = () => {
+    const bedroomtobescrolled = document.getElementById("content-container");
+    bedroomtobescrolled?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
   return (
     <>
       <Navbar />
@@ -29,12 +33,12 @@ export default function CommercialExterior() {
               Transform Your Business Landscape with Design Excellence
             </p>
           </div>
-          <div className="scroll-down-container">
+          <div className="scroll-down-container" onClick={handlebedroomscroll}>
             <LuMouse color="white" size={23} />
             <p className="scroll-down-content">Scroll Down</p>
           </div>
         </div>
-        <div className="content-container">
+        <div className="content-container" id="content-container">
           <FeaturesSection featurescard={CommercialExteriorFeaturesData} />
           <HowWeDesign
             main_head="How We Design Exterior"

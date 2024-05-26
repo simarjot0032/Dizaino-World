@@ -11,8 +11,13 @@ import FeaturesSection from "@Components/FeaturesSection";
 import { LuMouse } from "react-icons/lu";
 import HowWeDesign from "./HowWeDesign";
 import { SlideshowLightbox } from "lightbox.js-react";
+import hero from "@Assets/ClassicalExterior/hero.jpg";
 
 export default function ClassicalExterior() {
+  const handlebedroomscroll = () => {
+    const bedroomtobescrolled = document.getElementById("content-container");
+    bedroomtobescrolled?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
   return (
     <>
       <Navbar />
@@ -20,8 +25,7 @@ export default function ClassicalExterior() {
         <div
           className="hero-section-container"
           style={{
-            backgroundImage:
-              "url('https://c1.wallpaperflare.com/path/575/819/608/building-classic-architecture-33eff7875ef227e4763a9ae444fd0f4a.jpg')",
+            backgroundImage: `url(${hero})`,
           }}
         >
           <div className="hero-section-header-container">
@@ -30,12 +34,12 @@ export default function ClassicalExterior() {
               Crafting Architectural Masterpieces Inspired by Classical Design
             </p>
           </div>
-          <div className="scroll-down-container">
+          <div className="scroll-down-container" onClick={handlebedroomscroll}>
             <LuMouse color="white" size={23} />
             <p className="scroll-down-content">Scroll Down</p>
           </div>
         </div>
-        <div className="content-container">
+        <div className="content-container" id="content-container">
           {<FeaturesSection featurescard={ClassicalExteriorFeatures} />}
           {
             <HowWeDesign

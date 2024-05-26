@@ -11,8 +11,12 @@ import {
 import HowWeDesign from "./HowWeDesign";
 import { SlideshowLightbox } from "lightbox.js-react";
 import Accordian from "./Accordian";
-
+import hero from "@Assets/Theater/hero.jpg";
 export default function ThreeDPlanning() {
+  const handlebedroomscroll = () => {
+    const bedroomtobescrolled = document.getElementById("content-container");
+    bedroomtobescrolled?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
   return (
     <>
       <Navbar />
@@ -20,8 +24,7 @@ export default function ThreeDPlanning() {
         <div
           className="hero-section-container"
           style={{
-            backgroundImage:
-              "url('https://d1swvgohc7oxrg.cloudfront.net/filer_public/4b/68/4b68c746-6e4d-44ac-8d76-b71cc78a1383/squamish_interior.jpg')",
+            backgroundImage: `url(${hero})`,
           }}
         >
           <div className="hero-section-header-container">
@@ -30,12 +33,12 @@ export default function ThreeDPlanning() {
               Transforming Visions into Virtual Reality
             </p>
           </div>
-          <div className="scroll-down-container">
+          <div className="scroll-down-container" onClick={handlebedroomscroll}>
             <LuMouse size={23} color="white" />
             <p className="scroll-down-content">Scroll Down</p>
           </div>
         </div>
-        <div className="content-container">
+        <div className="content-container" id="content-container">
           <FeaturesSection featurescard={ThreeDPlanningFeaturesData} />
           <HowWeDesign
             main_head="How We Design 3D Plans"

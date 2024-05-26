@@ -13,6 +13,10 @@ import { SlideshowLightbox } from "lightbox.js-react";
 import Accordian from "./Accordian";
 
 export default function TwoDPlanning() {
+  const handlebedroomscroll = () => {
+    const bedroomtobescrolled = document.getElementById("content-container");
+    bedroomtobescrolled?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
   return (
     <>
       <Navbar />
@@ -31,12 +35,12 @@ export default function TwoDPlanning() {
               Crafting Spatial Blueprints for Seamless Execution
             </p>
           </div>
-          <div className="scroll-down-container">
+          <div className="scroll-down-container" onClick={handlebedroomscroll}>
             <LuMouse size={23} color="white" />
             <p className="scroll-down-content">Scroll Down</p>
           </div>
         </div>
-        <div className="content-container">
+        <div className="content-container" id="content-container">
           <FeaturesSection featurescard={TwoDPlanningFeaturesData} />
           <HowWeDesign
             main_head="How We Design 2D"

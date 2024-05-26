@@ -15,6 +15,12 @@ import { SlideshowLightbox } from "lightbox.js-react";
 import "lightbox.js-react/dist/index.css";
 
 export default function PoojaRoom() {
+  const handlebedroomscroll = () => {
+    const bedroomtobescrolled = document.getElementById(
+      "pooja-room-content-container"
+    );
+    bedroomtobescrolled?.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
   return (
     <>
       <Navbar />
