@@ -391,26 +391,6 @@ export default function Home() {
                 </h2>
               </div>
               <div className={activetab === 1 ? "project-commercial " : "none"}>
-                {/* {arrayforcommercialimages.map((item: any, index: any): any => {
-                  return (
-                    <React.Fragment key={index}>
-                      <img
-                        src={item.image}
-                        alt=""
-                        className="project-img"
-                        onClick={() => handlelightboxclick(index + 1)}
-                      />
-                      <div className="lightbox-container">
-                        {lightbox[index + 1] && (
-                          <Lightboximage
-                            imagelink={item.image}
-                            handlecross={handlelightboxclosing(index + 1)}
-                          />
-                        )}
-                      </div>
-                    </React.Fragment> 
-                  );
-                })}*/}
                 <SlideshowLightbox className="lightbox-container">
                   {arrayforcommercialimages.map((image, index) => {
                     return (
